@@ -1,0 +1,58 @@
+#!/bin/sh
+#
+# usage: runtest_local [<testfile>...]
+# without args, runs all *.test files in the current directory
+#
+
+# Absolute locations of NeSTiNg and INET project directories:
+NESTING=$(cd "${0%/*}/.." && pwd) || exit 1
+INET=$(cd "$NESTING/../inet" && pwd) || exit 1
+
+TESTFILES=$([ 0 -eq $# ] && echo "*.test" || echo "$*")
+
+mkdir -p work
+
+# echo "=== Building INET and NeSTiNg ==="
+# echo "(not taking care of 'make makefiles'...)"
+# echo
+
+# (cd $INET && make) || exit 1
+# (cd $NESTING && make) || exit 1
+
+echo
+echo "=== Generating tests ==="
+echo
+
+opp_test gen -v $TESTFILES || exit 1
+
+echo
+echo "=== Building tests ==="
+echo
+
+(cd work && opp_makemake -f --deep -P . -lnesting -L$NESTING/src -lINET -L$INET/src && make) || exit 1
+
+echo
+echo "=== Running tests ==="
+echo
+
+export NEDPATH=".;$NESTING/src;$INET/src"
+
+mkfifo so_dup ec_dup  # set up named pipes to capture output and exit code of opp_test
+tail -n+1 -f so_dup &  # forward so_dup to stdout
+exec 3<> ec_dup  # make shell buffer ec_dup
+
+TESTRESULT=$( ( opp_test run -v $TESTFILES; echo "$?" > ec_dup ) | tee so_dup | grep '^PASS:.*FAIL.*UNRESOLVED:' )
+read TESTRETURN < ec_dup
+
+rm so_dup ec_dup  # tear down named pipes
+
+[ 0 -eq $TESTRETURN ] || (echo "[ERROR] opp_test exited with nonzero status" $TESTRETURN; exit 1)
+
+# extract number of passed, failed, and unresolved test from opp_test output
+PASS=$(echo $TESTRESULT | sed -nre 's/PASS: ([[:digit:]]+).*/\1/p')
+FAIL=$(echo $TESTRESULT | sed -nre 's/.*FAIL: ([[:digit:]]+).*/\1/p')
+UNRESOLVED=$(echo $TESTRESULT | sed -nre 's/.*UNRESOLVED: ([[:digit:]]+).*/\1/p')
+
+[ -z $FAIL ] || [ -z $UNRESOLVED ] && (echo "[ERROR] Could not determine number of failed and/or unresolved tests"; exit 1)
+
+[ 0 -eq $FAIL ] && [ 0 -eq $UNRESOLVED ] || (echo "[ERROR]" $FAIL "failed and" $UNRESOLVED "unresolved tests"; exit 1 )
