@@ -1,0 +1,190 @@
+version 2
+run General-0-20190417-15:52:31-15701
+attr configname General
+attr datetime 20190417-15:52:31
+attr experiment General
+attr inifile 04_FramePreemption.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network TestNetwork
+attr processid 15701
+attr repetition 0
+attr replication #0
+attr resultdir 04_results_FramePreemption
+attr runnumber 0
+attr seedset 0
+param **.displayAddresses true
+param **.verbose true
+param **.promiscuous true
+param **.registerProtocol true
+param **.*.clock.clockRate "\"1us\""
+param **.robotController.eth.address "\"00-00-00-00-00-01\""
+param **.workstation1.eth.address "\"00-00-00-00-00-02\""
+param **.sink.eth.address "\"00-00-00-00-00-03\""
+param **.switch*.processingDelay[*].delay 5us
+param **.filteringDatabase.database "xmldoc(\"04_results_FramePreemption/04_FramePreemption_Routing.xml\", \"/filteringDatabases/\")"
+param **.filteringDatabase.cycle "xmldoc(\"04_results_FramePreemption/04_FramePreemption_Schedule.xml\", \"/schedule/\")"
+param **.gateController.initialSchedule "xmldoc(\"04_results_FramePreemption/04_FramePreemption_Schedule.xml\")"
+param **.gateController.enableHoldAndRelease false
+param **.switch*.queuing[*].tsAlgorithms[0].typename "\"StrictPriority\""
+param **.switch*.queuing[*].tsAlgorithms[1].typename "\"StrictPriority\""
+param **.switch*.queuing[*].tsAlgorithms[2].typename "\"StrictPriority\""
+param **.switch*.queuing[*].tsAlgorithms[3].typename "\"StrictPriority\""
+param **.switch*.queuing[*].tsAlgorithms[4].typename "\"StrictPriority\""
+param **.switch*.queuing[*].tsAlgorithms[5].typename "\"StrictPriority\""
+param **.switch*.queuing[*].tsAlgorithms[6].typename "\"StrictPriority\""
+param **.switch*.queuing[*].tsAlgorithms[7].typename "\"StrictPriority\""
+param **.queues[0].expressQueue false
+param **.queues[1].expressQueue false
+param **.queues[2].expressQueue false
+param **.queues[3].expressQueue false
+param **.queues[4].expressQueue false
+param **.queues[5].expressQueue false
+param **.queues[6].expressQueue false
+param **.queues[7].expressQueue true
+param **.queues[*].bufferCapacity 363360b
+param **.switchA.eth[2].mac.enablePreemptingFrames true
+param **.robotController.trafGenSchedApp.initialSchedule "xmldoc(\"04_results_FramePreemption/04_FramePreemption_Schedule.xml\")"
+param **.workstation1.trafGenQueueApp.destAddress "\"00-00-00-00-00-03\""
+param **.workstation1.trafGenQueueApp.packetLength 470Byte
+param **.workstation1.trafGenQueueApp.vlanTagEnabled true
+param **.workstation1.trafGenQueueApp.pcp 6
+param **.sink.trafGenApp.numPacketsPerBurst 0
+param **.sink.trafGenApp.sendInterval 1ms
+param **.sink.trafGenApp.packetLength 100B
+
+vector 0 TestNetwork.switchA.eth[0].queuing.queues[0] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 1 TestNetwork.switchA.eth[0].queuing.queues[1] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 2 TestNetwork.switchA.eth[0].queuing.queues[2] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 3 TestNetwork.switchA.eth[0].queuing.queues[3] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 4 TestNetwork.switchA.eth[0].queuing.queues[4] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 5 TestNetwork.switchA.eth[0].queuing.queues[5] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 6 TestNetwork.switchA.eth[0].queuing.queues[6] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 7 TestNetwork.switchA.eth[0].queuing.queues[7] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 8 TestNetwork.switchA.eth[1].queuing.queues[0] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 9 TestNetwork.switchA.eth[1].queuing.queues[1] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 10 TestNetwork.switchA.eth[1].queuing.queues[2] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 11 TestNetwork.switchA.eth[1].queuing.queues[3] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 12 TestNetwork.switchA.eth[1].queuing.queues[4] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 13 TestNetwork.switchA.eth[1].queuing.queues[5] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 14 TestNetwork.switchA.eth[1].queuing.queues[6] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 15 TestNetwork.switchA.eth[1].queuing.queues[7] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 16 TestNetwork.switchA.eth[2].queuing.queues[0] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 17 TestNetwork.switchA.eth[2].queuing.queues[1] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 18 TestNetwork.switchA.eth[2].queuing.queues[2] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 19 TestNetwork.switchA.eth[2].queuing.queues[3] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 20 TestNetwork.switchA.eth[2].queuing.queues[4] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 21 TestNetwork.switchA.eth[2].queuing.queues[5] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 22 TestNetwork.switchA.eth[2].queuing.queues[6] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 23 TestNetwork.switchA.eth[2].queuing.queues[7] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 24 TestNetwork.sink.eth.queuing.queues[0] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 25 TestNetwork.sink.eth.queuing.queues[1] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 26 TestNetwork.sink.eth.queuing.queues[2] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 27 TestNetwork.sink.eth.queuing.queues[3] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 28 TestNetwork.sink.eth.queuing.queues[4] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 29 TestNetwork.sink.eth.queuing.queues[5] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 30 TestNetwork.sink.eth.queuing.queues[6] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 31 TestNetwork.sink.eth.queuing.queues[7] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 32 TestNetwork.workstation1.trafGenQueueApp sentPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source sentPk
+attr title "packets sent, vector(packetBytes)"
+0	0	0	0
+1	0	0	0
+2	0	0	0
+3	0	0	0
+4	0	0	0
+5	0	0	0
+6	0	0	0
+7	0	0	0
+8	0	0	0
+9	0	0	0
+10	0	0	0
+11	0	0	0
+12	0	0	0
+13	0	0	0
+14	0	0	0
+15	0	0	0
+16	0	0	0
+17	0	0	0
+18	0	0	0
+19	0	0	0
+20	0	0	0
+21	0	0	0
+22	0	0	0
+23	0	0	0
+24	0	0	0
+25	0	0	0
+26	0	0	0
+27	0	0	0
+28	0	0	0
+29	0	0	0
+30	0	0	0
+31	0	0	0
+32	0	0	470
+

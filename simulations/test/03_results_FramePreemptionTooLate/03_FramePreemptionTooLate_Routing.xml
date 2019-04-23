@@ -1,0 +1,10 @@
+<filteringDatabases>
+	<filteringDatabase id="switchA">
+	    <static>
+	        <forward>
+	        	<!-- Forward packets addressed to sink to sink -->
+	        	<individualAddress macAddress="00-00-00-00-00-03" port="2" />
+	        </forward>
+	    </static>
+	</filteringDatabase>
+</filteringDatabases>

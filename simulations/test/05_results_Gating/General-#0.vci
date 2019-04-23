@@ -1,0 +1,377 @@
+file 18571 1555509043                                           
+version 2
+run General-0-20190417-15:50:07-15611
+attr configname General
+attr datetime 20190417-15:50:07
+attr experiment General
+attr inifile 05_Gating.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network TestNetwork
+attr processid 15611
+attr repetition 0
+attr replication #0
+attr resultdir 05_results_Gating
+attr runnumber 0
+attr seedset 0
+param **.displayAddresses true
+param **.verbose true
+param **.promiscuous true
+param **.registerProtocol true
+param **.*.clock.clockRate "\"1us\""
+param **.robotController.eth.address "\"00-00-00-00-00-01\""
+param **.workstation1.eth.address "\"00-00-00-00-00-02\""
+param **.sink.eth.address "\"00-00-00-00-00-03\""
+param **.switch*.processingDelay[*].delay 5us
+param **.filteringDatabase.database "xmldoc(\"05_results_Gating/05_Gating_Routing.xml\", \"/filteringDatabases/\")"
+param **.filteringDatabase.cycle "xmldoc(\"05_results_Gating/05_Gating_Schedule.xml\", \"/schedule/\")"
+param **.gateController.initialSchedule "xmldoc(\"05_results_Gating/05_Gating_Schedule.xml\")"
+param **.gateController.enableHoldAndRelease false
+param **.switch*.queuing[*].tsAlgorithms[0].typename "\"StrictPriority\""
+param **.switch*.queuing[*].tsAlgorithms[1].typename "\"StrictPriority\""
+param **.switch*.queuing[*].tsAlgorithms[2].typename "\"StrictPriority\""
+param **.switch*.queuing[*].tsAlgorithms[3].typename "\"StrictPriority\""
+param **.switch*.queuing[*].tsAlgorithms[4].typename "\"StrictPriority\""
+param **.switch*.queuing[*].tsAlgorithms[5].typename "\"StrictPriority\""
+param **.switch*.queuing[*].tsAlgorithms[6].typename "\"StrictPriority\""
+param **.switch*.queuing[*].tsAlgorithms[7].typename "\"StrictPriority\""
+param **.queues[0].expressQueue false
+param **.queues[1].expressQueue false
+param **.queues[2].expressQueue false
+param **.queues[3].expressQueue false
+param **.queues[4].expressQueue false
+param **.queues[5].expressQueue false
+param **.queues[6].expressQueue false
+param **.queues[7].expressQueue false
+param **.queues[*].bufferCapacity 363360b
+param **.switchA.eth[2].mac.enablePreemptingFrames false
+param **.robotController.trafGenSchedApp.initialSchedule "xmldoc(\"05_results_Gating/05_Gating_Schedule.xml\")"
+param **.workstation1.trafGenQueueApp.destAddress "\"00-00-00-00-00-03\""
+param **.workstation1.trafGenQueueApp.packetLength 470Byte
+param **.workstation1.trafGenQueueApp.vlanTagEnabled true
+param **.workstation1.trafGenQueueApp.pcp 6
+param **.sink.trafGenApp.numPacketsPerBurst 0
+param **.sink.trafGenApp.sendInterval 1ms
+param **.sink.trafGenApp.packetLength 100B
+
+vector 0 TestNetwork.switchA.eth[0].queuing.queues[0] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 1 TestNetwork.switchA.eth[0].queuing.queues[1] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 2 TestNetwork.switchA.eth[0].queuing.queues[2] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 3 TestNetwork.switchA.eth[0].queuing.queues[3] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 4 TestNetwork.switchA.eth[0].queuing.queues[4] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 5 TestNetwork.switchA.eth[0].queuing.queues[5] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 6 TestNetwork.switchA.eth[0].queuing.queues[6] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 7 TestNetwork.switchA.eth[0].queuing.queues[7] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 8 TestNetwork.switchA.eth[1].queuing.queues[0] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 9 TestNetwork.switchA.eth[1].queuing.queues[1] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 10 TestNetwork.switchA.eth[1].queuing.queues[2] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 11 TestNetwork.switchA.eth[1].queuing.queues[3] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 12 TestNetwork.switchA.eth[1].queuing.queues[4] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 13 TestNetwork.switchA.eth[1].queuing.queues[5] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 14 TestNetwork.switchA.eth[1].queuing.queues[6] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 15 TestNetwork.switchA.eth[1].queuing.queues[7] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 16 TestNetwork.switchA.eth[2].queuing.queues[0] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 17 TestNetwork.switchA.eth[2].queuing.queues[1] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 18 TestNetwork.switchA.eth[2].queuing.queues[2] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 19 TestNetwork.switchA.eth[2].queuing.queues[3] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 20 TestNetwork.switchA.eth[2].queuing.queues[4] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 21 TestNetwork.switchA.eth[2].queuing.queues[5] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 22 TestNetwork.switchA.eth[2].queuing.queues[6] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 23 TestNetwork.switchA.eth[2].queuing.queues[7] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 24 TestNetwork.sink.eth.queuing.queues[0] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 25 TestNetwork.sink.eth.queuing.queues[1] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 26 TestNetwork.sink.eth.queuing.queues[2] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 27 TestNetwork.sink.eth.queuing.queues[3] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 28 TestNetwork.sink.eth.queuing.queues[4] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 29 TestNetwork.sink.eth.queuing.queues[5] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 30 TestNetwork.sink.eth.queuing.queues[6] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 31 TestNetwork.sink.eth.queuing.queues[7] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 32 TestNetwork.workstation1.trafGenQueueApp sentPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source sentPk
+attr title "packets sent, vector(packetBytes)"
+vector 33 TestNetwork.workstation1.eth.etherEncap encapPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, vector(packetBytes)"
+vector 34 TestNetwork.switchA.eth[0].queuing.tGates[7] gateStateChanged:vector ETV
+attr interpolationmode none
+attr title "gateStateChanged, vector"
+vector 35 TestNetwork.switchA.eth[1].queuing.tGates[7] gateStateChanged:vector ETV
+attr interpolationmode none
+attr title "gateStateChanged, vector"
+vector 36 TestNetwork.switchA.eth[2].queuing.tGates[7] gateStateChanged:vector ETV
+attr interpolationmode none
+attr title "gateStateChanged, vector"
+vector 37 TestNetwork.workstation1.eth.vlanEncap encapPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, vector(packetBytes)"
+vector 38 TestNetwork.robotController.eth.etherEncap encapPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, vector(packetBytes)"
+vector 39 TestNetwork.workstation1.eth.mac packetReceivedFromUpper:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packet bytes from higher layer, vector(packetBytes)"
+vector 40 TestNetwork.robotController.eth.vlanEncap encapPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, vector(packetBytes)"
+vector 41 TestNetwork.robotController.eth.mac packetReceivedFromUpper:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packet bytes from higher layer, vector(packetBytes)"
+vector 42 TestNetwork.workstation1.eth.mac txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets transmitted, vector(packetBytes)"
+vector 43 TestNetwork.robotController.eth.mac txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets transmitted, vector(packetBytes)"
+vector 44 TestNetwork.switchA.eth[1].mac receivedExpressFrame:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "receivedExpressFrame, vector(packetBytes)"
+vector 45 TestNetwork.switchA.eth[1].mac rxPkOk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source rxPkOk
+attr title "packets received OK, vector(packetBytes)"
+vector 46 TestNetwork.switchA.eth[1].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 47 TestNetwork.switchA.eth[0].mac receivedExpressFrame:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "receivedExpressFrame, vector(packetBytes)"
+vector 48 TestNetwork.switchA.eth[0].mac rxPkOk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source rxPkOk
+attr title "packets received OK, vector(packetBytes)"
+vector 49 TestNetwork.switchA.eth[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 50 TestNetwork.switchA.eth[1].vlanEncapE decapPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, vector(packetBytes)"
+vector 51 TestNetwork.switchA.eth[0].vlanEncapE decapPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, vector(packetBytes)"
+vector 52 TestNetwork.switchA.processingDelay[1] packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 53 TestNetwork.switchA.processingDelay[1] delay:vector ETV
+attr interpolationmode none
+attr source delay
+attr title "packet delay, vector"
+vector 54 TestNetwork.switchA.processingDelay[0] packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 55 TestNetwork.switchA.processingDelay[0] delay:vector ETV
+attr interpolationmode none
+attr source delay
+attr title "packet delay, vector"
+vector 56 TestNetwork.switchA.processingDelay[1] packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 57 TestNetwork.switchA.processingDelay[0] packetSent:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, vector(packetBytes)"
+vector 58 TestNetwork.switchA.eth[2].queuing.queues[6] rcvdPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "received packets, vector(packetBytes)"
+vector 59 TestNetwork.switchA.eth[2].queuing.queues[7] rcvdPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "received packets, vector(packetBytes)"
+vector 60 TestNetwork.switchA.eth[2].queuing.queues[6] queueingTime:vector ETV
+attr interpolationmode none
+attr title "queueing time, vector"
+vector 61 TestNetwork.switchA.eth[2].etherEncapP encapPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, vector(packetBytes)"
+vector 62 TestNetwork.switchA.eth[2].vlanEncapP encapPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, vector(packetBytes)"
+vector 63 TestNetwork.switchA.eth[2].mac packetReceivedFromUpper:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packet bytes from higher layer, vector(packetBytes)"
+vector 64 TestNetwork.switchA.eth[2].mac eMacDelay:vector ETV
+attr interpolationmode none
+attr title "eMacDelay, vector"
+vector 65 TestNetwork.switchA.eth[2].mac txPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets transmitted, vector(packetBytes)"
+vector 66 TestNetwork.sink.eth.mac receivedExpressFrame:vector(packetBytes) ETV
+attr interpolationmode none
+attr title "receivedExpressFrame, vector(packetBytes)"
+vector 67 TestNetwork.sink.eth.mac rxPkOk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source rxPkOk
+attr title "packets received OK, vector(packetBytes)"
+vector 68 TestNetwork.sink.eth.mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 69 TestNetwork.sink.eth.vlanEncapE decapPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, vector(packetBytes)"
+vector 70 TestNetwork.sink.trafGenApp packetReceived:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, vector(packetBytes)"
+vector 71 TestNetwork.sink.trafGenApp endToEndDelay:vector ETV
+attr interpolationmode none
+attr source dataAge(packetReceived)
+attr title "end-to-end delay, vector"
+attr unit s
+0	14310 8 0 0 0 0 1 0 0 0 0
+1	14318 8 0 0 0 0 1 0 0 0 0
+2	14326 8 0 0 0 0 1 0 0 0 0
+3	14334 8 0 0 0 0 1 0 0 0 0
+4	14342 8 0 0 0 0 1 0 0 0 0
+5	14350 8 0 0 0 0 1 0 0 0 0
+6	14358 8 0 0 0 0 1 0 0 0 0
+7	14366 8 0 0 0 0 1 0 0 0 0
+8	14374 8 0 0 0 0 1 0 0 0 0
+9	14382 8 0 0 0 0 1 0 0 0 0
+10	14390 9 0 0 0 0 1 0 0 0 0
+11	14399 9 0 0 0 0 1 0 0 0 0
+12	14408 9 0 0 0 0 1 0 0 0 0
+13	14417 9 0 0 0 0 1 0 0 0 0
+14	14426 9 0 0 0 0 1 0 0 0 0
+15	14435 9 0 0 0 0 1 0 0 0 0
+16	14444 9 0 0 0 0 1 0 0 0 0
+17	14453 9 0 0 0 0 1 0 0 0 0
+18	14462 9 0 0 0 0 1 0 0 0 0
+19	14471 9 0 0 0 0 1 0 0 0 0
+20	14480 9 0 0 0 0 1 0 0 0 0
+21	14489 9 0 0 0 0 1 0 0 0 0
+22	14498 203 0 257 0 0.00020854 11 0 1 5 5
+23	14701 88 0 221 0 0.00019502 5 0 4 10 30
+24	14789 9 0 0 0 0 1 0 0 0 0
+25	14798 9 0 0 0 0 1 0 0 0 0
+26	14807 9 0 0 0 0 1 0 0 0 0
+27	14816 9 0 0 0 0 1 0 0 0 0
+28	14825 9 0 0 0 0 1 0 0 0 0
+29	14834 9 0 0 0 0 1 0 0 0 0
+30	14843 9 0 0 0 0 1 0 0 0 0
+31	14852 9 0 0 0 0 1 0 0 0 0
+32	14861 118 0 237 0 0.0002044 6 470 470 2820 1325400
+33	14979 118 7 238 0 0.0002044 6 470 470 2820 1325400
+34	15097 10 11 11 0 0 1 0 0 0 0
+35	15107 10 12 12 0 0 1 0 0 0 0
+36	15117 10 13 13 0 0 1 0 0 0 0
+37	15127 119 14 239 0 0.0002044 6 477 477 2862 1365174
+38	15246 85 15 228 0 0.0002 5 470 470 2350 1104500
+39	15331 119 16 240 0 0.0002044 6 491 491 2946 1446486
+40	15450 85 17 229 0 0.0002 5 477 477 2385 1137645
+41	15535 85 18 230 0 0.0002 5 491 491 2455 1205405
+42	15620 107 23 231 0.00003992 0.00020344 5 491 491 2455 1205405
+43	15727 87 24 211 0.00003992 0.00018992 4 491 491 1964 964324
+44	15814 107 25 232 0.00004002 0.00020354 5 499 499 2495 1245005
+45	15921 107 25 232 0.00004002 0.00020354 5 491 491 2455 1205405
+46	16028 107 25 232 0.00004002 0.00020354 5 491 491 2455 1205405
+47	16135 87 26 212 0.00004002 0.00019002 4 499 499 1996 996004
+48	16222 87 26 212 0.00004002 0.00019002 4 491 491 1964 964324
+49	16309 87 26 212 0.00004002 0.00019002 4 491 491 1964 964324
+50	16396 107 27 233 0.00004002 0.00020354 5 477 477 2385 1137645
+51	16503 87 28 213 0.00004002 0.00019002 4 477 477 1908 910116
+52	16590 107 33 236 0.00004002 0.00020354 5 470 470 2350 1104500
+53	16697 117 33 236 0.00004002 0.00020354 5 5e-06 5e-06 2.5e-05 1.25e-10
+54	16814 87 34 216 0.00004002 0.00019002 4 470 470 1880 883600
+55	16901 95 34 216 0.00004002 0.00019002 4 5e-06 5e-06 2e-05 1e-10
+56	16996 107 40 247 0.00004502 0.00020854 5 470 470 2350 1104500
+57	17103 87 41 218 0.00004502 0.00019502 4 470 470 1880 883600
+58	17190 107 46 251 0.00004502 0.00020854 5 470 470 2350 1104500
+59	17297 87 47 221 0.00004502 0.00019502 4 470 470 1880 883600
+60	17384 97 55 257 0.00004502 0.00020854 5 0 0 0 0
+61	17481 107 59 261 0.00004502 0.00020854 5 470 470 2350 1104500
+62	17588 108 60 262 0.00004502 0.00020854 5 477 477 2385 1137645
+63	17696 108 61 263 0.00004502 0.00020854 5 491 491 2455 1205405
+64	17804 140 61 263 0.00004502 0.00020854 5 4.502e-05 0.00020854 0.0006339 9.7077586e-08
+65	17944 86 79 241 0.00008494 0.00020758 4 491 491 1964 964324
+66	18030 86 80 242 0.00008504 0.00020768 4 499 499 1996 996004
+67	18116 86 80 242 0.00008504 0.00020768 4 491 491 1964 964324
+68	18202 86 80 242 0.00008504 0.00020768 4 491 491 1964 964324
+69	18288 86 81 243 0.00008504 0.00020768 4 477 477 1908 910116
+70	18374 86 84 246 0.00008504 0.00020768 4 470 470 1880 883600
+71	18460 110 84 246 0.00008504 0.00020768 4 8.504e-05 8.504e-05 0.00034016 2.89272064e-08
+

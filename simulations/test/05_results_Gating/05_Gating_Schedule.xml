@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<schedule>
+	<cycle>50</cycle>
+	<host name="robotController">
+		<entry>
+			<start>0</start>
+			<queue>7</queue>
+			<dest>00:00:00:00:00:03</dest>
+			<size>470</size>
+		</entry>
+	</host>
+	<switch name="switchA">
+		<port id="0">
+			<entry>
+				<length>1000</length>
+				<bitvector>11111110</bitvector>
+			</entry>
+			<entry>
+				<length>1000</length>
+				<bitvector>00000001</bitvector>
+			</entry>
+		</port>
+		<port id="1">
+			<entry>
+				<length>1000</length>
+				<bitvector>11111110</bitvector>
+			</entry>
+			<entry>
+				<length>1000</length>
+				<bitvector>00000001</bitvector>
+			</entry>
+		</port>
+		<port id="2">
+			<entry>
+				<length>1000</length>
+				<bitvector>11111110</bitvector>
+			</entry>
+			<entry>
+				<length>1000</length>
+				<bitvector>00000001</bitvector>
+			</entry>
+		</port>
+	</switch>
+</schedule>
