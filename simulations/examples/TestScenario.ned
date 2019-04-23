@@ -36,13 +36,13 @@ network TestScenario
             parameters:
                 @display("p=188,127");
             gates:
-                ethg[4];
+                ethg[8];
         }
         switchB: VlanEtherSwitchPreemptable {
             parameters:
                 @display("p=643,127");
             gates:
-                ethg[3];
+                ethg[8];
         }
         Control3: VlanEtherHostSched {
             @display("p=100,217");
@@ -87,19 +87,19 @@ network TestScenario
             @display("p=784,217");
         }
     connections:
-        Control3.ethg <--> C <--> switchA.ethg[0];
-        HeadUnit.ethg <--> C <--> switchB.ethg[0];
-        switchA.ethg[3] <--> C <--> switchB.ethg[2];
-        AV_sink.ethg <--> C <--> switchA.ethg[0];
-        Control4.ethg <--> C <--> switchA.ethg[0];
-        Camera3.ethg <--> C <--> switchA.ethg[0];
-        Video.ethg <--> C <--> switchA.ethg[0];
-        Audio.ethg <--> C <--> switchA.ethg[0];
-        Bulk.ethg <--> C <--> switchA.ethg[0];
-        switchB.ethg[0] <--> C <--> PUCAM.ethg;
-        Camera1.ethg <--> C <--> switchB.ethg[0];
-        Camera2.ethg <--> C <--> switchB.ethg[0];
-        FCAM.ethg <--> C <--> switchB.ethg[0];
-        Control1.ethg <--> C <--> switchB.ethg[0];
-        Control2.ethg <--> C <--> switchB.ethg[0];
+        switchA.ethg[0] <--> C <--> switchB.ethg[0];
+        switchA.ethg[1] <--> C <--> AV_sink.ethg;
+        Video.ethg <--> C <--> switchA.ethg[2];
+        Audio.ethg <--> C <--> switchA.ethg[3];
+        Camera3.ethg <--> C <--> switchA.ethg[4];
+        Control3.ethg <--> C <--> switchA.ethg[5];
+        Control4.ethg <--> C <--> switchA.ethg[6];
+        Bulk.ethg <--> C <--> switchA.ethg[7];
+        switchB.ethg[6] <--> C <--> PUCAM.ethg;
+        switchB.ethg[7] <--> C <--> HeadUnit.ethg;
+        Camera1.ethg <--> C <--> switchB.ethg[1];
+        Camera2.ethg <--> C <--> switchB.ethg[2];
+        FCAM.ethg <--> C <--> switchB.ethg[3];
+        Control1.ethg <--> C <--> switchB.ethg[4];
+        Control2.ethg <--> C <--> switchB.ethg[5];
 }

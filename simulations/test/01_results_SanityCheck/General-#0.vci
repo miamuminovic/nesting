@@ -1,4 +1,4 @@
-file 10198 1555942596                                           
+file 10198 1556013624                                           
 version 2
 run General-0-20190422-16:16:23-10382
 attr configname General
@@ -58,198 +58,197 @@ param **.sink.trafGenApp.packetLength 100B
 vector 0 TestNetwork.sink.eth.queuing.queues[0] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+0	9776 8 0 0 0 0 1 0 0 0 0
 vector 1 TestNetwork.sink.eth.queuing.queues[1] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+1	9784 8 0 0 0 0 1 0 0 0 0
 vector 2 TestNetwork.sink.eth.queuing.queues[2] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+2	9792 8 0 0 0 0 1 0 0 0 0
 vector 3 TestNetwork.sink.eth.queuing.queues[3] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+3	9800 8 0 0 0 0 1 0 0 0 0
 vector 4 TestNetwork.sink.eth.queuing.queues[4] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+4	9808 8 0 0 0 0 1 0 0 0 0
 vector 5 TestNetwork.sink.eth.queuing.queues[5] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+5	9816 8 0 0 0 0 1 0 0 0 0
 vector 6 TestNetwork.sink.eth.queuing.queues[6] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+6	9824 8 0 0 0 0 1 0 0 0 0
 vector 7 TestNetwork.sink.eth.queuing.queues[7] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+7	9832 8 0 0 0 0 1 0 0 0 0
 vector 8 TestNetwork.sink1.eth.queuing.queues[0] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+8	9840 8 0 0 0 0 1 0 0 0 0
 vector 9 TestNetwork.sink1.eth.queuing.queues[1] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+9	9848 8 0 0 0 0 1 0 0 0 0
 vector 10 TestNetwork.sink1.eth.queuing.queues[2] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+10	9856 9 0 0 0 0 1 0 0 0 0
 vector 11 TestNetwork.sink1.eth.queuing.queues[3] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+11	9865 9 0 0 0 0 1 0 0 0 0
 vector 12 TestNetwork.sink1.eth.queuing.queues[4] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+12	9874 9 0 0 0 0 1 0 0 0 0
 vector 13 TestNetwork.sink1.eth.queuing.queues[5] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+13	9883 9 0 0 0 0 1 0 0 0 0
 vector 14 TestNetwork.sink1.eth.queuing.queues[6] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+14	9892 9 0 0 0 0 1 0 0 0 0
 vector 15 TestNetwork.sink1.eth.queuing.queues[7] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+15	9901 9 0 0 0 0 1 0 0 0 0
 vector 16 TestNetwork.switchA.eth[0].queuing.queues[0] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+16	9910 9 0 0 0 0 1 0 0 0 0
 vector 17 TestNetwork.switchA.eth[0].queuing.queues[1] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+17	9919 9 0 0 0 0 1 0 0 0 0
 vector 18 TestNetwork.switchA.eth[0].queuing.queues[2] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+18	9928 9 0 0 0 0 1 0 0 0 0
 vector 19 TestNetwork.switchA.eth[0].queuing.queues[3] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+19	9937 9 0 0 0 0 1 0 0 0 0
 vector 20 TestNetwork.switchA.eth[0].queuing.queues[4] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+20	9946 9 0 0 0 0 1 0 0 0 0
 vector 21 TestNetwork.switchA.eth[0].queuing.queues[5] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+21	9955 9 0 0 0 0 1 0 0 0 0
 vector 22 TestNetwork.switchA.eth[0].queuing.queues[6] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+22	9964 9 0 0 0 0 1 0 0 0 0
 vector 23 TestNetwork.switchA.eth[0].queuing.queues[7] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+23	9973 9 0 0 0 0 1 0 0 0 0
 vector 24 TestNetwork.switchA.eth[1].queuing.queues[0] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+24	9982 9 0 0 0 0 1 0 0 0 0
 vector 25 TestNetwork.switchA.eth[1].queuing.queues[1] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+25	9991 9 0 0 0 0 1 0 0 0 0
 vector 26 TestNetwork.switchA.eth[1].queuing.queues[2] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+26	10000 9 0 0 0 0 1 0 0 0 0
 vector 27 TestNetwork.switchA.eth[1].queuing.queues[3] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+27	10009 9 0 0 0 0 1 0 0 0 0
 vector 28 TestNetwork.switchA.eth[1].queuing.queues[4] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+28	10018 9 0 0 0 0 1 0 0 0 0
 vector 29 TestNetwork.switchA.eth[1].queuing.queues[5] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+29	10027 9 0 0 0 0 1 0 0 0 0
 vector 30 TestNetwork.switchA.eth[1].queuing.queues[6] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+30	10036 9 0 0 0 0 1 0 0 0 0
 vector 31 TestNetwork.switchA.eth[1].queuing.queues[7] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+31	10045 9 0 0 0 0 1 0 0 0 0
 vector 32 TestNetwork.switchA.eth[2].queuing.queues[0] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+32	10054 9 0 0 0 0 1 0 0 0 0
 vector 33 TestNetwork.switchA.eth[2].queuing.queues[1] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+33	10063 9 0 0 0 0 1 0 0 0 0
 vector 34 TestNetwork.switchA.eth[2].queuing.queues[2] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+34	10072 9 0 0 0 0 1 0 0 0 0
 vector 35 TestNetwork.switchA.eth[2].queuing.queues[3] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+35	10081 9 0 0 0 0 1 0 0 0 0
 vector 36 TestNetwork.switchA.eth[2].queuing.queues[4] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+36	10090 9 0 0 0 0 1 0 0 0 0
 vector 37 TestNetwork.switchA.eth[2].queuing.queues[5] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+37	10099 9 0 0 0 0 1 0 0 0 0
 vector 38 TestNetwork.switchA.eth[2].queuing.queues[6] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+38	10108 9 0 0 0 0 1 0 0 0 0
 vector 39 TestNetwork.switchA.eth[2].queuing.queues[7] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+39	10117 9 0 0 0 0 1 0 0 0 0
 vector 40 TestNetwork.switchA.eth[3].queuing.queues[0] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+40	10126 9 0 0 0 0 1 0 0 0 0
 vector 41 TestNetwork.switchA.eth[3].queuing.queues[1] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+41	10135 9 0 0 0 0 1 0 0 0 0
 vector 42 TestNetwork.switchA.eth[3].queuing.queues[2] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+42	10144 9 0 0 0 0 1 0 0 0 0
 vector 43 TestNetwork.switchA.eth[3].queuing.queues[3] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+43	10153 9 0 0 0 0 1 0 0 0 0
 vector 44 TestNetwork.switchA.eth[3].queuing.queues[4] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+44	10162 9 0 0 0 0 1 0 0 0 0
 vector 45 TestNetwork.switchA.eth[3].queuing.queues[5] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+45	10171 9 0 0 0 0 1 0 0 0 0
 vector 46 TestNetwork.switchA.eth[3].queuing.queues[6] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+46	10180 9 0 0 0 0 1 0 0 0 0
 vector 47 TestNetwork.switchA.eth[3].queuing.queues[7] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+47	10189 9 0 0 0 0 1 0 0 0 0
 vector 48 TestNetwork.workstation1.trafGenQueueApp sentPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source sentPk
 attr title "packets sent, vector(packetBytes)"
 48	9764 12 0 0 0 0 1 1496 1496 1496 2238016
-0	9776 8 0 0 0 0 1 0 0 0 0
-1	9784 8 0 0 0 0 1 0 0 0 0
-2	9792 8 0 0 0 0 1 0 0 0 0
-3	9800 8 0 0 0 0 1 0 0 0 0
-4	9808 8 0 0 0 0 1 0 0 0 0
-5	9816 8 0 0 0 0 1 0 0 0 0
-6	9824 8 0 0 0 0 1 0 0 0 0
-7	9832 8 0 0 0 0 1 0 0 0 0
-8	9840 8 0 0 0 0 1 0 0 0 0
-9	9848 8 0 0 0 0 1 0 0 0 0
-10	9856 9 0 0 0 0 1 0 0 0 0
-11	9865 9 0 0 0 0 1 0 0 0 0
-12	9874 9 0 0 0 0 1 0 0 0 0
-13	9883 9 0 0 0 0 1 0 0 0 0
-14	9892 9 0 0 0 0 1 0 0 0 0
-15	9901 9 0 0 0 0 1 0 0 0 0
-16	9910 9 0 0 0 0 1 0 0 0 0
-17	9919 9 0 0 0 0 1 0 0 0 0
-18	9928 9 0 0 0 0 1 0 0 0 0
-19	9937 9 0 0 0 0 1 0 0 0 0
-20	9946 9 0 0 0 0 1 0 0 0 0
-21	9955 9 0 0 0 0 1 0 0 0 0
-22	9964 9 0 0 0 0 1 0 0 0 0
-23	9973 9 0 0 0 0 1 0 0 0 0
-24	9982 9 0 0 0 0 1 0 0 0 0
-25	9991 9 0 0 0 0 1 0 0 0 0
-26	10000 9 0 0 0 0 1 0 0 0 0
-27	10009 9 0 0 0 0 1 0 0 0 0
-28	10018 9 0 0 0 0 1 0 0 0 0
-29	10027 9 0 0 0 0 1 0 0 0 0
-30	10036 9 0 0 0 0 1 0 0 0 0
-31	10045 9 0 0 0 0 1 0 0 0 0
-32	10054 9 0 0 0 0 1 0 0 0 0
-33	10063 9 0 0 0 0 1 0 0 0 0
-34	10072 9 0 0 0 0 1 0 0 0 0
-35	10081 9 0 0 0 0 1 0 0 0 0
-36	10090 9 0 0 0 0 1 0 0 0 0
-37	10099 9 0 0 0 0 1 0 0 0 0
-38	10108 9 0 0 0 0 1 0 0 0 0
-39	10117 9 0 0 0 0 1 0 0 0 0
-40	10126 9 0 0 0 0 1 0 0 0 0
-41	10135 9 0 0 0 0 1 0 0 0 0
-42	10144 9 0 0 0 0 1 0 0 0 0
-43	10153 9 0 0 0 0 1 0 0 0 0
-44	10162 9 0 0 0 0 1 0 0 0 0
-45	10171 9 0 0 0 0 1 0 0 0 0
-46	10180 9 0 0 0 0 1 0 0 0 0
-47	10189 9 0 0 0 0 1 0 0 0 0
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                

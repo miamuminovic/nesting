@@ -1,4 +1,4 @@
-file 7771 1555509184                                            
+file 7771 1556013624                                            
 version 2
 run General-0-20190417-15:52:31-15701
 attr configname General
@@ -58,134 +58,133 @@ param **.sink.trafGenApp.packetLength 100B
 vector 0 TestNetwork.switchA.eth[0].queuing.queues[0] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+0	7481 8 0 0 0 0 1 0 0 0 0
 vector 1 TestNetwork.switchA.eth[0].queuing.queues[1] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+1	7489 8 0 0 0 0 1 0 0 0 0
 vector 2 TestNetwork.switchA.eth[0].queuing.queues[2] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+2	7497 8 0 0 0 0 1 0 0 0 0
 vector 3 TestNetwork.switchA.eth[0].queuing.queues[3] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+3	7505 8 0 0 0 0 1 0 0 0 0
 vector 4 TestNetwork.switchA.eth[0].queuing.queues[4] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+4	7513 8 0 0 0 0 1 0 0 0 0
 vector 5 TestNetwork.switchA.eth[0].queuing.queues[5] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+5	7521 8 0 0 0 0 1 0 0 0 0
 vector 6 TestNetwork.switchA.eth[0].queuing.queues[6] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+6	7529 8 0 0 0 0 1 0 0 0 0
 vector 7 TestNetwork.switchA.eth[0].queuing.queues[7] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+7	7537 8 0 0 0 0 1 0 0 0 0
 vector 8 TestNetwork.switchA.eth[1].queuing.queues[0] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+8	7545 8 0 0 0 0 1 0 0 0 0
 vector 9 TestNetwork.switchA.eth[1].queuing.queues[1] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+9	7553 8 0 0 0 0 1 0 0 0 0
 vector 10 TestNetwork.switchA.eth[1].queuing.queues[2] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+10	7561 9 0 0 0 0 1 0 0 0 0
 vector 11 TestNetwork.switchA.eth[1].queuing.queues[3] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+11	7570 9 0 0 0 0 1 0 0 0 0
 vector 12 TestNetwork.switchA.eth[1].queuing.queues[4] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+12	7579 9 0 0 0 0 1 0 0 0 0
 vector 13 TestNetwork.switchA.eth[1].queuing.queues[5] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+13	7588 9 0 0 0 0 1 0 0 0 0
 vector 14 TestNetwork.switchA.eth[1].queuing.queues[6] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+14	7597 9 0 0 0 0 1 0 0 0 0
 vector 15 TestNetwork.switchA.eth[1].queuing.queues[7] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+15	7606 9 0 0 0 0 1 0 0 0 0
 vector 16 TestNetwork.switchA.eth[2].queuing.queues[0] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+16	7615 9 0 0 0 0 1 0 0 0 0
 vector 17 TestNetwork.switchA.eth[2].queuing.queues[1] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+17	7624 9 0 0 0 0 1 0 0 0 0
 vector 18 TestNetwork.switchA.eth[2].queuing.queues[2] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+18	7633 9 0 0 0 0 1 0 0 0 0
 vector 19 TestNetwork.switchA.eth[2].queuing.queues[3] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+19	7642 9 0 0 0 0 1 0 0 0 0
 vector 20 TestNetwork.switchA.eth[2].queuing.queues[4] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+20	7651 9 0 0 0 0 1 0 0 0 0
 vector 21 TestNetwork.switchA.eth[2].queuing.queues[5] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+21	7660 9 0 0 0 0 1 0 0 0 0
 vector 22 TestNetwork.switchA.eth[2].queuing.queues[6] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+22	7669 9 0 0 0 0 1 0 0 0 0
 vector 23 TestNetwork.switchA.eth[2].queuing.queues[7] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+23	7678 9 0 0 0 0 1 0 0 0 0
 vector 24 TestNetwork.sink.eth.queuing.queues[0] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+24	7687 9 0 0 0 0 1 0 0 0 0
 vector 25 TestNetwork.sink.eth.queuing.queues[1] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+25	7696 9 0 0 0 0 1 0 0 0 0
 vector 26 TestNetwork.sink.eth.queuing.queues[2] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+26	7705 9 0 0 0 0 1 0 0 0 0
 vector 27 TestNetwork.sink.eth.queuing.queues[3] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+27	7714 9 0 0 0 0 1 0 0 0 0
 vector 28 TestNetwork.sink.eth.queuing.queues[4] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+28	7723 9 0 0 0 0 1 0 0 0 0
 vector 29 TestNetwork.sink.eth.queuing.queues[5] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+29	7732 9 0 0 0 0 1 0 0 0 0
 vector 30 TestNetwork.sink.eth.queuing.queues[6] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+30	7741 9 0 0 0 0 1 0 0 0 0
 vector 31 TestNetwork.sink.eth.queuing.queues[7] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
+31	7750 9 0 0 0 0 1 0 0 0 0
 vector 32 TestNetwork.workstation1.trafGenQueueApp sentPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source sentPk
 attr title "packets sent, vector(packetBytes)"
-0	7481 8 0 0 0 0 1 0 0 0 0
-1	7489 8 0 0 0 0 1 0 0 0 0
-2	7497 8 0 0 0 0 1 0 0 0 0
-3	7505 8 0 0 0 0 1 0 0 0 0
-4	7513 8 0 0 0 0 1 0 0 0 0
-5	7521 8 0 0 0 0 1 0 0 0 0
-6	7529 8 0 0 0 0 1 0 0 0 0
-7	7537 8 0 0 0 0 1 0 0 0 0
-8	7545 8 0 0 0 0 1 0 0 0 0
-9	7553 8 0 0 0 0 1 0 0 0 0
-10	7561 9 0 0 0 0 1 0 0 0 0
-11	7570 9 0 0 0 0 1 0 0 0 0
-12	7579 9 0 0 0 0 1 0 0 0 0
-13	7588 9 0 0 0 0 1 0 0 0 0
-14	7597 9 0 0 0 0 1 0 0 0 0
-15	7606 9 0 0 0 0 1 0 0 0 0
-16	7615 9 0 0 0 0 1 0 0 0 0
-17	7624 9 0 0 0 0 1 0 0 0 0
-18	7633 9 0 0 0 0 1 0 0 0 0
-19	7642 9 0 0 0 0 1 0 0 0 0
-20	7651 9 0 0 0 0 1 0 0 0 0
-21	7660 9 0 0 0 0 1 0 0 0 0
-22	7669 9 0 0 0 0 1 0 0 0 0
-23	7678 9 0 0 0 0 1 0 0 0 0
-24	7687 9 0 0 0 0 1 0 0 0 0
-25	7696 9 0 0 0 0 1 0 0 0 0
-26	7705 9 0 0 0 0 1 0 0 0 0
-27	7714 9 0 0 0 0 1 0 0 0 0
-28	7723 9 0 0 0 0 1 0 0 0 0
-29	7732 9 0 0 0 0 1 0 0 0 0
-30	7741 9 0 0 0 0 1 0 0 0 0
-31	7750 9 0 0 0 0 1 0 0 0 0
-32	7759 11 0 0 0 0 1 470 470 470 220900
-
+32	7759 12 0 0 0 0 1 470 470 470 220900
