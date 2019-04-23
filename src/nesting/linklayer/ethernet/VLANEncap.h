@@ -21,8 +21,10 @@
 #include "inet/linklayer/common/Ieee802Ctrl.h"
 #include "inet/linklayer/ieee8021q/Ieee8021qHeader_m.h"
 #include "inet/linklayer/common/MacAddressTag_m.h"
+#include "inet/linklayer/ethernet/EtherFrame_m.h"
+#include "inet/linklayer/ethernet/EtherEncap.h"
 #include "inet/common/packet/Packet.h"
-#include "inet/common/IProtocolRegistrationListener.h"
+#include "inet/common/packet/Message_m.h"
 #include "../common/VLANTag_m.h"
 #include "../../ieee8021q/Ieee8021q.h"
 

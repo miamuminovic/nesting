@@ -46,25 +46,25 @@ module VlanEthernetInterfaceSwitchPreemptable extends InterfaceEntry like IEther
     submodules:
         // mac supporting frame preemption
         mac: EtherMACFullDuplexPreemptable {
-            @display("p=140,511");
+            @display("p=139,478");
         }
         queuing: Queuing {
             parameters:
                 @display("p=202,61;q=l2queue");
         }
         vlanEncapE: VLANEncap {
-            @display("p=90,199");
+            @display("p=90,333");
         }
         etherEncapE: <default("EtherEncap")> like IEtherEncap {
             parameters:
-                @display("p=90,333");
+                @display("p=90,185");
         }
         vlanEncapP: VLANEncap {
-            @display("p=202,199");
+            @display("p=202,333");
         }
         etherEncapP: <default("EtherEncap")> like IEtherEncap {
             parameters:
-                @display("p=202,333");
+                @display("p=202,185");
         }
         frameForward: FrameForward {
             @display("p=90,61");
@@ -73,23 +73,23 @@ module VlanEthernetInterfaceSwitchPreemptable extends InterfaceEntry like IEther
         upperLayerIn --> queuing.in;
         frameForward.upperLayerOut --> upperLayerOut;
 
-        vlanEncapE.upperLayerOut --> frameForward.lowerLayerInE;
-        vlanEncapP.upperLayerOut --> frameForward.lowerLayerInP;
+        etherEncapE.upperLayerOut --> frameForward.lowerLayerInE;
+        etherEncapP.upperLayerOut --> frameForward.lowerLayerInP;
 
-        queuing.eOut --> vlanEncapE.upperLayerIn;
-        queuing.pOut --> vlanEncapP.upperLayerIn;
+        queuing.eOut --> etherEncapE.upperLayerIn;
+        queuing.pOut --> etherEncapP.upperLayerIn;
 
-        etherEncapE.lowerLayerOut --> mac.upperLayerIn;
-        mac.upperLayerOut --> etherEncapE.lowerLayerIn;
+        vlanEncapE.lowerLayerOut --> mac.upperLayerIn;
+        mac.upperLayerOut --> vlanEncapE.lowerLayerIn;
 
-        etherEncapP.lowerLayerOut --> mac.upperLayerPreemptableIn;
-        mac.upperLayerPreemptableOut --> etherEncapP.lowerLayerIn;
+        vlanEncapP.lowerLayerOut --> mac.upperLayerPreemptableIn;
+        mac.upperLayerPreemptableOut --> vlanEncapP.lowerLayerIn;
 
-        vlanEncapE.lowerLayerOut --> etherEncapE.upperLayerIn;
-        etherEncapE.upperLayerOut --> vlanEncapE.lowerLayerIn;
+        etherEncapE.lowerLayerOut --> vlanEncapE.upperLayerIn;
+        vlanEncapE.upperLayerOut --> etherEncapE.lowerLayerIn;
 
-        vlanEncapP.lowerLayerOut --> etherEncapP.upperLayerIn;
-        etherEncapP.upperLayerOut --> vlanEncapP.lowerLayerIn;
+        etherEncapP.lowerLayerOut --> vlanEncapP.upperLayerIn;
+        vlanEncapP.upperLayerOut --> etherEncapP.lowerLayerIn;
 
         mac.phys <--> { @display("m=s"); } <--> phys;
 }

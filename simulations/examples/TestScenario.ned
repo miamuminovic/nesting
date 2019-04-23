@@ -24,6 +24,7 @@ import nesting.node.ethernet.VlanEtherHostQ;
 
 network TestScenario
 {
+    @display("bgb=840,314");
     types:
         channel C extends DatarateChannel
         {
@@ -39,32 +40,66 @@ network TestScenario
         }
         switchB: VlanEtherSwitchPreemptable {
             parameters:
-                @display("p=327,127");
+                @display("p=643,127");
             gates:
                 ethg[3];
         }
-        workstation1: VlanEtherHostFullLoad {
-            @display("p=79,62");
+        Control3: VlanEtherHostSched {
+            @display("p=100,217");
         }
-        workstation2: VlanEtherHostFullLoad {
-            @display("p=172,29");
+        HeadUnit: VlanEtherHostQ {
+            @display("p=604,29");
         }
-        backupServer: VlanEtherHostQ {
-            @display("p=446,54");
+        AV_sink: VlanEtherHostQ {
+            @display("p=265,23");
         }
-        robotController: VlanEtherHostSched {
-            @display("p=79,202");
+        Control4: VlanEtherHostSched {
+            @display("p=188,217");
         }
-        roboticArm: VlanEtherHostQ {
-            @display("p=440,202");
+        Camera3: VlanEtherHostSched {
+            @display("p=45,128");
+        }
+        Video: VlanEtherHostSched {
+            @display("p=188,23");
+        }
+        Audio: VlanEtherHostSched {
+            @display("p=106,23");
+        }
+        Bulk: VlanEtherHostSched {
+            @display("p=265,217");
+        }
+        PUCAM: VlanEtherHostQ {
+            @display("p=682,29");
+        }
+        Camera1: VlanEtherHostSched {
+            @display("p=501,217");
+        }
+        Camera2: VlanEtherHostSched {
+            @display("p=572,217");
+        }
+        FCAM: VlanEtherHostSched {
+            @display("p=643,217");
+        }
+        Control1: VlanEtherHostSched {
+            @display("p=712,217");
+        }
+        Control2: VlanEtherHostSched {
+            @display("p=784,217");
         }
     connections:
-        robotController.ethg <--> C <--> switchA.ethg[0];
-        workstation1.ethg <--> C <--> switchA.ethg[1];
-        workstation2.ethg <--> C <--> switchA.ethg[2];
-
-        roboticArm.ethg <--> C <--> switchB.ethg[0];
-        backupServer.ethg <--> C <--> switchB.ethg[1];
-
+        Control3.ethg <--> C <--> switchA.ethg[0];
+        HeadUnit.ethg <--> C <--> switchB.ethg[0];
         switchA.ethg[3] <--> C <--> switchB.ethg[2];
+        AV_sink.ethg <--> C <--> switchA.ethg[0];
+        Control4.ethg <--> C <--> switchA.ethg[0];
+        Camera3.ethg <--> C <--> switchA.ethg[0];
+        Video.ethg <--> C <--> switchA.ethg[0];
+        Audio.ethg <--> C <--> switchA.ethg[0];
+        Bulk.ethg <--> C <--> switchA.ethg[0];
+        switchB.ethg[0] <--> C <--> PUCAM.ethg;
+        Camera1.ethg <--> C <--> switchB.ethg[0];
+        Camera2.ethg <--> C <--> switchB.ethg[0];
+        FCAM.ethg <--> C <--> switchB.ethg[0];
+        Control1.ethg <--> C <--> switchB.ethg[0];
+        Control2.ethg <--> C <--> switchB.ethg[0];
 }

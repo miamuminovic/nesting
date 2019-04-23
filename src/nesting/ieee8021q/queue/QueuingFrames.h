@@ -21,6 +21,7 @@
 
 #include "inet/common/packet/Packet.h"
 #include "inet/linklayer/common/MacAddressTag_m.h"
+#include "inet/linklayer/common/Ieee802SapTag_m.h"
 #include "../Ieee8021q.h"
 #include "../../linklayer/common/VLANTag_m.h"
 

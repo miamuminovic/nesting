@@ -49,7 +49,7 @@ void VlanEtherTrafGen::sendBurstPackets() {
         datapacket->insertAtBack(payload);
         datapacket->removeTagIfPresent<PacketProtocolTag>();
         datapacket->addTagIfAbsent<PacketProtocolTag>()->setProtocol(
-                &Protocol::ipv4);
+                &Protocol::ethernetMac);
         // TODO check which protocol to insert
         auto sapTag = datapacket->addTagIfAbsent<Ieee802SapReq>();
         sapTag->setSsap(ssap);

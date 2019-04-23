@@ -68,6 +68,8 @@ protected:
     int ssap = -1;
     int dsap = -1;
 
+    Ieee8022LlcSocket llcSocket;
+
     int seqNum = 0;
 
     virtual void initialize(int stage) override;

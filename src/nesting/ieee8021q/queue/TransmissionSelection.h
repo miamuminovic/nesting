@@ -23,6 +23,7 @@
 #include "gating/TransmissionGate.h"
 
 #include "inet/common/queue/IPassiveQueue.h"
+#include "inet/linklayer/ieee8022/Ieee8022LlcSocket.h"
 
 using namespace omnetpp;
 using namespace inet;
@@ -87,6 +88,12 @@ protected:
     cMessage packetEnqueuedMsg = cMessage("packetEnqueued");
 
 protected:
+    // so that EtherEncap does not drop packets
+    int ssap = -1;
+    int dsap = -1;
+
+    Ieee8022LlcSocket llcSocket;
+
     /**
      * @see cSimpleModule::initialize()
      */

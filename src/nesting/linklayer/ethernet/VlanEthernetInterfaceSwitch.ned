@@ -46,34 +46,34 @@ module VlanEthernetInterfaceSwitch extends InterfaceEntry like IEthernetInterfac
         inout phys @labels(EtherFrame);
     submodules:
         mac: EtherMacFullDuplex {
-            @display("p=113,354");
+            @display("p=113,340");
         }
         queuing: Queuing {
             parameters:
                 @display("p=202,51;q=l2queue");
         }
         vlanEncapE: VLANEncap {
-            @display("p=113,108");
+            @display("p=113,228");
         }
         etherEncapE: <default("EtherEncap")> like IEtherEncap {
             parameters:
-                @display("p=113,240");
+                @display("p=113,98");
         }
         sink: Sink {
             @display("p=202,181");
         }
     connections:
         upperLayerIn --> queuing.in;
-        vlanEncapE.upperLayerOut --> upperLayerOut;
+        etherEncapE.upperLayerOut --> upperLayerOut;
 
-        queuing.eOut --> vlanEncapE.upperLayerIn;
+        queuing.eOut --> etherEncapE.upperLayerIn;
         queuing.pOut --> sink.in++;
 
-        vlanEncapE.lowerLayerOut --> etherEncapE.upperLayerIn;
-        etherEncapE.upperLayerOut --> vlanEncapE.lowerLayerIn;
+        etherEncapE.lowerLayerOut --> vlanEncapE.upperLayerIn;
+        vlanEncapE.upperLayerOut --> etherEncapE.lowerLayerIn;
 
-        mac.upperLayerOut --> etherEncapE.lowerLayerIn;
-        etherEncapE.lowerLayerOut --> mac.upperLayerIn;
+        mac.upperLayerOut --> vlanEncapE.lowerLayerIn;
+        vlanEncapE.lowerLayerOut --> mac.upperLayerIn;
 
         mac.phys <--> { @display("m=s"); } <--> phys;
 }

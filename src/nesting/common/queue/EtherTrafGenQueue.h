@@ -29,6 +29,7 @@
 #include "inet/linklayer/common/Ieee802SapTag_m.h"
 #include "inet/common/packet/Packet.h"
 #include "inet/common/TimeTag_m.h"
+#include "inet/linklayer/ieee8022/Ieee8022LlcSocket.h"
 #include "../../linklayer/common/VLANTag_m.h"
 
 using namespace omnetpp;
@@ -57,6 +58,8 @@ protected:
     cPar* vid;
     int ssap = -1;
     int dsap = -1;
+
+    Ieee8022LlcSocket llcSocket;
 
     cPar* packetLength;
 

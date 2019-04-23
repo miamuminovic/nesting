@@ -42,24 +42,24 @@ module VlanEthernetInterface extends InterfaceEntry like IEthernetInterface
         inout phys @labels(EtherFrame);
     submodules:
         mac: EtherMacFullDuplex {
-            @display("p=141,242");
+            @display("p=141,261");
         }
         etherEncap: EtherEncap {
             parameters:
-                @display("p=141,152");
+                @display("p=141,69");
         }
         vlanEncap: VLANEncap {
-            @display("p=141,68");
+            @display("p=141,165");
         }
     connections:
         mac.phys <--> { @display("m=s"); } <--> phys;
 
-        mac.upperLayerOut --> etherEncap.lowerLayerIn;
-        mac.upperLayerIn <-- etherEncap.lowerLayerOut;
+        mac.upperLayerOut --> vlanEncap.lowerLayerIn;
+        mac.upperLayerIn <-- vlanEncap.lowerLayerOut;
 
-        etherEncap.upperLayerOut --> { @display("m=n"); } --> vlanEncap.lowerLayerIn;
-        etherEncap.upperLayerIn <-- { @display("m=n"); } <-- vlanEncap.lowerLayerOut;
+        vlanEncap.upperLayerOut --> { @display("m=n"); } --> etherEncap.lowerLayerIn;
+        vlanEncap.upperLayerIn <-- { @display("m=n"); } <-- etherEncap.lowerLayerOut;
 
-        vlanEncap.upperLayerOut --> { @display("m=n"); } --> upperLayerOut;
-        vlanEncap.upperLayerIn <-- { @display("m=n"); } <-- upperLayerIn;
+        etherEncap.upperLayerOut --> { @display("m=n"); } --> upperLayerOut;
+        etherEncap.upperLayerIn <-- { @display("m=n"); } <-- upperLayerIn;
 }

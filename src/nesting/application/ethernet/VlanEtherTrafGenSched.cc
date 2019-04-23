@@ -38,6 +38,8 @@ void VlanEtherTrafGenSched::initialize(int stage) {
         cModule* clockModule = getModuleFromPar<cModule>(par("clockModule"),
                 this);
         clock = check_and_cast<IClock*>(clockModule);
+
+        llcSocket.setOutputGate(gate("out"));
     } else if (stage == INITSTAGE_LINK_LAYER) {
         //clock module reference from ned parameter
 
@@ -50,6 +52,8 @@ void VlanEtherTrafGenSched::initialize(int stage) {
         nextSchedule.reset();
 
         clock->subscribeTick(this, scheduleNextTickEvent());
+
+        llcSocket.open(-1, ssap);
     }
 }
 
@@ -81,7 +85,7 @@ void VlanEtherTrafGenSched::sendPacket() {
     datapacket->insertAtBack(payload);
     datapacket->removeTagIfPresent<PacketProtocolTag>();
     datapacket->addTagIfAbsent<PacketProtocolTag>()->setProtocol(
-            &Protocol::ipv4);
+            &Protocol::ethernetMac);
     // TODO check if protocol is correct
     auto sapTag = datapacket->addTagIfAbsent<Ieee802SapReq>();
     sapTag->setSsap(ssap);

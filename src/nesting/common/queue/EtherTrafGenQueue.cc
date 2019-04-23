@@ -60,6 +60,10 @@ void EtherTrafGenQueue::initialize() {
     packetsSent = 0;
     WATCH(packetsSent);
 
+    llcSocket.setOutputGate(gate("out"));
+
+    llcSocket.open(-1, ssap);
+
 }
 
 void EtherTrafGenQueue::handleMessage(cMessage *msg) {
@@ -83,7 +87,7 @@ Packet* EtherTrafGenQueue::generatePacket() {
     datapacket->insertAtBack(payload);
     datapacket->removeTagIfPresent<PacketProtocolTag>();
     datapacket->addTagIfAbsent<PacketProtocolTag>()->setProtocol(
-            &Protocol::ipv4);
+            &Protocol::ethernetMac);
     // TODO check if protocol is correct
     auto sapTag = datapacket->addTagIfAbsent<Ieee802SapReq>();
     sapTag->setSsap(ssap);

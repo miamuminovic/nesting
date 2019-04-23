@@ -48,9 +48,6 @@ module VlanEtherHostSched
             parameters:
                 @display("p=330,215;is=s");
         }
-        vlanEncap: VLANEncap {
-            @display("p=138,149");
-        }
         clock: <default("IdealClock")> like IClock {
             @display("p=330,69");
         }
@@ -59,16 +56,13 @@ module VlanEtherHostSched
 
             @display("p=330,149;b=29,25");
         }
-        eth: <default("EthernetInterface")> like IEthernetInterface {
+        eth: <default("VlanEthernetInterface")> like IEthernetInterface {
             parameters:
                 @display("p=138,271,row,150;q=txQueue");
         }
     connections:
-        trafGenSchedApp.out --> vlanEncap.upperLayerIn;
-        vlanEncap.upperLayerOut --> trafGenSchedApp.in;
-
-        vlanEncap.lowerLayerOut --> eth.upperLayerIn;
-        eth.upperLayerOut --> vlanEncap.lowerLayerIn;
+        trafGenSchedApp.out --> eth.upperLayerIn;
+        eth.upperLayerOut --> trafGenSchedApp.in;
 
         eth.phys <--> ethg;
 }

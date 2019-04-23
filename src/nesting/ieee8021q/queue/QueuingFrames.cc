@@ -52,8 +52,14 @@ void QueuingFrames::handleMessage(cMessage *msg) {
     macTagOut->setDestAddress(macTagIn->getDestAddress());
     macTagOut->setSrcAddress(macTagIn->getSrcAddress());
 
+    // switch ingoing sap tag to outgoing sap tag
+    auto sapTagIn = packet->removeTag<inet::Ieee802SapInd>();
+    auto sapTagOut = packet->addTag<inet::Ieee802SapReq>();
+    sapTagOut->setDsap(sapTagIn->getDsap());
+    sapTagOut->setSsap(sapTagIn->getSsap());
     delete macTagIn;
     delete vlanTagIn;
+    delete sapTagIn;
 
     // remove encapsulation
     packet->trim();

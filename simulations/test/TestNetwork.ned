@@ -31,12 +31,6 @@ network TestNetwork
             datarate = 0.1Gbps;
         }
     submodules:
-        switchA: VlanEtherSwitchPreemptable {
-            parameters:
-                @display("p=188,127");
-            gates:
-                ethg[3];
-        }
         workstation1: VlanEtherHostFullLoad {
             @display("p=79,62");
         }
@@ -44,11 +38,20 @@ network TestNetwork
             @display("p=79,202");
         }
         sink: VlanEtherHostQ {
-            @display("p=307,128");
+            @display("p=290,62");
+        }
+        sink1: VlanEtherHostQ {
+            @display("p=290,202");
+        }
+        switchA: VlanEtherSwitchPreemptable {
+            parameters:
+                @display("p=184,140");
+            gates:
+                ethg[4];
         }
     connections:
-        robotController.ethg <--> C <--> switchA.ethg[0];
-        workstation1.ethg <--> C <--> switchA.ethg[1];
-
+        workstation1.ethg <--> C <--> switchA.ethg[0];
+        robotController.ethg <--> C <--> switchA.ethg[1];
+        switchA.ethg[3] <--> C <--> sink1.ethg;
         switchA.ethg[2] <--> C <--> sink.ethg;
 }
