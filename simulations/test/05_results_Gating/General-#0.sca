@@ -1,14 +1,14 @@
 version 2
-run General-0-20190417-15:50:07-15611
+run General-0-20190425-13:29:08-5734
 attr configname General
-attr datetime 20190417-15:50:07
+attr datetime 20190425-13:29:08
 attr experiment General
 attr inifile 05_Gating.ini
 attr iterationvars ""
 attr iterationvarsf ""
 attr measurement ""
 attr network TestNetwork
-attr processid 15611
+attr processid 5734
 attr repetition 0
 attr replication #0
 attr resultdir 05_results_Gating
@@ -54,1600 +54,11 @@ param **.sink.trafGenApp.numPacketsPerBurst 0
 param **.sink.trafGenApp.sendInterval 1ms
 param **.sink.trafGenApp.packetLength 100B
 
-scalar TestNetwork.switchA.eth[0].mac "simulated time" 0.00021
-scalar TestNetwork.switchA.eth[0].mac full-duplex 1
-scalar TestNetwork.switchA.eth[0].mac "frames/sec sent" 0
-scalar TestNetwork.switchA.eth[0].mac "frames/sec rcvd" 19047.619047619
-scalar TestNetwork.switchA.eth[0].mac "bits/sec sent" 0
-scalar TestNetwork.switchA.eth[0].mac "bits/sec rcvd" 74819047.619048
-scalar TestNetwork.switchA.eth[0].mac "rx channel idle (%)" 100
-scalar TestNetwork.switchA.eth[0].mac "rx channel utilization (%)" 0
-statistic TestNetwork.switchA.eth[0].mac pMacDelay:histogram
-field count 0
-field mean -nan
-field stddev -nan
-field min -nan
-field max -nan
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr title "pMacDelay, histogram"
-bin	-inf	0
-bin	0	0
-bin	1	0
-statistic TestNetwork.switchA.eth[0].mac eMacDelay:histogram
-field count 0
-field mean -nan
-field stddev -nan
-field min -nan
-field max -nan
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr title "eMacDelay, histogram"
-bin	-inf	0
-bin	0	0
-bin	1	0
-scalar TestNetwork.switchA.eth[0].mac expressFramesEnqueued:count 0
-attr interpolationmode none
-attr source expressFrameEnqueuedWhileSendingPreemptableSignal
-attr title "express frames enqueued, count"
-scalar TestNetwork.switchA.eth[0].mac mPacketsFull:count 0
-attr interpolationmode none
-attr source transmittedPreemptableFullSignal
-attr title "mpackets full, count"
-scalar TestNetwork.switchA.eth[0].mac mPacketsFinal:count 0
-attr interpolationmode none
-attr source transmittedPreemptableFinalSignal
-attr title "mPackets final, count"
-scalar TestNetwork.switchA.eth[0].mac mPacketsNonFinal:count 0
-attr interpolationmode none
-attr source transmittedPreemptableNonFinalSignal
-attr title "mPackets non-final, count"
-scalar TestNetwork.switchA.eth[0].mac mPackets:count 0
-attr interpolationmode none
-attr source transmittedPreemptableFramePartSignal
-attr title "mPackets, count"
-scalar TestNetwork.switchA.eth[0].mac preemptableFrames:count 0
-attr interpolationmode none
-attr source transmittedPreemptableFrameSignal
-attr title "preemptableFrames, count"
-scalar TestNetwork.switchA.eth[0].mac expressFrames:count 0
-attr interpolationmode none
-attr source transmittedExpressFrameSignal
-attr title "expressFrames, count"
-scalar TestNetwork.switchA.eth[0].mac preemptions:count 0
-attr interpolationmode none
-attr source preemptCurrentFrameSignal
-attr title "preemptions, count"
-scalar TestNetwork.switchA.eth[0].mac rxPausePkUnits:count 0
-attr interpolationmode none
-attr title "pause units received, count"
-scalar TestNetwork.switchA.eth[0].mac rxPausePkUnits:sum 0
-attr interpolationmode none
-attr title "pause units received, sum"
-scalar TestNetwork.switchA.eth[0].mac txPausePkUnits:count 0
-attr interpolationmode none
-attr title "pause units sent, count"
-scalar TestNetwork.switchA.eth[0].mac txPausePkUnits:sum 0
-attr interpolationmode none
-attr title "pause units sent, sum"
-scalar TestNetwork.switchA.eth[0].mac rxPkOk:count 4
-attr interpolationmode none
-attr source rxPkOk
-attr title "packets received OK, count"
-scalar TestNetwork.switchA.eth[0].mac rxPkOk:sum(packetBytes) 1964
-attr interpolationmode none
-attr source rxPkOk
-attr title "packets received OK, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[0].mac txPk:count 0
-attr interpolationmode none
-attr source packetSentToLower
-attr title "packets transmitted, count"
-scalar TestNetwork.switchA.eth[0].mac txPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source packetSentToLower
-attr title "packets transmitted, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[0].mac packetReceivedFromUpper:count 0
-attr interpolationmode none
-attr source packetReceivedFromUpper
-attr title "packet bytes from higher layer, count"
-scalar TestNetwork.switchA.eth[0].mac packetReceivedFromUpper:sum(packetBytes) 0
-attr interpolationmode none
-attr source packetReceivedFromUpper
-attr title "packet bytes from higher layer, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[0].mac passedUpPk:count 4
-attr interpolationmode none
-attr source packetSentToUpper
-attr title "packets passed to higher layer, count"
-scalar TestNetwork.switchA.eth[0].mac passedUpPk:sum(packetBytes) 1964
-attr interpolationmode none
-attr source packetSentToUpper
-attr title "packets passed to higher layer, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[0].mac packetDropIncorrectlyReceived:count 0
-attr interpolationmode none
-attr source packetDropReasonIsIncorrectlyReceived(packetDropped)
-attr title "packet drop: incorrectly received, count"
-scalar TestNetwork.switchA.eth[0].mac packetDropIncorrectlyReceived:sum(packetBytes) 0
-attr interpolationmode none
-attr source packetDropReasonIsIncorrectlyReceived(packetDropped)
-attr title "packet drop: incorrectly received, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[0].mac packetDropInterfaceDown:count 0
-attr interpolationmode none
-attr source packetDropReasonIsInterfaceDown(packetDropped)
-attr title "packet drop: interface down, count"
-scalar TestNetwork.switchA.eth[0].mac packetDropInterfaceDown:sum(packetBytes) 0
-attr interpolationmode none
-attr source packetDropReasonIsInterfaceDown(packetDropped)
-attr title "packet drop: interface down, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[0].mac packetDropNotAddressedToUs:count 0
-attr interpolationmode none
-attr source packetDropReasonIsNotAddressedToUs(packetDropped)
-attr title "packet drop: not addressed to us, count"
-scalar TestNetwork.switchA.eth[0].mac packetDropNotAddressedToUs:sum(packetBytes) 0
-attr interpolationmode none
-attr source packetDropReasonIsNotAddressedToUs(packetDropped)
-attr title "packet drop: not addressed to us, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[0].queuing.queues[0] dropPk:count 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, count"
-scalar TestNetwork.switchA.eth[0].queuing.queues[0] dropPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[0].queuing.queues[0] rcvdPk:count 0
-attr interpolationmode none
-attr title "received packets, count"
-scalar TestNetwork.switchA.eth[0].queuing.queues[0] rcvdPk:sum(packetBytes) 0
-attr interpolationmode none
-attr title "received packets, sum(packetBytes)"
-statistic TestNetwork.switchA.eth[0].queuing.queues[0] queueingTime:histogram
-field count 0
-field mean -nan
-field stddev -nan
-field min -nan
-field max -nan
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr title "queueing time, histogram"
-bin	-inf	0
-bin	0	0
-bin	1	0
-scalar TestNetwork.switchA.eth[0].queuing.queues[0] queueLength:max 0
-attr interpolationmode sample-hold
-attr title "queue length, max"
-scalar TestNetwork.switchA.eth[0].queuing.queues[0] queueLength:timeavg 0
-attr interpolationmode sample-hold
-attr title "queue length, timeavg"
-scalar TestNetwork.switchA.eth[0].queuing.queues[1] dropPk:count 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, count"
-scalar TestNetwork.switchA.eth[0].queuing.queues[1] dropPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[0].queuing.queues[1] rcvdPk:count 0
-attr interpolationmode none
-attr title "received packets, count"
-scalar TestNetwork.switchA.eth[0].queuing.queues[1] rcvdPk:sum(packetBytes) 0
-attr interpolationmode none
-attr title "received packets, sum(packetBytes)"
-statistic TestNetwork.switchA.eth[0].queuing.queues[1] queueingTime:histogram
-field count 0
-field mean -nan
-field stddev -nan
-field min -nan
-field max -nan
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr title "queueing time, histogram"
-bin	-inf	0
-bin	0	0
-bin	1	0
-scalar TestNetwork.switchA.eth[0].queuing.queues[1] queueLength:max 0
-attr interpolationmode sample-hold
-attr title "queue length, max"
-scalar TestNetwork.switchA.eth[0].queuing.queues[1] queueLength:timeavg 0
-attr interpolationmode sample-hold
-attr title "queue length, timeavg"
-scalar TestNetwork.switchA.eth[0].queuing.queues[2] dropPk:count 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, count"
-scalar TestNetwork.switchA.eth[0].queuing.queues[2] dropPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[0].queuing.queues[2] rcvdPk:count 0
-attr interpolationmode none
-attr title "received packets, count"
-scalar TestNetwork.switchA.eth[0].queuing.queues[2] rcvdPk:sum(packetBytes) 0
-attr interpolationmode none
-attr title "received packets, sum(packetBytes)"
-statistic TestNetwork.switchA.eth[0].queuing.queues[2] queueingTime:histogram
-field count 0
-field mean -nan
-field stddev -nan
-field min -nan
-field max -nan
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr title "queueing time, histogram"
-bin	-inf	0
-bin	0	0
-bin	1	0
-scalar TestNetwork.switchA.eth[0].queuing.queues[2] queueLength:max 0
-attr interpolationmode sample-hold
-attr title "queue length, max"
-scalar TestNetwork.switchA.eth[0].queuing.queues[2] queueLength:timeavg 0
-attr interpolationmode sample-hold
-attr title "queue length, timeavg"
-scalar TestNetwork.switchA.eth[0].queuing.queues[3] dropPk:count 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, count"
-scalar TestNetwork.switchA.eth[0].queuing.queues[3] dropPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[0].queuing.queues[3] rcvdPk:count 0
-attr interpolationmode none
-attr title "received packets, count"
-scalar TestNetwork.switchA.eth[0].queuing.queues[3] rcvdPk:sum(packetBytes) 0
-attr interpolationmode none
-attr title "received packets, sum(packetBytes)"
-statistic TestNetwork.switchA.eth[0].queuing.queues[3] queueingTime:histogram
-field count 0
-field mean -nan
-field stddev -nan
-field min -nan
-field max -nan
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr title "queueing time, histogram"
-bin	-inf	0
-bin	0	0
-bin	1	0
-scalar TestNetwork.switchA.eth[0].queuing.queues[3] queueLength:max 0
-attr interpolationmode sample-hold
-attr title "queue length, max"
-scalar TestNetwork.switchA.eth[0].queuing.queues[3] queueLength:timeavg 0
-attr interpolationmode sample-hold
-attr title "queue length, timeavg"
-scalar TestNetwork.switchA.eth[0].queuing.queues[4] dropPk:count 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, count"
-scalar TestNetwork.switchA.eth[0].queuing.queues[4] dropPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[0].queuing.queues[4] rcvdPk:count 0
-attr interpolationmode none
-attr title "received packets, count"
-scalar TestNetwork.switchA.eth[0].queuing.queues[4] rcvdPk:sum(packetBytes) 0
-attr interpolationmode none
-attr title "received packets, sum(packetBytes)"
-statistic TestNetwork.switchA.eth[0].queuing.queues[4] queueingTime:histogram
-field count 0
-field mean -nan
-field stddev -nan
-field min -nan
-field max -nan
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr title "queueing time, histogram"
-bin	-inf	0
-bin	0	0
-bin	1	0
-scalar TestNetwork.switchA.eth[0].queuing.queues[4] queueLength:max 0
-attr interpolationmode sample-hold
-attr title "queue length, max"
-scalar TestNetwork.switchA.eth[0].queuing.queues[4] queueLength:timeavg 0
-attr interpolationmode sample-hold
-attr title "queue length, timeavg"
-scalar TestNetwork.switchA.eth[0].queuing.queues[5] dropPk:count 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, count"
-scalar TestNetwork.switchA.eth[0].queuing.queues[5] dropPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[0].queuing.queues[5] rcvdPk:count 0
-attr interpolationmode none
-attr title "received packets, count"
-scalar TestNetwork.switchA.eth[0].queuing.queues[5] rcvdPk:sum(packetBytes) 0
-attr interpolationmode none
-attr title "received packets, sum(packetBytes)"
-statistic TestNetwork.switchA.eth[0].queuing.queues[5] queueingTime:histogram
-field count 0
-field mean -nan
-field stddev -nan
-field min -nan
-field max -nan
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr title "queueing time, histogram"
-bin	-inf	0
-bin	0	0
-bin	1	0
-scalar TestNetwork.switchA.eth[0].queuing.queues[5] queueLength:max 0
-attr interpolationmode sample-hold
-attr title "queue length, max"
-scalar TestNetwork.switchA.eth[0].queuing.queues[5] queueLength:timeavg 0
-attr interpolationmode sample-hold
-attr title "queue length, timeavg"
-scalar TestNetwork.switchA.eth[0].queuing.queues[6] dropPk:count 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, count"
-scalar TestNetwork.switchA.eth[0].queuing.queues[6] dropPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[0].queuing.queues[6] rcvdPk:count 0
-attr interpolationmode none
-attr title "received packets, count"
-scalar TestNetwork.switchA.eth[0].queuing.queues[6] rcvdPk:sum(packetBytes) 0
-attr interpolationmode none
-attr title "received packets, sum(packetBytes)"
-statistic TestNetwork.switchA.eth[0].queuing.queues[6] queueingTime:histogram
-field count 0
-field mean -nan
-field stddev -nan
-field min -nan
-field max -nan
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr title "queueing time, histogram"
-bin	-inf	0
-bin	0	0
-bin	1	0
-scalar TestNetwork.switchA.eth[0].queuing.queues[6] queueLength:max 0
-attr interpolationmode sample-hold
-attr title "queue length, max"
-scalar TestNetwork.switchA.eth[0].queuing.queues[6] queueLength:timeavg 0
-attr interpolationmode sample-hold
-attr title "queue length, timeavg"
-scalar TestNetwork.switchA.eth[0].queuing.queues[7] dropPk:count 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, count"
-scalar TestNetwork.switchA.eth[0].queuing.queues[7] dropPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[0].queuing.queues[7] rcvdPk:count 0
-attr interpolationmode none
-attr title "received packets, count"
-scalar TestNetwork.switchA.eth[0].queuing.queues[7] rcvdPk:sum(packetBytes) 0
-attr interpolationmode none
-attr title "received packets, sum(packetBytes)"
-statistic TestNetwork.switchA.eth[0].queuing.queues[7] queueingTime:histogram
-field count 0
-field mean -nan
-field stddev -nan
-field min -nan
-field max -nan
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr title "queueing time, histogram"
-bin	-inf	0
-bin	0	0
-bin	1	0
-scalar TestNetwork.switchA.eth[0].queuing.queues[7] queueLength:max 0
-attr interpolationmode sample-hold
-attr title "queue length, max"
-scalar TestNetwork.switchA.eth[0].queuing.queues[7] queueLength:timeavg 0
-attr interpolationmode sample-hold
-attr title "queue length, timeavg"
-scalar TestNetwork.switchA.eth[0].vlanEncapE decapPk:count 4
-attr interpolationmode none
-attr source decapPk
-attr title "packets decapsulated, count"
-scalar TestNetwork.switchA.eth[0].vlanEncapE decapPk:sum(packetBytes) 1908
-attr interpolationmode none
-attr source decapPk
-attr title "packets decapsulated, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[0].vlanEncapE encapPk:count 0
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, count"
-scalar TestNetwork.switchA.eth[0].vlanEncapE encapPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[0].etherEncapE pauseSent:count 0
-attr title "pause sent, count"
-scalar TestNetwork.switchA.eth[0].etherEncapE pauseSent:sum 0
-attr title "pause sent, sum"
-scalar TestNetwork.switchA.eth[0].etherEncapE decapPk:count 0
-attr interpolationmode none
-attr source decapPk
-attr title "packets decapsulated, count"
-scalar TestNetwork.switchA.eth[0].etherEncapE decapPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source decapPk
-attr title "packets decapsulated, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[0].etherEncapE encapPk:count 0
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, count"
-scalar TestNetwork.switchA.eth[0].etherEncapE encapPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[0].vlanEncapP decapPk:count 0
-attr interpolationmode none
-attr source decapPk
-attr title "packets decapsulated, count"
-scalar TestNetwork.switchA.eth[0].vlanEncapP decapPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source decapPk
-attr title "packets decapsulated, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[0].vlanEncapP encapPk:count 0
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, count"
-scalar TestNetwork.switchA.eth[0].vlanEncapP encapPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[0].etherEncapP pauseSent:count 0
-attr title "pause sent, count"
-scalar TestNetwork.switchA.eth[0].etherEncapP pauseSent:sum 0
-attr title "pause sent, sum"
-scalar TestNetwork.switchA.eth[0].etherEncapP decapPk:count 0
-attr interpolationmode none
-attr source decapPk
-attr title "packets decapsulated, count"
-scalar TestNetwork.switchA.eth[0].etherEncapP decapPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source decapPk
-attr title "packets decapsulated, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[0].etherEncapP encapPk:count 0
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, count"
-scalar TestNetwork.switchA.eth[0].etherEncapP encapPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[1].mac "simulated time" 0.00021
-scalar TestNetwork.switchA.eth[1].mac full-duplex 1
-scalar TestNetwork.switchA.eth[1].mac "frames/sec sent" 0
-scalar TestNetwork.switchA.eth[1].mac "frames/sec rcvd" 23809.523809524
-scalar TestNetwork.switchA.eth[1].mac "bits/sec sent" 0
-scalar TestNetwork.switchA.eth[1].mac "bits/sec rcvd" 93523809.52381
-scalar TestNetwork.switchA.eth[1].mac "rx channel idle (%)" 100
-scalar TestNetwork.switchA.eth[1].mac "rx channel utilization (%)" 0
-statistic TestNetwork.switchA.eth[1].mac pMacDelay:histogram
-field count 0
-field mean -nan
-field stddev -nan
-field min -nan
-field max -nan
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr title "pMacDelay, histogram"
-bin	-inf	0
-bin	0	0
-bin	1	0
-statistic TestNetwork.switchA.eth[1].mac eMacDelay:histogram
-field count 0
-field mean -nan
-field stddev -nan
-field min -nan
-field max -nan
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr title "eMacDelay, histogram"
-bin	-inf	0
-bin	0	0
-bin	1	0
-scalar TestNetwork.switchA.eth[1].mac expressFramesEnqueued:count 0
-attr interpolationmode none
-attr source expressFrameEnqueuedWhileSendingPreemptableSignal
-attr title "express frames enqueued, count"
-scalar TestNetwork.switchA.eth[1].mac mPacketsFull:count 0
-attr interpolationmode none
-attr source transmittedPreemptableFullSignal
-attr title "mpackets full, count"
-scalar TestNetwork.switchA.eth[1].mac mPacketsFinal:count 0
-attr interpolationmode none
-attr source transmittedPreemptableFinalSignal
-attr title "mPackets final, count"
-scalar TestNetwork.switchA.eth[1].mac mPacketsNonFinal:count 0
-attr interpolationmode none
-attr source transmittedPreemptableNonFinalSignal
-attr title "mPackets non-final, count"
-scalar TestNetwork.switchA.eth[1].mac mPackets:count 0
-attr interpolationmode none
-attr source transmittedPreemptableFramePartSignal
-attr title "mPackets, count"
-scalar TestNetwork.switchA.eth[1].mac preemptableFrames:count 0
-attr interpolationmode none
-attr source transmittedPreemptableFrameSignal
-attr title "preemptableFrames, count"
-scalar TestNetwork.switchA.eth[1].mac expressFrames:count 0
-attr interpolationmode none
-attr source transmittedExpressFrameSignal
-attr title "expressFrames, count"
-scalar TestNetwork.switchA.eth[1].mac preemptions:count 0
-attr interpolationmode none
-attr source preemptCurrentFrameSignal
-attr title "preemptions, count"
-scalar TestNetwork.switchA.eth[1].mac rxPausePkUnits:count 0
-attr interpolationmode none
-attr title "pause units received, count"
-scalar TestNetwork.switchA.eth[1].mac rxPausePkUnits:sum 0
-attr interpolationmode none
-attr title "pause units received, sum"
-scalar TestNetwork.switchA.eth[1].mac txPausePkUnits:count 0
-attr interpolationmode none
-attr title "pause units sent, count"
-scalar TestNetwork.switchA.eth[1].mac txPausePkUnits:sum 0
-attr interpolationmode none
-attr title "pause units sent, sum"
-scalar TestNetwork.switchA.eth[1].mac rxPkOk:count 5
-attr interpolationmode none
-attr source rxPkOk
-attr title "packets received OK, count"
-scalar TestNetwork.switchA.eth[1].mac rxPkOk:sum(packetBytes) 2455
-attr interpolationmode none
-attr source rxPkOk
-attr title "packets received OK, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[1].mac txPk:count 0
-attr interpolationmode none
-attr source packetSentToLower
-attr title "packets transmitted, count"
-scalar TestNetwork.switchA.eth[1].mac txPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source packetSentToLower
-attr title "packets transmitted, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[1].mac packetReceivedFromUpper:count 0
-attr interpolationmode none
-attr source packetReceivedFromUpper
-attr title "packet bytes from higher layer, count"
-scalar TestNetwork.switchA.eth[1].mac packetReceivedFromUpper:sum(packetBytes) 0
-attr interpolationmode none
-attr source packetReceivedFromUpper
-attr title "packet bytes from higher layer, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[1].mac passedUpPk:count 5
-attr interpolationmode none
-attr source packetSentToUpper
-attr title "packets passed to higher layer, count"
-scalar TestNetwork.switchA.eth[1].mac passedUpPk:sum(packetBytes) 2455
-attr interpolationmode none
-attr source packetSentToUpper
-attr title "packets passed to higher layer, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[1].mac packetDropIncorrectlyReceived:count 0
-attr interpolationmode none
-attr source packetDropReasonIsIncorrectlyReceived(packetDropped)
-attr title "packet drop: incorrectly received, count"
-scalar TestNetwork.switchA.eth[1].mac packetDropIncorrectlyReceived:sum(packetBytes) 0
-attr interpolationmode none
-attr source packetDropReasonIsIncorrectlyReceived(packetDropped)
-attr title "packet drop: incorrectly received, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[1].mac packetDropInterfaceDown:count 0
-attr interpolationmode none
-attr source packetDropReasonIsInterfaceDown(packetDropped)
-attr title "packet drop: interface down, count"
-scalar TestNetwork.switchA.eth[1].mac packetDropInterfaceDown:sum(packetBytes) 0
-attr interpolationmode none
-attr source packetDropReasonIsInterfaceDown(packetDropped)
-attr title "packet drop: interface down, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[1].mac packetDropNotAddressedToUs:count 0
-attr interpolationmode none
-attr source packetDropReasonIsNotAddressedToUs(packetDropped)
-attr title "packet drop: not addressed to us, count"
-scalar TestNetwork.switchA.eth[1].mac packetDropNotAddressedToUs:sum(packetBytes) 0
-attr interpolationmode none
-attr source packetDropReasonIsNotAddressedToUs(packetDropped)
-attr title "packet drop: not addressed to us, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[1].queuing.queues[0] dropPk:count 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, count"
-scalar TestNetwork.switchA.eth[1].queuing.queues[0] dropPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[1].queuing.queues[0] rcvdPk:count 0
-attr interpolationmode none
-attr title "received packets, count"
-scalar TestNetwork.switchA.eth[1].queuing.queues[0] rcvdPk:sum(packetBytes) 0
-attr interpolationmode none
-attr title "received packets, sum(packetBytes)"
-statistic TestNetwork.switchA.eth[1].queuing.queues[0] queueingTime:histogram
-field count 0
-field mean -nan
-field stddev -nan
-field min -nan
-field max -nan
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr title "queueing time, histogram"
-bin	-inf	0
-bin	0	0
-bin	1	0
-scalar TestNetwork.switchA.eth[1].queuing.queues[0] queueLength:max 0
-attr interpolationmode sample-hold
-attr title "queue length, max"
-scalar TestNetwork.switchA.eth[1].queuing.queues[0] queueLength:timeavg 0
-attr interpolationmode sample-hold
-attr title "queue length, timeavg"
-scalar TestNetwork.switchA.eth[1].queuing.queues[1] dropPk:count 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, count"
-scalar TestNetwork.switchA.eth[1].queuing.queues[1] dropPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[1].queuing.queues[1] rcvdPk:count 0
-attr interpolationmode none
-attr title "received packets, count"
-scalar TestNetwork.switchA.eth[1].queuing.queues[1] rcvdPk:sum(packetBytes) 0
-attr interpolationmode none
-attr title "received packets, sum(packetBytes)"
-statistic TestNetwork.switchA.eth[1].queuing.queues[1] queueingTime:histogram
-field count 0
-field mean -nan
-field stddev -nan
-field min -nan
-field max -nan
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr title "queueing time, histogram"
-bin	-inf	0
-bin	0	0
-bin	1	0
-scalar TestNetwork.switchA.eth[1].queuing.queues[1] queueLength:max 0
-attr interpolationmode sample-hold
-attr title "queue length, max"
-scalar TestNetwork.switchA.eth[1].queuing.queues[1] queueLength:timeavg 0
-attr interpolationmode sample-hold
-attr title "queue length, timeavg"
-scalar TestNetwork.switchA.eth[1].queuing.queues[2] dropPk:count 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, count"
-scalar TestNetwork.switchA.eth[1].queuing.queues[2] dropPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[1].queuing.queues[2] rcvdPk:count 0
-attr interpolationmode none
-attr title "received packets, count"
-scalar TestNetwork.switchA.eth[1].queuing.queues[2] rcvdPk:sum(packetBytes) 0
-attr interpolationmode none
-attr title "received packets, sum(packetBytes)"
-statistic TestNetwork.switchA.eth[1].queuing.queues[2] queueingTime:histogram
-field count 0
-field mean -nan
-field stddev -nan
-field min -nan
-field max -nan
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr title "queueing time, histogram"
-bin	-inf	0
-bin	0	0
-bin	1	0
-scalar TestNetwork.switchA.eth[1].queuing.queues[2] queueLength:max 0
-attr interpolationmode sample-hold
-attr title "queue length, max"
-scalar TestNetwork.switchA.eth[1].queuing.queues[2] queueLength:timeavg 0
-attr interpolationmode sample-hold
-attr title "queue length, timeavg"
-scalar TestNetwork.switchA.eth[1].queuing.queues[3] dropPk:count 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, count"
-scalar TestNetwork.switchA.eth[1].queuing.queues[3] dropPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[1].queuing.queues[3] rcvdPk:count 0
-attr interpolationmode none
-attr title "received packets, count"
-scalar TestNetwork.switchA.eth[1].queuing.queues[3] rcvdPk:sum(packetBytes) 0
-attr interpolationmode none
-attr title "received packets, sum(packetBytes)"
-statistic TestNetwork.switchA.eth[1].queuing.queues[3] queueingTime:histogram
-field count 0
-field mean -nan
-field stddev -nan
-field min -nan
-field max -nan
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr title "queueing time, histogram"
-bin	-inf	0
-bin	0	0
-bin	1	0
-scalar TestNetwork.switchA.eth[1].queuing.queues[3] queueLength:max 0
-attr interpolationmode sample-hold
-attr title "queue length, max"
-scalar TestNetwork.switchA.eth[1].queuing.queues[3] queueLength:timeavg 0
-attr interpolationmode sample-hold
-attr title "queue length, timeavg"
-scalar TestNetwork.switchA.eth[1].queuing.queues[4] dropPk:count 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, count"
-scalar TestNetwork.switchA.eth[1].queuing.queues[4] dropPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[1].queuing.queues[4] rcvdPk:count 0
-attr interpolationmode none
-attr title "received packets, count"
-scalar TestNetwork.switchA.eth[1].queuing.queues[4] rcvdPk:sum(packetBytes) 0
-attr interpolationmode none
-attr title "received packets, sum(packetBytes)"
-statistic TestNetwork.switchA.eth[1].queuing.queues[4] queueingTime:histogram
-field count 0
-field mean -nan
-field stddev -nan
-field min -nan
-field max -nan
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr title "queueing time, histogram"
-bin	-inf	0
-bin	0	0
-bin	1	0
-scalar TestNetwork.switchA.eth[1].queuing.queues[4] queueLength:max 0
-attr interpolationmode sample-hold
-attr title "queue length, max"
-scalar TestNetwork.switchA.eth[1].queuing.queues[4] queueLength:timeavg 0
-attr interpolationmode sample-hold
-attr title "queue length, timeavg"
-scalar TestNetwork.switchA.eth[1].queuing.queues[5] dropPk:count 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, count"
-scalar TestNetwork.switchA.eth[1].queuing.queues[5] dropPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[1].queuing.queues[5] rcvdPk:count 0
-attr interpolationmode none
-attr title "received packets, count"
-scalar TestNetwork.switchA.eth[1].queuing.queues[5] rcvdPk:sum(packetBytes) 0
-attr interpolationmode none
-attr title "received packets, sum(packetBytes)"
-statistic TestNetwork.switchA.eth[1].queuing.queues[5] queueingTime:histogram
-field count 0
-field mean -nan
-field stddev -nan
-field min -nan
-field max -nan
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr title "queueing time, histogram"
-bin	-inf	0
-bin	0	0
-bin	1	0
-scalar TestNetwork.switchA.eth[1].queuing.queues[5] queueLength:max 0
-attr interpolationmode sample-hold
-attr title "queue length, max"
-scalar TestNetwork.switchA.eth[1].queuing.queues[5] queueLength:timeavg 0
-attr interpolationmode sample-hold
-attr title "queue length, timeavg"
-scalar TestNetwork.switchA.eth[1].queuing.queues[6] dropPk:count 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, count"
-scalar TestNetwork.switchA.eth[1].queuing.queues[6] dropPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[1].queuing.queues[6] rcvdPk:count 0
-attr interpolationmode none
-attr title "received packets, count"
-scalar TestNetwork.switchA.eth[1].queuing.queues[6] rcvdPk:sum(packetBytes) 0
-attr interpolationmode none
-attr title "received packets, sum(packetBytes)"
-statistic TestNetwork.switchA.eth[1].queuing.queues[6] queueingTime:histogram
-field count 0
-field mean -nan
-field stddev -nan
-field min -nan
-field max -nan
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr title "queueing time, histogram"
-bin	-inf	0
-bin	0	0
-bin	1	0
-scalar TestNetwork.switchA.eth[1].queuing.queues[6] queueLength:max 0
-attr interpolationmode sample-hold
-attr title "queue length, max"
-scalar TestNetwork.switchA.eth[1].queuing.queues[6] queueLength:timeavg 0
-attr interpolationmode sample-hold
-attr title "queue length, timeavg"
-scalar TestNetwork.switchA.eth[1].queuing.queues[7] dropPk:count 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, count"
-scalar TestNetwork.switchA.eth[1].queuing.queues[7] dropPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[1].queuing.queues[7] rcvdPk:count 0
-attr interpolationmode none
-attr title "received packets, count"
-scalar TestNetwork.switchA.eth[1].queuing.queues[7] rcvdPk:sum(packetBytes) 0
-attr interpolationmode none
-attr title "received packets, sum(packetBytes)"
-statistic TestNetwork.switchA.eth[1].queuing.queues[7] queueingTime:histogram
-field count 0
-field mean -nan
-field stddev -nan
-field min -nan
-field max -nan
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr title "queueing time, histogram"
-bin	-inf	0
-bin	0	0
-bin	1	0
-scalar TestNetwork.switchA.eth[1].queuing.queues[7] queueLength:max 0
-attr interpolationmode sample-hold
-attr title "queue length, max"
-scalar TestNetwork.switchA.eth[1].queuing.queues[7] queueLength:timeavg 0
-attr interpolationmode sample-hold
-attr title "queue length, timeavg"
-scalar TestNetwork.switchA.eth[1].vlanEncapE decapPk:count 5
-attr interpolationmode none
-attr source decapPk
-attr title "packets decapsulated, count"
-scalar TestNetwork.switchA.eth[1].vlanEncapE decapPk:sum(packetBytes) 2385
-attr interpolationmode none
-attr source decapPk
-attr title "packets decapsulated, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[1].vlanEncapE encapPk:count 0
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, count"
-scalar TestNetwork.switchA.eth[1].vlanEncapE encapPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[1].etherEncapE pauseSent:count 0
-attr title "pause sent, count"
-scalar TestNetwork.switchA.eth[1].etherEncapE pauseSent:sum 0
-attr title "pause sent, sum"
-scalar TestNetwork.switchA.eth[1].etherEncapE decapPk:count 0
-attr interpolationmode none
-attr source decapPk
-attr title "packets decapsulated, count"
-scalar TestNetwork.switchA.eth[1].etherEncapE decapPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source decapPk
-attr title "packets decapsulated, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[1].etherEncapE encapPk:count 0
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, count"
-scalar TestNetwork.switchA.eth[1].etherEncapE encapPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[1].vlanEncapP decapPk:count 0
-attr interpolationmode none
-attr source decapPk
-attr title "packets decapsulated, count"
-scalar TestNetwork.switchA.eth[1].vlanEncapP decapPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source decapPk
-attr title "packets decapsulated, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[1].vlanEncapP encapPk:count 0
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, count"
-scalar TestNetwork.switchA.eth[1].vlanEncapP encapPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[1].etherEncapP pauseSent:count 0
-attr title "pause sent, count"
-scalar TestNetwork.switchA.eth[1].etherEncapP pauseSent:sum 0
-attr title "pause sent, sum"
-scalar TestNetwork.switchA.eth[1].etherEncapP decapPk:count 0
-attr interpolationmode none
-attr source decapPk
-attr title "packets decapsulated, count"
-scalar TestNetwork.switchA.eth[1].etherEncapP decapPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source decapPk
-attr title "packets decapsulated, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[1].etherEncapP encapPk:count 0
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, count"
-scalar TestNetwork.switchA.eth[1].etherEncapP encapPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[2].mac "simulated time" 0.00021
-scalar TestNetwork.switchA.eth[2].mac full-duplex 1
-scalar TestNetwork.switchA.eth[2].mac "frames/sec sent" 19047.619047619
-scalar TestNetwork.switchA.eth[2].mac "frames/sec rcvd" 0
-scalar TestNetwork.switchA.eth[2].mac "bits/sec sent" 74819047.619048
-scalar TestNetwork.switchA.eth[2].mac "bits/sec rcvd" 0
-scalar TestNetwork.switchA.eth[2].mac "rx channel idle (%)" 100
-scalar TestNetwork.switchA.eth[2].mac "rx channel utilization (%)" 0
-statistic TestNetwork.switchA.eth[2].mac pMacDelay:histogram
-field count 0
-field mean -nan
-field stddev -nan
-field min -nan
-field max -nan
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr title "pMacDelay, histogram"
-bin	-inf	0
-bin	0	0
-bin	1	0
-statistic TestNetwork.switchA.eth[2].mac eMacDelay:histogram
-field count 5
-field mean 0.00012678
-field stddev 6.4636955373842e-05
-field min 4.502e-05
-field max 0.00020854
-field sum 0.0006339
-field sqrsum 9.7077586e-08
-attr interpolationmode none
-attr title "eMacDelay, histogram"
-bin	-inf	0
-bin	0	0
-bin	5e-06	0
-bin	1e-05	0
-bin	1.5e-05	0
-bin	2e-05	0
-bin	2.5e-05	0
-bin	3e-05	0
-bin	3.5e-05	0
-bin	4e-05	0
-bin	4.5e-05	1
-bin	5e-05	0
-bin	5.5e-05	0
-bin	6e-05	0
-bin	6.5e-05	0
-bin	7e-05	0
-bin	7.5e-05	0
-bin	8e-05	0
-bin	8.5e-05	1
-bin	9e-05	0
-bin	9.5e-05	0
-bin	0.0001	0
-bin	0.000105	0
-bin	0.00011	0
-bin	0.000115	0
-bin	0.00012	0
-bin	0.000125	1
-bin	0.00013	0
-bin	0.000135	0
-bin	0.00014	0
-bin	0.000145	0
-bin	0.00015	0
-bin	0.000155	0
-bin	0.00016	0
-bin	0.000165	1
-bin	0.00017	0
-bin	0.000175	0
-bin	0.00018	0
-bin	0.000185	0
-bin	0.00019	0
-bin	0.000195	0
-bin	0.0002	0
-bin	0.000205	1
-bin	0.00021	0
-bin	0.000215	0
-bin	0.00022	0
-bin	0.000225	0
-bin	0.00023	0
-bin	0.000235	0
-bin	0.00024	0
-bin	0.000245	0
-bin	0.00025	0
-scalar TestNetwork.switchA.eth[2].mac expressFramesEnqueued:count 0
-attr interpolationmode none
-attr source expressFrameEnqueuedWhileSendingPreemptableSignal
-attr title "express frames enqueued, count"
-scalar TestNetwork.switchA.eth[2].mac mPacketsFull:count 0
-attr interpolationmode none
-attr source transmittedPreemptableFullSignal
-attr title "mpackets full, count"
-scalar TestNetwork.switchA.eth[2].mac mPacketsFinal:count 0
-attr interpolationmode none
-attr source transmittedPreemptableFinalSignal
-attr title "mPackets final, count"
-scalar TestNetwork.switchA.eth[2].mac mPacketsNonFinal:count 0
-attr interpolationmode none
-attr source transmittedPreemptableNonFinalSignal
-attr title "mPackets non-final, count"
-scalar TestNetwork.switchA.eth[2].mac mPackets:count 0
-attr interpolationmode none
-attr source transmittedPreemptableFramePartSignal
-attr title "mPackets, count"
-scalar TestNetwork.switchA.eth[2].mac preemptableFrames:count 0
-attr interpolationmode none
-attr source transmittedPreemptableFrameSignal
-attr title "preemptableFrames, count"
-scalar TestNetwork.switchA.eth[2].mac expressFrames:count 4
-attr interpolationmode none
-attr source transmittedExpressFrameSignal
-attr title "expressFrames, count"
-scalar TestNetwork.switchA.eth[2].mac preemptions:count 0
-attr interpolationmode none
-attr source preemptCurrentFrameSignal
-attr title "preemptions, count"
-scalar TestNetwork.switchA.eth[2].mac rxPausePkUnits:count 0
-attr interpolationmode none
-attr title "pause units received, count"
-scalar TestNetwork.switchA.eth[2].mac rxPausePkUnits:sum 0
-attr interpolationmode none
-attr title "pause units received, sum"
-scalar TestNetwork.switchA.eth[2].mac txPausePkUnits:count 0
-attr interpolationmode none
-attr title "pause units sent, count"
-scalar TestNetwork.switchA.eth[2].mac txPausePkUnits:sum 0
-attr interpolationmode none
-attr title "pause units sent, sum"
-scalar TestNetwork.switchA.eth[2].mac rxPkOk:count 0
-attr interpolationmode none
-attr source rxPkOk
-attr title "packets received OK, count"
-scalar TestNetwork.switchA.eth[2].mac rxPkOk:sum(packetBytes) 0
-attr interpolationmode none
-attr source rxPkOk
-attr title "packets received OK, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[2].mac txPk:count 4
-attr interpolationmode none
-attr source packetSentToLower
-attr title "packets transmitted, count"
-scalar TestNetwork.switchA.eth[2].mac txPk:sum(packetBytes) 1964
-attr interpolationmode none
-attr source packetSentToLower
-attr title "packets transmitted, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[2].mac packetReceivedFromUpper:count 5
-attr interpolationmode none
-attr source packetReceivedFromUpper
-attr title "packet bytes from higher layer, count"
-scalar TestNetwork.switchA.eth[2].mac packetReceivedFromUpper:sum(packetBytes) 2455
-attr interpolationmode none
-attr source packetReceivedFromUpper
-attr title "packet bytes from higher layer, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[2].mac passedUpPk:count 0
-attr interpolationmode none
-attr source packetSentToUpper
-attr title "packets passed to higher layer, count"
-scalar TestNetwork.switchA.eth[2].mac passedUpPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source packetSentToUpper
-attr title "packets passed to higher layer, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[2].mac packetDropIncorrectlyReceived:count 0
-attr interpolationmode none
-attr source packetDropReasonIsIncorrectlyReceived(packetDropped)
-attr title "packet drop: incorrectly received, count"
-scalar TestNetwork.switchA.eth[2].mac packetDropIncorrectlyReceived:sum(packetBytes) 0
-attr interpolationmode none
-attr source packetDropReasonIsIncorrectlyReceived(packetDropped)
-attr title "packet drop: incorrectly received, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[2].mac packetDropInterfaceDown:count 0
-attr interpolationmode none
-attr source packetDropReasonIsInterfaceDown(packetDropped)
-attr title "packet drop: interface down, count"
-scalar TestNetwork.switchA.eth[2].mac packetDropInterfaceDown:sum(packetBytes) 0
-attr interpolationmode none
-attr source packetDropReasonIsInterfaceDown(packetDropped)
-attr title "packet drop: interface down, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[2].mac packetDropNotAddressedToUs:count 0
-attr interpolationmode none
-attr source packetDropReasonIsNotAddressedToUs(packetDropped)
-attr title "packet drop: not addressed to us, count"
-scalar TestNetwork.switchA.eth[2].mac packetDropNotAddressedToUs:sum(packetBytes) 0
-attr interpolationmode none
-attr source packetDropReasonIsNotAddressedToUs(packetDropped)
-attr title "packet drop: not addressed to us, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[2].queuing.queues[0] dropPk:count 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, count"
-scalar TestNetwork.switchA.eth[2].queuing.queues[0] dropPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[2].queuing.queues[0] rcvdPk:count 0
-attr interpolationmode none
-attr title "received packets, count"
-scalar TestNetwork.switchA.eth[2].queuing.queues[0] rcvdPk:sum(packetBytes) 0
-attr interpolationmode none
-attr title "received packets, sum(packetBytes)"
-statistic TestNetwork.switchA.eth[2].queuing.queues[0] queueingTime:histogram
-field count 0
-field mean -nan
-field stddev -nan
-field min -nan
-field max -nan
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr title "queueing time, histogram"
-bin	-inf	0
-bin	0	0
-bin	1	0
-scalar TestNetwork.switchA.eth[2].queuing.queues[0] queueLength:max 0
-attr interpolationmode sample-hold
-attr title "queue length, max"
-scalar TestNetwork.switchA.eth[2].queuing.queues[0] queueLength:timeavg 0
-attr interpolationmode sample-hold
-attr title "queue length, timeavg"
-scalar TestNetwork.switchA.eth[2].queuing.queues[1] dropPk:count 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, count"
-scalar TestNetwork.switchA.eth[2].queuing.queues[1] dropPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[2].queuing.queues[1] rcvdPk:count 0
-attr interpolationmode none
-attr title "received packets, count"
-scalar TestNetwork.switchA.eth[2].queuing.queues[1] rcvdPk:sum(packetBytes) 0
-attr interpolationmode none
-attr title "received packets, sum(packetBytes)"
-statistic TestNetwork.switchA.eth[2].queuing.queues[1] queueingTime:histogram
-field count 0
-field mean -nan
-field stddev -nan
-field min -nan
-field max -nan
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr title "queueing time, histogram"
-bin	-inf	0
-bin	0	0
-bin	1	0
-scalar TestNetwork.switchA.eth[2].queuing.queues[1] queueLength:max 0
-attr interpolationmode sample-hold
-attr title "queue length, max"
-scalar TestNetwork.switchA.eth[2].queuing.queues[1] queueLength:timeavg 0
-attr interpolationmode sample-hold
-attr title "queue length, timeavg"
-scalar TestNetwork.switchA.eth[2].queuing.queues[2] dropPk:count 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, count"
-scalar TestNetwork.switchA.eth[2].queuing.queues[2] dropPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[2].queuing.queues[2] rcvdPk:count 0
-attr interpolationmode none
-attr title "received packets, count"
-scalar TestNetwork.switchA.eth[2].queuing.queues[2] rcvdPk:sum(packetBytes) 0
-attr interpolationmode none
-attr title "received packets, sum(packetBytes)"
-statistic TestNetwork.switchA.eth[2].queuing.queues[2] queueingTime:histogram
-field count 0
-field mean -nan
-field stddev -nan
-field min -nan
-field max -nan
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr title "queueing time, histogram"
-bin	-inf	0
-bin	0	0
-bin	1	0
-scalar TestNetwork.switchA.eth[2].queuing.queues[2] queueLength:max 0
-attr interpolationmode sample-hold
-attr title "queue length, max"
-scalar TestNetwork.switchA.eth[2].queuing.queues[2] queueLength:timeavg 0
-attr interpolationmode sample-hold
-attr title "queue length, timeavg"
-scalar TestNetwork.switchA.eth[2].queuing.queues[3] dropPk:count 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, count"
-scalar TestNetwork.switchA.eth[2].queuing.queues[3] dropPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[2].queuing.queues[3] rcvdPk:count 0
-attr interpolationmode none
-attr title "received packets, count"
-scalar TestNetwork.switchA.eth[2].queuing.queues[3] rcvdPk:sum(packetBytes) 0
-attr interpolationmode none
-attr title "received packets, sum(packetBytes)"
-statistic TestNetwork.switchA.eth[2].queuing.queues[3] queueingTime:histogram
-field count 0
-field mean -nan
-field stddev -nan
-field min -nan
-field max -nan
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr title "queueing time, histogram"
-bin	-inf	0
-bin	0	0
-bin	1	0
-scalar TestNetwork.switchA.eth[2].queuing.queues[3] queueLength:max 0
-attr interpolationmode sample-hold
-attr title "queue length, max"
-scalar TestNetwork.switchA.eth[2].queuing.queues[3] queueLength:timeavg 0
-attr interpolationmode sample-hold
-attr title "queue length, timeavg"
-scalar TestNetwork.switchA.eth[2].queuing.queues[4] dropPk:count 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, count"
-scalar TestNetwork.switchA.eth[2].queuing.queues[4] dropPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[2].queuing.queues[4] rcvdPk:count 0
-attr interpolationmode none
-attr title "received packets, count"
-scalar TestNetwork.switchA.eth[2].queuing.queues[4] rcvdPk:sum(packetBytes) 0
-attr interpolationmode none
-attr title "received packets, sum(packetBytes)"
-statistic TestNetwork.switchA.eth[2].queuing.queues[4] queueingTime:histogram
-field count 0
-field mean -nan
-field stddev -nan
-field min -nan
-field max -nan
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr title "queueing time, histogram"
-bin	-inf	0
-bin	0	0
-bin	1	0
-scalar TestNetwork.switchA.eth[2].queuing.queues[4] queueLength:max 0
-attr interpolationmode sample-hold
-attr title "queue length, max"
-scalar TestNetwork.switchA.eth[2].queuing.queues[4] queueLength:timeavg 0
-attr interpolationmode sample-hold
-attr title "queue length, timeavg"
-scalar TestNetwork.switchA.eth[2].queuing.queues[5] dropPk:count 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, count"
-scalar TestNetwork.switchA.eth[2].queuing.queues[5] dropPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[2].queuing.queues[5] rcvdPk:count 0
-attr interpolationmode none
-attr title "received packets, count"
-scalar TestNetwork.switchA.eth[2].queuing.queues[5] rcvdPk:sum(packetBytes) 0
-attr interpolationmode none
-attr title "received packets, sum(packetBytes)"
-statistic TestNetwork.switchA.eth[2].queuing.queues[5] queueingTime:histogram
-field count 0
-field mean -nan
-field stddev -nan
-field min -nan
-field max -nan
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr title "queueing time, histogram"
-bin	-inf	0
-bin	0	0
-bin	1	0
-scalar TestNetwork.switchA.eth[2].queuing.queues[5] queueLength:max 0
-attr interpolationmode sample-hold
-attr title "queue length, max"
-scalar TestNetwork.switchA.eth[2].queuing.queues[5] queueLength:timeavg 0
-attr interpolationmode sample-hold
-attr title "queue length, timeavg"
-scalar TestNetwork.switchA.eth[2].queuing.queues[6] dropPk:count 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, count"
-scalar TestNetwork.switchA.eth[2].queuing.queues[6] dropPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[2].queuing.queues[6] rcvdPk:count 5
-attr interpolationmode none
-attr title "received packets, count"
-scalar TestNetwork.switchA.eth[2].queuing.queues[6] rcvdPk:sum(packetBytes) 2350
-attr interpolationmode none
-attr title "received packets, sum(packetBytes)"
-statistic TestNetwork.switchA.eth[2].queuing.queues[6] queueingTime:histogram
-field count 5
-field mean 0
-field stddev 0
-field min 0
-field max 0
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr title "queueing time, histogram"
-bin	-inf	0
-bin	-0.5	0
-bin	-0.48	0
-bin	-0.46	0
-bin	-0.44	0
-bin	-0.42	0
-bin	-0.4	0
-bin	-0.38	0
-bin	-0.36	0
-bin	-0.34	0
-bin	-0.32	0
-bin	-0.3	0
-bin	-0.28	0
-bin	-0.26	0
-bin	-0.24	0
-bin	-0.22	0
-bin	-0.2	0
-bin	-0.18	0
-bin	-0.16	0
-bin	-0.14	0
-bin	-0.12	0
-bin	-0.1	0
-bin	-0.08	0
-bin	-0.06	0
-bin	-0.04	0
-bin	-0.02	0
-bin	0	5
-bin	0.02	0
-bin	0.04	0
-bin	0.06	0
-bin	0.08	0
-bin	0.1	0
-bin	0.12	0
-bin	0.14	0
-bin	0.16	0
-bin	0.18	0
-bin	0.2	0
-bin	0.22	0
-bin	0.24	0
-bin	0.26	0
-bin	0.28	0
-bin	0.3	0
-bin	0.32	0
-bin	0.34	0
-bin	0.36	0
-bin	0.38	0
-bin	0.4	0
-bin	0.42	0
-bin	0.44	0
-bin	0.46	0
-bin	0.48	0
-bin	0.5	0
-scalar TestNetwork.switchA.eth[2].queuing.queues[6] queueLength:max 1
-attr interpolationmode sample-hold
-attr title "queue length, max"
-scalar TestNetwork.switchA.eth[2].queuing.queues[6] queueLength:timeavg 0
-attr interpolationmode sample-hold
-attr title "queue length, timeavg"
-scalar TestNetwork.switchA.eth[2].queuing.queues[7] dropPk:count 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, count"
-scalar TestNetwork.switchA.eth[2].queuing.queues[7] dropPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source dropPkByQueue
-attr title "dropped packets, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[2].queuing.queues[7] rcvdPk:count 4
-attr interpolationmode none
-attr title "received packets, count"
-scalar TestNetwork.switchA.eth[2].queuing.queues[7] rcvdPk:sum(packetBytes) 1880
-attr interpolationmode none
-attr title "received packets, sum(packetBytes)"
-statistic TestNetwork.switchA.eth[2].queuing.queues[7] queueingTime:histogram
-field count 0
-field mean -nan
-field stddev -nan
-field min -nan
-field max -nan
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr title "queueing time, histogram"
-bin	-inf	0
-bin	0	0
-bin	1	0
-scalar TestNetwork.switchA.eth[2].queuing.queues[7] queueLength:max 4
-attr interpolationmode sample-hold
-attr title "queue length, max"
-scalar TestNetwork.switchA.eth[2].queuing.queues[7] queueLength:timeavg 1.7139047619048
-attr interpolationmode sample-hold
-attr title "queue length, timeavg"
-scalar TestNetwork.switchA.eth[2].vlanEncapE decapPk:count 0
-attr interpolationmode none
-attr source decapPk
-attr title "packets decapsulated, count"
-scalar TestNetwork.switchA.eth[2].vlanEncapE decapPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source decapPk
-attr title "packets decapsulated, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[2].vlanEncapE encapPk:count 0
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, count"
-scalar TestNetwork.switchA.eth[2].vlanEncapE encapPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[2].etherEncapE pauseSent:count 0
-attr title "pause sent, count"
-scalar TestNetwork.switchA.eth[2].etherEncapE pauseSent:sum 0
-attr title "pause sent, sum"
-scalar TestNetwork.switchA.eth[2].etherEncapE decapPk:count 0
-attr interpolationmode none
-attr source decapPk
-attr title "packets decapsulated, count"
-scalar TestNetwork.switchA.eth[2].etherEncapE decapPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source decapPk
-attr title "packets decapsulated, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[2].etherEncapE encapPk:count 0
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, count"
-scalar TestNetwork.switchA.eth[2].etherEncapE encapPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[2].vlanEncapP decapPk:count 0
-attr interpolationmode none
-attr source decapPk
-attr title "packets decapsulated, count"
-scalar TestNetwork.switchA.eth[2].vlanEncapP decapPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source decapPk
-attr title "packets decapsulated, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[2].vlanEncapP encapPk:count 5
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, count"
-scalar TestNetwork.switchA.eth[2].vlanEncapP encapPk:sum(packetBytes) 2385
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[2].etherEncapP pauseSent:count 0
-attr title "pause sent, count"
-scalar TestNetwork.switchA.eth[2].etherEncapP pauseSent:sum 0
-attr title "pause sent, sum"
-scalar TestNetwork.switchA.eth[2].etherEncapP decapPk:count 0
-attr interpolationmode none
-attr source decapPk
-attr title "packets decapsulated, count"
-scalar TestNetwork.switchA.eth[2].etherEncapP decapPk:sum(packetBytes) 0
-attr interpolationmode none
-attr source decapPk
-attr title "packets decapsulated, sum(packetBytes)"
-scalar TestNetwork.switchA.eth[2].etherEncapP encapPk:count 5
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, count"
-scalar TestNetwork.switchA.eth[2].etherEncapP encapPk:sum(packetBytes) 2350
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, sum(packetBytes)"
-statistic TestNetwork.switchA.processingDelay[0] delay:stats
-field count 4
-field mean 5e-06
-field stddev 0
-field min 5e-06
-field max 5e-06
-field sum 2e-05
-field sqrsum 1e-10
-attr interpolationmode none
-attr source delay
-attr title "packet delay, stats"
-scalar TestNetwork.switchA.processingDelay[0] packetReceived:count 4
-attr interpolationmode none
-attr source packetReceived
-attr title "packets received, count"
-scalar TestNetwork.switchA.processingDelay[0] packetReceived:sum(packetBytes) 1880
-attr interpolationmode none
-attr source packetReceived
-attr title "packets received, sum(packetBytes)"
-scalar TestNetwork.switchA.processingDelay[0] packetSent:count 4
-attr interpolationmode none
-attr source packetSent
-attr title "packets sent, count"
-scalar TestNetwork.switchA.processingDelay[0] packetSent:sum(packetBytes) 1880
-attr interpolationmode none
-attr source packetSent
-attr title "packets sent, sum(packetBytes)"
-statistic TestNetwork.switchA.processingDelay[1] delay:stats
-field count 5
-field mean 5e-06
-field stddev 0
-field min 5e-06
-field max 5e-06
-field sum 2.5e-05
-field sqrsum 1.25e-10
-attr interpolationmode none
-attr source delay
-attr title "packet delay, stats"
-scalar TestNetwork.switchA.processingDelay[1] packetReceived:count 5
-attr interpolationmode none
-attr source packetReceived
-attr title "packets received, count"
-scalar TestNetwork.switchA.processingDelay[1] packetReceived:sum(packetBytes) 2350
-attr interpolationmode none
-attr source packetReceived
-attr title "packets received, sum(packetBytes)"
-scalar TestNetwork.switchA.processingDelay[1] packetSent:count 5
-attr interpolationmode none
-attr source packetSent
-attr title "packets sent, count"
-scalar TestNetwork.switchA.processingDelay[1] packetSent:sum(packetBytes) 2350
-attr interpolationmode none
-attr source packetSent
-attr title "packets sent, sum(packetBytes)"
-statistic TestNetwork.switchA.processingDelay[2] delay:stats
-field count 0
-field mean -nan
-field stddev -nan
-field min -nan
-field max -nan
-field sum 0
-field sqrsum 0
-attr interpolationmode none
-attr source delay
-attr title "packet delay, stats"
-scalar TestNetwork.switchA.processingDelay[2] packetReceived:count 0
-attr interpolationmode none
-attr source packetReceived
-attr title "packets received, count"
-scalar TestNetwork.switchA.processingDelay[2] packetReceived:sum(packetBytes) 0
-attr interpolationmode none
-attr source packetReceived
-attr title "packets received, sum(packetBytes)"
-scalar TestNetwork.switchA.processingDelay[2] packetSent:count 0
-attr interpolationmode none
-attr source packetSent
-attr title "packets sent, count"
-scalar TestNetwork.switchA.processingDelay[2] packetSent:sum(packetBytes) 0
-attr interpolationmode none
-attr source packetSent
-attr title "packets sent, sum(packetBytes)"
-scalar TestNetwork.workstation1.trafGenQueueApp sentPk:count 6
+scalar TestNetwork.workstation1.trafGenQueueApp sentPk:count 4
 attr interpolationmode none
 attr source sentPk
 attr title "packets sent, count"
-scalar TestNetwork.workstation1.trafGenQueueApp sentPk:sum(packetBytes) 2820
+scalar TestNetwork.workstation1.trafGenQueueApp sentPk:sum(packetBytes) 1880
 attr interpolationmode none
 attr source sentPk
 attr title "packets sent, sum(packetBytes)"
@@ -1661,11 +72,11 @@ scalar TestNetwork.workstation1.sink packetReceived:sum(packetBytes) 0
 attr interpolationmode none
 attr source packetReceived
 attr title "packets received, sum(packetBytes)"
-scalar TestNetwork.workstation1.eth.mac "simulated time" 0.00021
+scalar TestNetwork.workstation1.eth.mac "simulated time" 0.00012678
 scalar TestNetwork.workstation1.eth.mac full-duplex 1
-scalar TestNetwork.workstation1.eth.mac "frames/sec sent" 23809.523809524
+scalar TestNetwork.workstation1.eth.mac "frames/sec sent" 23663.038334122
 scalar TestNetwork.workstation1.eth.mac "frames/sec rcvd" 0
-scalar TestNetwork.workstation1.eth.mac "bits/sec sent" 93523809.52381
+scalar TestNetwork.workstation1.eth.mac "bits/sec sent" 92948414.576432
 scalar TestNetwork.workstation1.eth.mac "bits/sec rcvd" 0
 scalar TestNetwork.workstation1.eth.mac "rx channel idle (%)" 100
 scalar TestNetwork.workstation1.eth.mac "rx channel utilization (%)" 0
@@ -1689,19 +100,19 @@ scalar TestNetwork.workstation1.eth.mac rxPkOk:sum(packetBytes) 0
 attr interpolationmode none
 attr source rxPkOk
 attr title "packets received OK, sum(packetBytes)"
-scalar TestNetwork.workstation1.eth.mac txPk:count 5
+scalar TestNetwork.workstation1.eth.mac txPk:count 3
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets transmitted, count"
-scalar TestNetwork.workstation1.eth.mac txPk:sum(packetBytes) 2455
+scalar TestNetwork.workstation1.eth.mac txPk:sum(packetBytes) 1473
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets transmitted, sum(packetBytes)"
-scalar TestNetwork.workstation1.eth.mac packetReceivedFromUpper:count 6
+scalar TestNetwork.workstation1.eth.mac packetReceivedFromUpper:count 4
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packet bytes from higher layer, count"
-scalar TestNetwork.workstation1.eth.mac packetReceivedFromUpper:sum(packetBytes) 2946
+scalar TestNetwork.workstation1.eth.mac packetReceivedFromUpper:sum(packetBytes) 1964
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packet bytes from higher layer, sum(packetBytes)"
@@ -1749,11 +160,11 @@ scalar TestNetwork.workstation1.eth.etherEncap decapPk:sum(packetBytes) 0
 attr interpolationmode none
 attr source decapPk
 attr title "packets decapsulated, sum(packetBytes)"
-scalar TestNetwork.workstation1.eth.etherEncap encapPk:count 6
+scalar TestNetwork.workstation1.eth.etherEncap encapPk:count 4
 attr interpolationmode none
 attr source encapPk
 attr title "packets encapsulated, count"
-scalar TestNetwork.workstation1.eth.etherEncap encapPk:sum(packetBytes) 2820
+scalar TestNetwork.workstation1.eth.etherEncap encapPk:sum(packetBytes) 1880
 attr interpolationmode none
 attr source encapPk
 attr title "packets encapsulated, sum(packetBytes)"
@@ -1765,19 +176,19 @@ scalar TestNetwork.workstation1.eth.vlanEncap decapPk:sum(packetBytes) 0
 attr interpolationmode none
 attr source decapPk
 attr title "packets decapsulated, sum(packetBytes)"
-scalar TestNetwork.workstation1.eth.vlanEncap encapPk:count 6
+scalar TestNetwork.workstation1.eth.vlanEncap encapPk:count 4
 attr interpolationmode none
 attr source encapPk
 attr title "packets encapsulated, count"
-scalar TestNetwork.workstation1.eth.vlanEncap encapPk:sum(packetBytes) 2862
+scalar TestNetwork.workstation1.eth.vlanEncap encapPk:sum(packetBytes) 1908
 attr interpolationmode none
 attr source encapPk
 attr title "packets encapsulated, sum(packetBytes)"
-scalar TestNetwork.robotController.eth.mac "simulated time" 0.00021
+scalar TestNetwork.robotController.eth.mac "simulated time" 0.00012678
 scalar TestNetwork.robotController.eth.mac full-duplex 1
-scalar TestNetwork.robotController.eth.mac "frames/sec sent" 19047.619047619
+scalar TestNetwork.robotController.eth.mac "frames/sec sent" 15775.358889415
 scalar TestNetwork.robotController.eth.mac "frames/sec rcvd" 0
-scalar TestNetwork.robotController.eth.mac "bits/sec sent" 74819047.619048
+scalar TestNetwork.robotController.eth.mac "bits/sec sent" 61965609.717621
 scalar TestNetwork.robotController.eth.mac "bits/sec rcvd" 0
 scalar TestNetwork.robotController.eth.mac "rx channel idle (%)" 100
 scalar TestNetwork.robotController.eth.mac "rx channel utilization (%)" 0
@@ -1801,19 +212,19 @@ scalar TestNetwork.robotController.eth.mac rxPkOk:sum(packetBytes) 0
 attr interpolationmode none
 attr source rxPkOk
 attr title "packets received OK, sum(packetBytes)"
-scalar TestNetwork.robotController.eth.mac txPk:count 4
+scalar TestNetwork.robotController.eth.mac txPk:count 2
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets transmitted, count"
-scalar TestNetwork.robotController.eth.mac txPk:sum(packetBytes) 1964
+scalar TestNetwork.robotController.eth.mac txPk:sum(packetBytes) 982
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets transmitted, sum(packetBytes)"
-scalar TestNetwork.robotController.eth.mac packetReceivedFromUpper:count 5
+scalar TestNetwork.robotController.eth.mac packetReceivedFromUpper:count 3
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packet bytes from higher layer, count"
-scalar TestNetwork.robotController.eth.mac packetReceivedFromUpper:sum(packetBytes) 2455
+scalar TestNetwork.robotController.eth.mac packetReceivedFromUpper:sum(packetBytes) 1473
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packet bytes from higher layer, sum(packetBytes)"
@@ -1861,11 +272,11 @@ scalar TestNetwork.robotController.eth.etherEncap decapPk:sum(packetBytes) 0
 attr interpolationmode none
 attr source decapPk
 attr title "packets decapsulated, sum(packetBytes)"
-scalar TestNetwork.robotController.eth.etherEncap encapPk:count 5
+scalar TestNetwork.robotController.eth.etherEncap encapPk:count 3
 attr interpolationmode none
 attr source encapPk
 attr title "packets encapsulated, count"
-scalar TestNetwork.robotController.eth.etherEncap encapPk:sum(packetBytes) 2350
+scalar TestNetwork.robotController.eth.etherEncap encapPk:sum(packetBytes) 1410
 attr interpolationmode none
 attr source encapPk
 attr title "packets encapsulated, sum(packetBytes)"
@@ -1877,36 +288,36 @@ scalar TestNetwork.robotController.eth.vlanEncap decapPk:sum(packetBytes) 0
 attr interpolationmode none
 attr source decapPk
 attr title "packets decapsulated, sum(packetBytes)"
-scalar TestNetwork.robotController.eth.vlanEncap encapPk:count 5
+scalar TestNetwork.robotController.eth.vlanEncap encapPk:count 3
 attr interpolationmode none
 attr source encapPk
 attr title "packets encapsulated, count"
-scalar TestNetwork.robotController.eth.vlanEncap encapPk:sum(packetBytes) 2385
+scalar TestNetwork.robotController.eth.vlanEncap encapPk:sum(packetBytes) 1431
 attr interpolationmode none
 attr source encapPk
 attr title "packets encapsulated, sum(packetBytes)"
-scalar TestNetwork.sink.trafGenApp packetReceived:count 4
+scalar TestNetwork.sink.trafGenApp packetReceived:count 2
 attr interpolationmode none
 attr source packetReceived
 attr title "packets received, count"
-scalar TestNetwork.sink.trafGenApp packetReceived:sum(packetBytes) 1880
+scalar TestNetwork.sink.trafGenApp packetReceived:sum(packetBytes) 940
 attr interpolationmode none
 attr source packetReceived
 attr title "packets received, sum(packetBytes)"
 statistic TestNetwork.sink.trafGenApp endToEndDelay:histogram
-field count 4
+field count 2
 field mean 8.504e-05
 field stddev 0
 field min 8.504e-05
 field max 8.504e-05
-field sum 0.00034016
-field sqrsum 2.89272064e-08
+field sum 0.00017008
+field sqrsum 1.44636032e-08
 attr interpolationmode none
 attr source dataAge(packetReceived)
 attr title "end-to-end delay, histogram"
 attr unit s
 bin	-inf	0
-bin	0	4
+bin	0	2
 bin	0.01	0
 bin	0.02	0
 bin	0.03	0
@@ -1966,12 +377,12 @@ scalar TestNetwork.sink.trafGenApp packetSent:sum(packetBytes) 0
 attr interpolationmode none
 attr source packetSent
 attr title "packets sent, sum(packetBytes)"
-scalar TestNetwork.sink.eth.mac "simulated time" 0.00021
+scalar TestNetwork.sink.eth.mac "simulated time" 0.00012678
 scalar TestNetwork.sink.eth.mac full-duplex 1
 scalar TestNetwork.sink.eth.mac "frames/sec sent" 0
-scalar TestNetwork.sink.eth.mac "frames/sec rcvd" 19047.619047619
+scalar TestNetwork.sink.eth.mac "frames/sec rcvd" 15775.358889415
 scalar TestNetwork.sink.eth.mac "bits/sec sent" 0
-scalar TestNetwork.sink.eth.mac "bits/sec rcvd" 74819047.619048
+scalar TestNetwork.sink.eth.mac "bits/sec rcvd" 61965609.717621
 scalar TestNetwork.sink.eth.mac "rx channel idle (%)" 100
 scalar TestNetwork.sink.eth.mac "rx channel utilization (%)" 0
 statistic TestNetwork.sink.eth.mac pMacDelay:histogram
@@ -2044,11 +455,11 @@ attr title "pause units sent, count"
 scalar TestNetwork.sink.eth.mac txPausePkUnits:sum 0
 attr interpolationmode none
 attr title "pause units sent, sum"
-scalar TestNetwork.sink.eth.mac rxPkOk:count 4
+scalar TestNetwork.sink.eth.mac rxPkOk:count 2
 attr interpolationmode none
 attr source rxPkOk
 attr title "packets received OK, count"
-scalar TestNetwork.sink.eth.mac rxPkOk:sum(packetBytes) 1964
+scalar TestNetwork.sink.eth.mac rxPkOk:sum(packetBytes) 982
 attr interpolationmode none
 attr source rxPkOk
 attr title "packets received OK, sum(packetBytes)"
@@ -2068,11 +479,11 @@ scalar TestNetwork.sink.eth.mac packetReceivedFromUpper:sum(packetBytes) 0
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packet bytes from higher layer, sum(packetBytes)"
-scalar TestNetwork.sink.eth.mac passedUpPk:count 4
+scalar TestNetwork.sink.eth.mac passedUpPk:count 2
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, count"
-scalar TestNetwork.sink.eth.mac passedUpPk:sum(packetBytes) 1964
+scalar TestNetwork.sink.eth.mac passedUpPk:sum(packetBytes) 982
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, sum(packetBytes)"
@@ -2364,11 +775,11 @@ attr title "queue length, max"
 scalar TestNetwork.sink.eth.queuing.queues[7] queueLength:timeavg 0
 attr interpolationmode sample-hold
 attr title "queue length, timeavg"
-scalar TestNetwork.sink.eth.vlanEncapE decapPk:count 4
+scalar TestNetwork.sink.eth.vlanEncapE decapPk:count 2
 attr interpolationmode none
 attr source decapPk
 attr title "packets decapsulated, count"
-scalar TestNetwork.sink.eth.vlanEncapE decapPk:sum(packetBytes) 1908
+scalar TestNetwork.sink.eth.vlanEncapE decapPk:sum(packetBytes) 954
 attr interpolationmode none
 attr source decapPk
 attr title "packets decapsulated, sum(packetBytes)"
@@ -2436,4 +847,2604 @@ scalar TestNetwork.sink.eth.etherEncapP encapPk:sum(packetBytes) 0
 attr interpolationmode none
 attr source encapPk
 attr title "packets encapsulated, sum(packetBytes)"
+scalar TestNetwork.sink1.trafGenApp packetReceived:count 0
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, count"
+scalar TestNetwork.sink1.trafGenApp packetReceived:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, sum(packetBytes)"
+statistic TestNetwork.sink1.trafGenApp endToEndDelay:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source dataAge(packetReceived)
+attr title "end-to-end delay, histogram"
+attr unit s
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.sink1.trafGenApp packetSent:count 0
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, count"
+scalar TestNetwork.sink1.trafGenApp packetSent:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, sum(packetBytes)"
+scalar TestNetwork.sink1.eth.mac "simulated time" 0.00012678
+scalar TestNetwork.sink1.eth.mac full-duplex 1
+scalar TestNetwork.sink1.eth.mac "frames/sec sent" 0
+scalar TestNetwork.sink1.eth.mac "frames/sec rcvd" 0
+scalar TestNetwork.sink1.eth.mac "bits/sec sent" 0
+scalar TestNetwork.sink1.eth.mac "bits/sec rcvd" 0
+scalar TestNetwork.sink1.eth.mac "rx channel idle (%)" 100
+scalar TestNetwork.sink1.eth.mac "rx channel utilization (%)" 0
+statistic TestNetwork.sink1.eth.mac pMacDelay:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "pMacDelay, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+statistic TestNetwork.sink1.eth.mac eMacDelay:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "eMacDelay, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.sink1.eth.mac expressFramesEnqueued:count 0
+attr interpolationmode none
+attr source expressFrameEnqueuedWhileSendingPreemptableSignal
+attr title "express frames enqueued, count"
+scalar TestNetwork.sink1.eth.mac mPacketsFull:count 0
+attr interpolationmode none
+attr source transmittedPreemptableFullSignal
+attr title "mpackets full, count"
+scalar TestNetwork.sink1.eth.mac mPacketsFinal:count 0
+attr interpolationmode none
+attr source transmittedPreemptableFinalSignal
+attr title "mPackets final, count"
+scalar TestNetwork.sink1.eth.mac mPacketsNonFinal:count 0
+attr interpolationmode none
+attr source transmittedPreemptableNonFinalSignal
+attr title "mPackets non-final, count"
+scalar TestNetwork.sink1.eth.mac mPackets:count 0
+attr interpolationmode none
+attr source transmittedPreemptableFramePartSignal
+attr title "mPackets, count"
+scalar TestNetwork.sink1.eth.mac preemptableFrames:count 0
+attr interpolationmode none
+attr source transmittedPreemptableFrameSignal
+attr title "preemptableFrames, count"
+scalar TestNetwork.sink1.eth.mac expressFrames:count 0
+attr interpolationmode none
+attr source transmittedExpressFrameSignal
+attr title "expressFrames, count"
+scalar TestNetwork.sink1.eth.mac preemptions:count 0
+attr interpolationmode none
+attr source preemptCurrentFrameSignal
+attr title "preemptions, count"
+scalar TestNetwork.sink1.eth.mac rxPausePkUnits:count 0
+attr interpolationmode none
+attr title "pause units received, count"
+scalar TestNetwork.sink1.eth.mac rxPausePkUnits:sum 0
+attr interpolationmode none
+attr title "pause units received, sum"
+scalar TestNetwork.sink1.eth.mac txPausePkUnits:count 0
+attr interpolationmode none
+attr title "pause units sent, count"
+scalar TestNetwork.sink1.eth.mac txPausePkUnits:sum 0
+attr interpolationmode none
+attr title "pause units sent, sum"
+scalar TestNetwork.sink1.eth.mac rxPkOk:count 0
+attr interpolationmode none
+attr source rxPkOk
+attr title "packets received OK, count"
+scalar TestNetwork.sink1.eth.mac rxPkOk:sum(packetBytes) 0
+attr interpolationmode none
+attr source rxPkOk
+attr title "packets received OK, sum(packetBytes)"
+scalar TestNetwork.sink1.eth.mac txPk:count 0
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets transmitted, count"
+scalar TestNetwork.sink1.eth.mac txPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets transmitted, sum(packetBytes)"
+scalar TestNetwork.sink1.eth.mac packetReceivedFromUpper:count 0
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packet bytes from higher layer, count"
+scalar TestNetwork.sink1.eth.mac packetReceivedFromUpper:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packet bytes from higher layer, sum(packetBytes)"
+scalar TestNetwork.sink1.eth.mac passedUpPk:count 0
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, count"
+scalar TestNetwork.sink1.eth.mac passedUpPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, sum(packetBytes)"
+scalar TestNetwork.sink1.eth.mac packetDropIncorrectlyReceived:count 0
+attr interpolationmode none
+attr source packetDropReasonIsIncorrectlyReceived(packetDropped)
+attr title "packet drop: incorrectly received, count"
+scalar TestNetwork.sink1.eth.mac packetDropIncorrectlyReceived:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetDropReasonIsIncorrectlyReceived(packetDropped)
+attr title "packet drop: incorrectly received, sum(packetBytes)"
+scalar TestNetwork.sink1.eth.mac packetDropInterfaceDown:count 0
+attr interpolationmode none
+attr source packetDropReasonIsInterfaceDown(packetDropped)
+attr title "packet drop: interface down, count"
+scalar TestNetwork.sink1.eth.mac packetDropInterfaceDown:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetDropReasonIsInterfaceDown(packetDropped)
+attr title "packet drop: interface down, sum(packetBytes)"
+scalar TestNetwork.sink1.eth.mac packetDropNotAddressedToUs:count 0
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, count"
+scalar TestNetwork.sink1.eth.mac packetDropNotAddressedToUs:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, sum(packetBytes)"
+scalar TestNetwork.sink1.eth.queuing.queues[0] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.sink1.eth.queuing.queues[0] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.sink1.eth.queuing.queues[0] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.sink1.eth.queuing.queues[0] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.sink1.eth.queuing.queues[0] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.sink1.eth.queuing.queues[0] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.sink1.eth.queuing.queues[0] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.sink1.eth.queuing.queues[1] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.sink1.eth.queuing.queues[1] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.sink1.eth.queuing.queues[1] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.sink1.eth.queuing.queues[1] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.sink1.eth.queuing.queues[1] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.sink1.eth.queuing.queues[1] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.sink1.eth.queuing.queues[1] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.sink1.eth.queuing.queues[2] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.sink1.eth.queuing.queues[2] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.sink1.eth.queuing.queues[2] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.sink1.eth.queuing.queues[2] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.sink1.eth.queuing.queues[2] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.sink1.eth.queuing.queues[2] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.sink1.eth.queuing.queues[2] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.sink1.eth.queuing.queues[3] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.sink1.eth.queuing.queues[3] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.sink1.eth.queuing.queues[3] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.sink1.eth.queuing.queues[3] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.sink1.eth.queuing.queues[3] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.sink1.eth.queuing.queues[3] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.sink1.eth.queuing.queues[3] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.sink1.eth.queuing.queues[4] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.sink1.eth.queuing.queues[4] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.sink1.eth.queuing.queues[4] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.sink1.eth.queuing.queues[4] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.sink1.eth.queuing.queues[4] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.sink1.eth.queuing.queues[4] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.sink1.eth.queuing.queues[4] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.sink1.eth.queuing.queues[5] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.sink1.eth.queuing.queues[5] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.sink1.eth.queuing.queues[5] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.sink1.eth.queuing.queues[5] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.sink1.eth.queuing.queues[5] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.sink1.eth.queuing.queues[5] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.sink1.eth.queuing.queues[5] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.sink1.eth.queuing.queues[6] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.sink1.eth.queuing.queues[6] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.sink1.eth.queuing.queues[6] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.sink1.eth.queuing.queues[6] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.sink1.eth.queuing.queues[6] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.sink1.eth.queuing.queues[6] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.sink1.eth.queuing.queues[6] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.sink1.eth.queuing.queues[7] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.sink1.eth.queuing.queues[7] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.sink1.eth.queuing.queues[7] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.sink1.eth.queuing.queues[7] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.sink1.eth.queuing.queues[7] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.sink1.eth.queuing.queues[7] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.sink1.eth.queuing.queues[7] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.sink1.eth.vlanEncapE decapPk:count 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, count"
+scalar TestNetwork.sink1.eth.vlanEncapE decapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, sum(packetBytes)"
+scalar TestNetwork.sink1.eth.vlanEncapE encapPk:count 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, count"
+scalar TestNetwork.sink1.eth.vlanEncapE encapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, sum(packetBytes)"
+scalar TestNetwork.sink1.eth.etherEncapE pauseSent:count 0
+attr title "pause sent, count"
+scalar TestNetwork.sink1.eth.etherEncapE pauseSent:sum 0
+attr title "pause sent, sum"
+scalar TestNetwork.sink1.eth.etherEncapE decapPk:count 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, count"
+scalar TestNetwork.sink1.eth.etherEncapE decapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, sum(packetBytes)"
+scalar TestNetwork.sink1.eth.etherEncapE encapPk:count 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, count"
+scalar TestNetwork.sink1.eth.etherEncapE encapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, sum(packetBytes)"
+scalar TestNetwork.sink1.eth.vlanEncapP decapPk:count 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, count"
+scalar TestNetwork.sink1.eth.vlanEncapP decapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, sum(packetBytes)"
+scalar TestNetwork.sink1.eth.vlanEncapP encapPk:count 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, count"
+scalar TestNetwork.sink1.eth.vlanEncapP encapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, sum(packetBytes)"
+scalar TestNetwork.sink1.eth.etherEncapP pauseSent:count 0
+attr title "pause sent, count"
+scalar TestNetwork.sink1.eth.etherEncapP pauseSent:sum 0
+attr title "pause sent, sum"
+scalar TestNetwork.sink1.eth.etherEncapP decapPk:count 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, count"
+scalar TestNetwork.sink1.eth.etherEncapP decapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, sum(packetBytes)"
+scalar TestNetwork.sink1.eth.etherEncapP encapPk:count 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, count"
+scalar TestNetwork.sink1.eth.etherEncapP encapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[0].mac "simulated time" 0.00012678
+scalar TestNetwork.switchA.eth[0].mac full-duplex 1
+scalar TestNetwork.switchA.eth[0].mac "frames/sec sent" 0
+scalar TestNetwork.switchA.eth[0].mac "frames/sec rcvd" 23663.038334122
+scalar TestNetwork.switchA.eth[0].mac "bits/sec sent" 0
+scalar TestNetwork.switchA.eth[0].mac "bits/sec rcvd" 92948414.576432
+scalar TestNetwork.switchA.eth[0].mac "rx channel idle (%)" 100
+scalar TestNetwork.switchA.eth[0].mac "rx channel utilization (%)" 0
+statistic TestNetwork.switchA.eth[0].mac pMacDelay:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "pMacDelay, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+statistic TestNetwork.switchA.eth[0].mac eMacDelay:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "eMacDelay, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[0].mac expressFramesEnqueued:count 0
+attr interpolationmode none
+attr source expressFrameEnqueuedWhileSendingPreemptableSignal
+attr title "express frames enqueued, count"
+scalar TestNetwork.switchA.eth[0].mac mPacketsFull:count 0
+attr interpolationmode none
+attr source transmittedPreemptableFullSignal
+attr title "mpackets full, count"
+scalar TestNetwork.switchA.eth[0].mac mPacketsFinal:count 0
+attr interpolationmode none
+attr source transmittedPreemptableFinalSignal
+attr title "mPackets final, count"
+scalar TestNetwork.switchA.eth[0].mac mPacketsNonFinal:count 0
+attr interpolationmode none
+attr source transmittedPreemptableNonFinalSignal
+attr title "mPackets non-final, count"
+scalar TestNetwork.switchA.eth[0].mac mPackets:count 0
+attr interpolationmode none
+attr source transmittedPreemptableFramePartSignal
+attr title "mPackets, count"
+scalar TestNetwork.switchA.eth[0].mac preemptableFrames:count 0
+attr interpolationmode none
+attr source transmittedPreemptableFrameSignal
+attr title "preemptableFrames, count"
+scalar TestNetwork.switchA.eth[0].mac expressFrames:count 0
+attr interpolationmode none
+attr source transmittedExpressFrameSignal
+attr title "expressFrames, count"
+scalar TestNetwork.switchA.eth[0].mac preemptions:count 0
+attr interpolationmode none
+attr source preemptCurrentFrameSignal
+attr title "preemptions, count"
+scalar TestNetwork.switchA.eth[0].mac rxPausePkUnits:count 0
+attr interpolationmode none
+attr title "pause units received, count"
+scalar TestNetwork.switchA.eth[0].mac rxPausePkUnits:sum 0
+attr interpolationmode none
+attr title "pause units received, sum"
+scalar TestNetwork.switchA.eth[0].mac txPausePkUnits:count 0
+attr interpolationmode none
+attr title "pause units sent, count"
+scalar TestNetwork.switchA.eth[0].mac txPausePkUnits:sum 0
+attr interpolationmode none
+attr title "pause units sent, sum"
+scalar TestNetwork.switchA.eth[0].mac rxPkOk:count 3
+attr interpolationmode none
+attr source rxPkOk
+attr title "packets received OK, count"
+scalar TestNetwork.switchA.eth[0].mac rxPkOk:sum(packetBytes) 1473
+attr interpolationmode none
+attr source rxPkOk
+attr title "packets received OK, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[0].mac txPk:count 0
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets transmitted, count"
+scalar TestNetwork.switchA.eth[0].mac txPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets transmitted, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[0].mac packetReceivedFromUpper:count 0
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packet bytes from higher layer, count"
+scalar TestNetwork.switchA.eth[0].mac packetReceivedFromUpper:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packet bytes from higher layer, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[0].mac passedUpPk:count 3
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, count"
+scalar TestNetwork.switchA.eth[0].mac passedUpPk:sum(packetBytes) 1473
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[0].mac packetDropIncorrectlyReceived:count 0
+attr interpolationmode none
+attr source packetDropReasonIsIncorrectlyReceived(packetDropped)
+attr title "packet drop: incorrectly received, count"
+scalar TestNetwork.switchA.eth[0].mac packetDropIncorrectlyReceived:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetDropReasonIsIncorrectlyReceived(packetDropped)
+attr title "packet drop: incorrectly received, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[0].mac packetDropInterfaceDown:count 0
+attr interpolationmode none
+attr source packetDropReasonIsInterfaceDown(packetDropped)
+attr title "packet drop: interface down, count"
+scalar TestNetwork.switchA.eth[0].mac packetDropInterfaceDown:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetDropReasonIsInterfaceDown(packetDropped)
+attr title "packet drop: interface down, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[0].mac packetDropNotAddressedToUs:count 0
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, count"
+scalar TestNetwork.switchA.eth[0].mac packetDropNotAddressedToUs:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[0].queuing.queues[0] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[0].queuing.queues[0] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[0].queuing.queues[0] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[0].queuing.queues[0] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[0].queuing.queues[0] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[0].queuing.queues[0] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[0].queuing.queues[0] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[0].queuing.queues[1] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[0].queuing.queues[1] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[0].queuing.queues[1] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[0].queuing.queues[1] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[0].queuing.queues[1] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[0].queuing.queues[1] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[0].queuing.queues[1] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[0].queuing.queues[2] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[0].queuing.queues[2] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[0].queuing.queues[2] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[0].queuing.queues[2] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[0].queuing.queues[2] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[0].queuing.queues[2] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[0].queuing.queues[2] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[0].queuing.queues[3] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[0].queuing.queues[3] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[0].queuing.queues[3] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[0].queuing.queues[3] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[0].queuing.queues[3] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[0].queuing.queues[3] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[0].queuing.queues[3] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[0].queuing.queues[4] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[0].queuing.queues[4] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[0].queuing.queues[4] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[0].queuing.queues[4] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[0].queuing.queues[4] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[0].queuing.queues[4] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[0].queuing.queues[4] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[0].queuing.queues[5] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[0].queuing.queues[5] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[0].queuing.queues[5] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[0].queuing.queues[5] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[0].queuing.queues[5] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[0].queuing.queues[5] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[0].queuing.queues[5] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[0].queuing.queues[6] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[0].queuing.queues[6] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[0].queuing.queues[6] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[0].queuing.queues[6] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[0].queuing.queues[6] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[0].queuing.queues[6] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[0].queuing.queues[6] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[0].queuing.queues[7] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[0].queuing.queues[7] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[0].queuing.queues[7] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[0].queuing.queues[7] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[0].queuing.queues[7] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[0].queuing.queues[7] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[0].queuing.queues[7] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[0].vlanEncapE decapPk:count 3
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, count"
+scalar TestNetwork.switchA.eth[0].vlanEncapE decapPk:sum(packetBytes) 1431
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[0].vlanEncapE encapPk:count 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, count"
+scalar TestNetwork.switchA.eth[0].vlanEncapE encapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[0].etherEncapE pauseSent:count 0
+attr title "pause sent, count"
+scalar TestNetwork.switchA.eth[0].etherEncapE pauseSent:sum 0
+attr title "pause sent, sum"
+scalar TestNetwork.switchA.eth[0].etherEncapE decapPk:count 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, count"
+scalar TestNetwork.switchA.eth[0].etherEncapE decapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[0].etherEncapE encapPk:count 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, count"
+scalar TestNetwork.switchA.eth[0].etherEncapE encapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[0].vlanEncapP decapPk:count 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, count"
+scalar TestNetwork.switchA.eth[0].vlanEncapP decapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[0].vlanEncapP encapPk:count 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, count"
+scalar TestNetwork.switchA.eth[0].vlanEncapP encapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[0].etherEncapP pauseSent:count 0
+attr title "pause sent, count"
+scalar TestNetwork.switchA.eth[0].etherEncapP pauseSent:sum 0
+attr title "pause sent, sum"
+scalar TestNetwork.switchA.eth[0].etherEncapP decapPk:count 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, count"
+scalar TestNetwork.switchA.eth[0].etherEncapP decapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[0].etherEncapP encapPk:count 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, count"
+scalar TestNetwork.switchA.eth[0].etherEncapP encapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[1].mac "simulated time" 0.00012678
+scalar TestNetwork.switchA.eth[1].mac full-duplex 1
+scalar TestNetwork.switchA.eth[1].mac "frames/sec sent" 0
+scalar TestNetwork.switchA.eth[1].mac "frames/sec rcvd" 15775.358889415
+scalar TestNetwork.switchA.eth[1].mac "bits/sec sent" 0
+scalar TestNetwork.switchA.eth[1].mac "bits/sec rcvd" 61965609.717621
+scalar TestNetwork.switchA.eth[1].mac "rx channel idle (%)" 100
+scalar TestNetwork.switchA.eth[1].mac "rx channel utilization (%)" 0
+statistic TestNetwork.switchA.eth[1].mac pMacDelay:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "pMacDelay, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+statistic TestNetwork.switchA.eth[1].mac eMacDelay:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "eMacDelay, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[1].mac expressFramesEnqueued:count 0
+attr interpolationmode none
+attr source expressFrameEnqueuedWhileSendingPreemptableSignal
+attr title "express frames enqueued, count"
+scalar TestNetwork.switchA.eth[1].mac mPacketsFull:count 0
+attr interpolationmode none
+attr source transmittedPreemptableFullSignal
+attr title "mpackets full, count"
+scalar TestNetwork.switchA.eth[1].mac mPacketsFinal:count 0
+attr interpolationmode none
+attr source transmittedPreemptableFinalSignal
+attr title "mPackets final, count"
+scalar TestNetwork.switchA.eth[1].mac mPacketsNonFinal:count 0
+attr interpolationmode none
+attr source transmittedPreemptableNonFinalSignal
+attr title "mPackets non-final, count"
+scalar TestNetwork.switchA.eth[1].mac mPackets:count 0
+attr interpolationmode none
+attr source transmittedPreemptableFramePartSignal
+attr title "mPackets, count"
+scalar TestNetwork.switchA.eth[1].mac preemptableFrames:count 0
+attr interpolationmode none
+attr source transmittedPreemptableFrameSignal
+attr title "preemptableFrames, count"
+scalar TestNetwork.switchA.eth[1].mac expressFrames:count 0
+attr interpolationmode none
+attr source transmittedExpressFrameSignal
+attr title "expressFrames, count"
+scalar TestNetwork.switchA.eth[1].mac preemptions:count 0
+attr interpolationmode none
+attr source preemptCurrentFrameSignal
+attr title "preemptions, count"
+scalar TestNetwork.switchA.eth[1].mac rxPausePkUnits:count 0
+attr interpolationmode none
+attr title "pause units received, count"
+scalar TestNetwork.switchA.eth[1].mac rxPausePkUnits:sum 0
+attr interpolationmode none
+attr title "pause units received, sum"
+scalar TestNetwork.switchA.eth[1].mac txPausePkUnits:count 0
+attr interpolationmode none
+attr title "pause units sent, count"
+scalar TestNetwork.switchA.eth[1].mac txPausePkUnits:sum 0
+attr interpolationmode none
+attr title "pause units sent, sum"
+scalar TestNetwork.switchA.eth[1].mac rxPkOk:count 2
+attr interpolationmode none
+attr source rxPkOk
+attr title "packets received OK, count"
+scalar TestNetwork.switchA.eth[1].mac rxPkOk:sum(packetBytes) 982
+attr interpolationmode none
+attr source rxPkOk
+attr title "packets received OK, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[1].mac txPk:count 0
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets transmitted, count"
+scalar TestNetwork.switchA.eth[1].mac txPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets transmitted, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[1].mac packetReceivedFromUpper:count 0
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packet bytes from higher layer, count"
+scalar TestNetwork.switchA.eth[1].mac packetReceivedFromUpper:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packet bytes from higher layer, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[1].mac passedUpPk:count 2
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, count"
+scalar TestNetwork.switchA.eth[1].mac passedUpPk:sum(packetBytes) 982
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[1].mac packetDropIncorrectlyReceived:count 0
+attr interpolationmode none
+attr source packetDropReasonIsIncorrectlyReceived(packetDropped)
+attr title "packet drop: incorrectly received, count"
+scalar TestNetwork.switchA.eth[1].mac packetDropIncorrectlyReceived:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetDropReasonIsIncorrectlyReceived(packetDropped)
+attr title "packet drop: incorrectly received, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[1].mac packetDropInterfaceDown:count 0
+attr interpolationmode none
+attr source packetDropReasonIsInterfaceDown(packetDropped)
+attr title "packet drop: interface down, count"
+scalar TestNetwork.switchA.eth[1].mac packetDropInterfaceDown:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetDropReasonIsInterfaceDown(packetDropped)
+attr title "packet drop: interface down, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[1].mac packetDropNotAddressedToUs:count 0
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, count"
+scalar TestNetwork.switchA.eth[1].mac packetDropNotAddressedToUs:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[1].queuing.queues[0] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[1].queuing.queues[0] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[1].queuing.queues[0] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[1].queuing.queues[0] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[1].queuing.queues[0] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[1].queuing.queues[0] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[1].queuing.queues[0] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[1].queuing.queues[1] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[1].queuing.queues[1] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[1].queuing.queues[1] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[1].queuing.queues[1] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[1].queuing.queues[1] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[1].queuing.queues[1] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[1].queuing.queues[1] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[1].queuing.queues[2] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[1].queuing.queues[2] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[1].queuing.queues[2] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[1].queuing.queues[2] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[1].queuing.queues[2] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[1].queuing.queues[2] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[1].queuing.queues[2] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[1].queuing.queues[3] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[1].queuing.queues[3] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[1].queuing.queues[3] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[1].queuing.queues[3] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[1].queuing.queues[3] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[1].queuing.queues[3] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[1].queuing.queues[3] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[1].queuing.queues[4] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[1].queuing.queues[4] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[1].queuing.queues[4] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[1].queuing.queues[4] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[1].queuing.queues[4] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[1].queuing.queues[4] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[1].queuing.queues[4] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[1].queuing.queues[5] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[1].queuing.queues[5] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[1].queuing.queues[5] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[1].queuing.queues[5] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[1].queuing.queues[5] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[1].queuing.queues[5] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[1].queuing.queues[5] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[1].queuing.queues[6] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[1].queuing.queues[6] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[1].queuing.queues[6] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[1].queuing.queues[6] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[1].queuing.queues[6] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[1].queuing.queues[6] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[1].queuing.queues[6] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[1].queuing.queues[7] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[1].queuing.queues[7] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[1].queuing.queues[7] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[1].queuing.queues[7] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[1].queuing.queues[7] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[1].queuing.queues[7] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[1].queuing.queues[7] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[1].vlanEncapE decapPk:count 2
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, count"
+scalar TestNetwork.switchA.eth[1].vlanEncapE decapPk:sum(packetBytes) 954
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[1].vlanEncapE encapPk:count 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, count"
+scalar TestNetwork.switchA.eth[1].vlanEncapE encapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[1].etherEncapE pauseSent:count 0
+attr title "pause sent, count"
+scalar TestNetwork.switchA.eth[1].etherEncapE pauseSent:sum 0
+attr title "pause sent, sum"
+scalar TestNetwork.switchA.eth[1].etherEncapE decapPk:count 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, count"
+scalar TestNetwork.switchA.eth[1].etherEncapE decapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[1].etherEncapE encapPk:count 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, count"
+scalar TestNetwork.switchA.eth[1].etherEncapE encapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[1].vlanEncapP decapPk:count 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, count"
+scalar TestNetwork.switchA.eth[1].vlanEncapP decapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[1].vlanEncapP encapPk:count 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, count"
+scalar TestNetwork.switchA.eth[1].vlanEncapP encapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[1].etherEncapP pauseSent:count 0
+attr title "pause sent, count"
+scalar TestNetwork.switchA.eth[1].etherEncapP pauseSent:sum 0
+attr title "pause sent, sum"
+scalar TestNetwork.switchA.eth[1].etherEncapP decapPk:count 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, count"
+scalar TestNetwork.switchA.eth[1].etherEncapP decapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[1].etherEncapP encapPk:count 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, count"
+scalar TestNetwork.switchA.eth[1].etherEncapP encapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[2].mac "simulated time" 0.00012678
+scalar TestNetwork.switchA.eth[2].mac full-duplex 1
+scalar TestNetwork.switchA.eth[2].mac "frames/sec sent" 15775.358889415
+scalar TestNetwork.switchA.eth[2].mac "frames/sec rcvd" 0
+scalar TestNetwork.switchA.eth[2].mac "bits/sec sent" 61965609.717621
+scalar TestNetwork.switchA.eth[2].mac "bits/sec rcvd" 0
+scalar TestNetwork.switchA.eth[2].mac "rx channel idle (%)" 100
+scalar TestNetwork.switchA.eth[2].mac "rx channel utilization (%)" 0
+statistic TestNetwork.switchA.eth[2].mac pMacDelay:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "pMacDelay, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+statistic TestNetwork.switchA.eth[2].mac eMacDelay:histogram
+field count 2
+field mean 6.546e-05
+field stddev 2.8906525214906e-05
+field min 4.502e-05
+field max 8.59e-05
+field sum 0.00013092
+field sqrsum 9.4056104e-09
+attr interpolationmode none
+attr title "eMacDelay, histogram"
+bin	-inf	0
+bin	3.4e-05	0
+bin	3.5e-05	0
+bin	3.6e-05	0
+bin	3.7e-05	0
+bin	3.8e-05	0
+bin	3.9e-05	0
+bin	4e-05	0
+bin	4.1e-05	0
+bin	4.2e-05	0
+bin	4.3e-05	0
+bin	4.4e-05	0
+bin	4.5e-05	1
+bin	4.6e-05	0
+bin	4.7e-05	0
+bin	4.8e-05	0
+bin	4.9e-05	0
+bin	5e-05	0
+bin	5.1e-05	0
+bin	5.2e-05	0
+bin	5.3e-05	0
+bin	5.4e-05	0
+bin	5.5e-05	0
+bin	5.6e-05	0
+bin	5.7e-05	0
+bin	5.8e-05	0
+bin	5.9e-05	0
+bin	6e-05	0
+bin	6.1e-05	0
+bin	6.2e-05	0
+bin	6.3e-05	0
+bin	6.4e-05	0
+bin	6.5e-05	0
+bin	6.6e-05	0
+bin	6.7e-05	0
+bin	6.8e-05	0
+bin	6.9e-05	0
+bin	7e-05	0
+bin	7.1e-05	0
+bin	7.2e-05	0
+bin	7.3e-05	0
+bin	7.4e-05	0
+bin	7.5e-05	0
+bin	7.6e-05	0
+bin	7.7e-05	0
+bin	7.8e-05	0
+bin	7.9e-05	0
+bin	8e-05	0
+bin	8.1e-05	0
+bin	8.2e-05	0
+bin	8.3e-05	0
+bin	8.4e-05	0
+bin	8.5e-05	1
+bin	8.6e-05	0
+bin	8.7e-05	0
+bin	8.8e-05	0
+bin	8.9e-05	0
+bin	9e-05	0
+bin	9.1e-05	0
+bin	9.2e-05	0
+bin	9.3e-05	0
+bin	9.4e-05	0
+bin	9.5e-05	0
+bin	9.6e-05	0
+bin	9.7e-05	0
+scalar TestNetwork.switchA.eth[2].mac expressFramesEnqueued:count 0
+attr interpolationmode none
+attr source expressFrameEnqueuedWhileSendingPreemptableSignal
+attr title "express frames enqueued, count"
+scalar TestNetwork.switchA.eth[2].mac mPacketsFull:count 0
+attr interpolationmode none
+attr source transmittedPreemptableFullSignal
+attr title "mpackets full, count"
+scalar TestNetwork.switchA.eth[2].mac mPacketsFinal:count 0
+attr interpolationmode none
+attr source transmittedPreemptableFinalSignal
+attr title "mPackets final, count"
+scalar TestNetwork.switchA.eth[2].mac mPacketsNonFinal:count 0
+attr interpolationmode none
+attr source transmittedPreemptableNonFinalSignal
+attr title "mPackets non-final, count"
+scalar TestNetwork.switchA.eth[2].mac mPackets:count 0
+attr interpolationmode none
+attr source transmittedPreemptableFramePartSignal
+attr title "mPackets, count"
+scalar TestNetwork.switchA.eth[2].mac preemptableFrames:count 0
+attr interpolationmode none
+attr source transmittedPreemptableFrameSignal
+attr title "preemptableFrames, count"
+scalar TestNetwork.switchA.eth[2].mac expressFrames:count 2
+attr interpolationmode none
+attr source transmittedExpressFrameSignal
+attr title "expressFrames, count"
+scalar TestNetwork.switchA.eth[2].mac preemptions:count 0
+attr interpolationmode none
+attr source preemptCurrentFrameSignal
+attr title "preemptions, count"
+scalar TestNetwork.switchA.eth[2].mac rxPausePkUnits:count 0
+attr interpolationmode none
+attr title "pause units received, count"
+scalar TestNetwork.switchA.eth[2].mac rxPausePkUnits:sum 0
+attr interpolationmode none
+attr title "pause units received, sum"
+scalar TestNetwork.switchA.eth[2].mac txPausePkUnits:count 0
+attr interpolationmode none
+attr title "pause units sent, count"
+scalar TestNetwork.switchA.eth[2].mac txPausePkUnits:sum 0
+attr interpolationmode none
+attr title "pause units sent, sum"
+scalar TestNetwork.switchA.eth[2].mac rxPkOk:count 0
+attr interpolationmode none
+attr source rxPkOk
+attr title "packets received OK, count"
+scalar TestNetwork.switchA.eth[2].mac rxPkOk:sum(packetBytes) 0
+attr interpolationmode none
+attr source rxPkOk
+attr title "packets received OK, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[2].mac txPk:count 2
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets transmitted, count"
+scalar TestNetwork.switchA.eth[2].mac txPk:sum(packetBytes) 982
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets transmitted, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[2].mac packetReceivedFromUpper:count 2
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packet bytes from higher layer, count"
+scalar TestNetwork.switchA.eth[2].mac packetReceivedFromUpper:sum(packetBytes) 982
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packet bytes from higher layer, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[2].mac passedUpPk:count 0
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, count"
+scalar TestNetwork.switchA.eth[2].mac passedUpPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[2].mac packetDropIncorrectlyReceived:count 0
+attr interpolationmode none
+attr source packetDropReasonIsIncorrectlyReceived(packetDropped)
+attr title "packet drop: incorrectly received, count"
+scalar TestNetwork.switchA.eth[2].mac packetDropIncorrectlyReceived:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetDropReasonIsIncorrectlyReceived(packetDropped)
+attr title "packet drop: incorrectly received, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[2].mac packetDropInterfaceDown:count 0
+attr interpolationmode none
+attr source packetDropReasonIsInterfaceDown(packetDropped)
+attr title "packet drop: interface down, count"
+scalar TestNetwork.switchA.eth[2].mac packetDropInterfaceDown:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetDropReasonIsInterfaceDown(packetDropped)
+attr title "packet drop: interface down, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[2].mac packetDropNotAddressedToUs:count 0
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, count"
+scalar TestNetwork.switchA.eth[2].mac packetDropNotAddressedToUs:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[2].queuing.queues[0] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[2].queuing.queues[0] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[2].queuing.queues[0] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[2].queuing.queues[0] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[2].queuing.queues[0] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[2].queuing.queues[0] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[2].queuing.queues[0] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[2].queuing.queues[1] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[2].queuing.queues[1] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[2].queuing.queues[1] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[2].queuing.queues[1] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[2].queuing.queues[1] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[2].queuing.queues[1] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[2].queuing.queues[1] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[2].queuing.queues[2] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[2].queuing.queues[2] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[2].queuing.queues[2] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[2].queuing.queues[2] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[2].queuing.queues[2] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[2].queuing.queues[2] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[2].queuing.queues[2] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[2].queuing.queues[3] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[2].queuing.queues[3] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[2].queuing.queues[3] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[2].queuing.queues[3] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[2].queuing.queues[3] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[2].queuing.queues[3] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[2].queuing.queues[3] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[2].queuing.queues[4] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[2].queuing.queues[4] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[2].queuing.queues[4] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[2].queuing.queues[4] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[2].queuing.queues[4] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[2].queuing.queues[4] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[2].queuing.queues[4] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[2].queuing.queues[5] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[2].queuing.queues[5] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[2].queuing.queues[5] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[2].queuing.queues[5] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[2].queuing.queues[5] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[2].queuing.queues[5] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[2].queuing.queues[5] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[2].queuing.queues[6] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[2].queuing.queues[6] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[2].queuing.queues[6] rcvdPk:count 2
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[2].queuing.queues[6] rcvdPk:sum(packetBytes) 940
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[2].queuing.queues[6] queueingTime:histogram
+field count 2
+field mean 0
+field stddev 0
+field min 0
+field max 0
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	-0.5	0
+bin	-0.48	0
+bin	-0.46	0
+bin	-0.44	0
+bin	-0.42	0
+bin	-0.4	0
+bin	-0.38	0
+bin	-0.36	0
+bin	-0.34	0
+bin	-0.32	0
+bin	-0.3	0
+bin	-0.28	0
+bin	-0.26	0
+bin	-0.24	0
+bin	-0.22	0
+bin	-0.2	0
+bin	-0.18	0
+bin	-0.16	0
+bin	-0.14	0
+bin	-0.12	0
+bin	-0.1	0
+bin	-0.08	0
+bin	-0.06	0
+bin	-0.04	0
+bin	-0.02	0
+bin	0	2
+bin	0.02	0
+bin	0.04	0
+bin	0.06	0
+bin	0.08	0
+bin	0.1	0
+bin	0.12	0
+bin	0.14	0
+bin	0.16	0
+bin	0.18	0
+bin	0.2	0
+bin	0.22	0
+bin	0.24	0
+bin	0.26	0
+bin	0.28	0
+bin	0.3	0
+bin	0.32	0
+bin	0.34	0
+bin	0.36	0
+bin	0.38	0
+bin	0.4	0
+bin	0.42	0
+bin	0.44	0
+bin	0.46	0
+bin	0.48	0
+bin	0.5	0
+scalar TestNetwork.switchA.eth[2].queuing.queues[6] queueLength:max 1
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[2].queuing.queues[6] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[2].queuing.queues[7] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[2].queuing.queues[7] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[2].queuing.queues[7] rcvdPk:count 2
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[2].queuing.queues[7] rcvdPk:sum(packetBytes) 940
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[2].queuing.queues[7] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[2].queuing.queues[7] queueLength:max 2
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[2].queuing.queues[7] queueLength:timeavg 0.89540937056318
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[2].vlanEncapE decapPk:count 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, count"
+scalar TestNetwork.switchA.eth[2].vlanEncapE decapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[2].vlanEncapE encapPk:count 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, count"
+scalar TestNetwork.switchA.eth[2].vlanEncapE encapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[2].etherEncapE pauseSent:count 0
+attr title "pause sent, count"
+scalar TestNetwork.switchA.eth[2].etherEncapE pauseSent:sum 0
+attr title "pause sent, sum"
+scalar TestNetwork.switchA.eth[2].etherEncapE decapPk:count 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, count"
+scalar TestNetwork.switchA.eth[2].etherEncapE decapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[2].etherEncapE encapPk:count 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, count"
+scalar TestNetwork.switchA.eth[2].etherEncapE encapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[2].vlanEncapP decapPk:count 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, count"
+scalar TestNetwork.switchA.eth[2].vlanEncapP decapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[2].vlanEncapP encapPk:count 2
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, count"
+scalar TestNetwork.switchA.eth[2].vlanEncapP encapPk:sum(packetBytes) 954
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[2].etherEncapP pauseSent:count 0
+attr title "pause sent, count"
+scalar TestNetwork.switchA.eth[2].etherEncapP pauseSent:sum 0
+attr title "pause sent, sum"
+scalar TestNetwork.switchA.eth[2].etherEncapP decapPk:count 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, count"
+scalar TestNetwork.switchA.eth[2].etherEncapP decapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[2].etherEncapP encapPk:count 2
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, count"
+scalar TestNetwork.switchA.eth[2].etherEncapP encapPk:sum(packetBytes) 940
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[3].mac "simulated time" 0.00012678
+scalar TestNetwork.switchA.eth[3].mac full-duplex 1
+scalar TestNetwork.switchA.eth[3].mac "frames/sec sent" 0
+scalar TestNetwork.switchA.eth[3].mac "frames/sec rcvd" 0
+scalar TestNetwork.switchA.eth[3].mac "bits/sec sent" 0
+scalar TestNetwork.switchA.eth[3].mac "bits/sec rcvd" 0
+scalar TestNetwork.switchA.eth[3].mac "rx channel idle (%)" 100
+scalar TestNetwork.switchA.eth[3].mac "rx channel utilization (%)" 0
+statistic TestNetwork.switchA.eth[3].mac pMacDelay:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "pMacDelay, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+statistic TestNetwork.switchA.eth[3].mac eMacDelay:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "eMacDelay, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[3].mac expressFramesEnqueued:count 0
+attr interpolationmode none
+attr source expressFrameEnqueuedWhileSendingPreemptableSignal
+attr title "express frames enqueued, count"
+scalar TestNetwork.switchA.eth[3].mac mPacketsFull:count 0
+attr interpolationmode none
+attr source transmittedPreemptableFullSignal
+attr title "mpackets full, count"
+scalar TestNetwork.switchA.eth[3].mac mPacketsFinal:count 0
+attr interpolationmode none
+attr source transmittedPreemptableFinalSignal
+attr title "mPackets final, count"
+scalar TestNetwork.switchA.eth[3].mac mPacketsNonFinal:count 0
+attr interpolationmode none
+attr source transmittedPreemptableNonFinalSignal
+attr title "mPackets non-final, count"
+scalar TestNetwork.switchA.eth[3].mac mPackets:count 0
+attr interpolationmode none
+attr source transmittedPreemptableFramePartSignal
+attr title "mPackets, count"
+scalar TestNetwork.switchA.eth[3].mac preemptableFrames:count 0
+attr interpolationmode none
+attr source transmittedPreemptableFrameSignal
+attr title "preemptableFrames, count"
+scalar TestNetwork.switchA.eth[3].mac expressFrames:count 0
+attr interpolationmode none
+attr source transmittedExpressFrameSignal
+attr title "expressFrames, count"
+scalar TestNetwork.switchA.eth[3].mac preemptions:count 0
+attr interpolationmode none
+attr source preemptCurrentFrameSignal
+attr title "preemptions, count"
+scalar TestNetwork.switchA.eth[3].mac rxPausePkUnits:count 0
+attr interpolationmode none
+attr title "pause units received, count"
+scalar TestNetwork.switchA.eth[3].mac rxPausePkUnits:sum 0
+attr interpolationmode none
+attr title "pause units received, sum"
+scalar TestNetwork.switchA.eth[3].mac txPausePkUnits:count 0
+attr interpolationmode none
+attr title "pause units sent, count"
+scalar TestNetwork.switchA.eth[3].mac txPausePkUnits:sum 0
+attr interpolationmode none
+attr title "pause units sent, sum"
+scalar TestNetwork.switchA.eth[3].mac rxPkOk:count 0
+attr interpolationmode none
+attr source rxPkOk
+attr title "packets received OK, count"
+scalar TestNetwork.switchA.eth[3].mac rxPkOk:sum(packetBytes) 0
+attr interpolationmode none
+attr source rxPkOk
+attr title "packets received OK, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[3].mac txPk:count 0
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets transmitted, count"
+scalar TestNetwork.switchA.eth[3].mac txPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets transmitted, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[3].mac packetReceivedFromUpper:count 0
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packet bytes from higher layer, count"
+scalar TestNetwork.switchA.eth[3].mac packetReceivedFromUpper:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packet bytes from higher layer, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[3].mac passedUpPk:count 0
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, count"
+scalar TestNetwork.switchA.eth[3].mac passedUpPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[3].mac packetDropIncorrectlyReceived:count 0
+attr interpolationmode none
+attr source packetDropReasonIsIncorrectlyReceived(packetDropped)
+attr title "packet drop: incorrectly received, count"
+scalar TestNetwork.switchA.eth[3].mac packetDropIncorrectlyReceived:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetDropReasonIsIncorrectlyReceived(packetDropped)
+attr title "packet drop: incorrectly received, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[3].mac packetDropInterfaceDown:count 0
+attr interpolationmode none
+attr source packetDropReasonIsInterfaceDown(packetDropped)
+attr title "packet drop: interface down, count"
+scalar TestNetwork.switchA.eth[3].mac packetDropInterfaceDown:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetDropReasonIsInterfaceDown(packetDropped)
+attr title "packet drop: interface down, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[3].mac packetDropNotAddressedToUs:count 0
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, count"
+scalar TestNetwork.switchA.eth[3].mac packetDropNotAddressedToUs:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetDropReasonIsNotAddressedToUs(packetDropped)
+attr title "packet drop: not addressed to us, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[3].queuing.queues[0] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[3].queuing.queues[0] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[3].queuing.queues[0] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[3].queuing.queues[0] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[3].queuing.queues[0] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[3].queuing.queues[0] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[3].queuing.queues[0] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[3].queuing.queues[1] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[3].queuing.queues[1] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[3].queuing.queues[1] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[3].queuing.queues[1] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[3].queuing.queues[1] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[3].queuing.queues[1] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[3].queuing.queues[1] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[3].queuing.queues[2] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[3].queuing.queues[2] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[3].queuing.queues[2] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[3].queuing.queues[2] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[3].queuing.queues[2] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[3].queuing.queues[2] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[3].queuing.queues[2] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[3].queuing.queues[3] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[3].queuing.queues[3] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[3].queuing.queues[3] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[3].queuing.queues[3] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[3].queuing.queues[3] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[3].queuing.queues[3] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[3].queuing.queues[3] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[3].queuing.queues[4] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[3].queuing.queues[4] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[3].queuing.queues[4] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[3].queuing.queues[4] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[3].queuing.queues[4] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[3].queuing.queues[4] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[3].queuing.queues[4] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[3].queuing.queues[5] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[3].queuing.queues[5] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[3].queuing.queues[5] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[3].queuing.queues[5] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[3].queuing.queues[5] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[3].queuing.queues[5] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[3].queuing.queues[5] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[3].queuing.queues[6] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[3].queuing.queues[6] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[3].queuing.queues[6] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[3].queuing.queues[6] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[3].queuing.queues[6] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[3].queuing.queues[6] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[3].queuing.queues[6] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[3].queuing.queues[7] dropPk:count 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, count"
+scalar TestNetwork.switchA.eth[3].queuing.queues[7] dropPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkByQueue
+attr title "dropped packets, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[3].queuing.queues[7] rcvdPk:count 0
+attr interpolationmode none
+attr title "received packets, count"
+scalar TestNetwork.switchA.eth[3].queuing.queues[7] rcvdPk:sum(packetBytes) 0
+attr interpolationmode none
+attr title "received packets, sum(packetBytes)"
+statistic TestNetwork.switchA.eth[3].queuing.queues[7] queueingTime:histogram
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr title "queueing time, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+scalar TestNetwork.switchA.eth[3].queuing.queues[7] queueLength:max 0
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar TestNetwork.switchA.eth[3].queuing.queues[7] queueLength:timeavg 0
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar TestNetwork.switchA.eth[3].vlanEncapE decapPk:count 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, count"
+scalar TestNetwork.switchA.eth[3].vlanEncapE decapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[3].vlanEncapE encapPk:count 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, count"
+scalar TestNetwork.switchA.eth[3].vlanEncapE encapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[3].etherEncapE pauseSent:count 0
+attr title "pause sent, count"
+scalar TestNetwork.switchA.eth[3].etherEncapE pauseSent:sum 0
+attr title "pause sent, sum"
+scalar TestNetwork.switchA.eth[3].etherEncapE decapPk:count 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, count"
+scalar TestNetwork.switchA.eth[3].etherEncapE decapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[3].etherEncapE encapPk:count 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, count"
+scalar TestNetwork.switchA.eth[3].etherEncapE encapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[3].vlanEncapP decapPk:count 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, count"
+scalar TestNetwork.switchA.eth[3].vlanEncapP decapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[3].vlanEncapP encapPk:count 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, count"
+scalar TestNetwork.switchA.eth[3].vlanEncapP encapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[3].etherEncapP pauseSent:count 0
+attr title "pause sent, count"
+scalar TestNetwork.switchA.eth[3].etherEncapP pauseSent:sum 0
+attr title "pause sent, sum"
+scalar TestNetwork.switchA.eth[3].etherEncapP decapPk:count 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, count"
+scalar TestNetwork.switchA.eth[3].etherEncapP decapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source decapPk
+attr title "packets decapsulated, sum(packetBytes)"
+scalar TestNetwork.switchA.eth[3].etherEncapP encapPk:count 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, count"
+scalar TestNetwork.switchA.eth[3].etherEncapP encapPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source encapPk
+attr title "packets encapsulated, sum(packetBytes)"
+statistic TestNetwork.switchA.processingDelay[0] delay:stats
+field count 3
+field mean 5e-06
+field stddev 0
+field min 5e-06
+field max 5e-06
+field sum 1.5e-05
+field sqrsum 7.5e-11
+attr interpolationmode none
+attr source delay
+attr title "packet delay, stats"
+scalar TestNetwork.switchA.processingDelay[0] packetReceived:count 3
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, count"
+scalar TestNetwork.switchA.processingDelay[0] packetReceived:sum(packetBytes) 1410
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, sum(packetBytes)"
+scalar TestNetwork.switchA.processingDelay[0] packetSent:count 3
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, count"
+scalar TestNetwork.switchA.processingDelay[0] packetSent:sum(packetBytes) 1410
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, sum(packetBytes)"
+statistic TestNetwork.switchA.processingDelay[1] delay:stats
+field count 2
+field mean 5e-06
+field stddev 0
+field min 5e-06
+field max 5e-06
+field sum 1e-05
+field sqrsum 5e-11
+attr interpolationmode none
+attr source delay
+attr title "packet delay, stats"
+scalar TestNetwork.switchA.processingDelay[1] packetReceived:count 2
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, count"
+scalar TestNetwork.switchA.processingDelay[1] packetReceived:sum(packetBytes) 940
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, sum(packetBytes)"
+scalar TestNetwork.switchA.processingDelay[1] packetSent:count 2
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, count"
+scalar TestNetwork.switchA.processingDelay[1] packetSent:sum(packetBytes) 940
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, sum(packetBytes)"
+statistic TestNetwork.switchA.processingDelay[2] delay:stats
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source delay
+attr title "packet delay, stats"
+scalar TestNetwork.switchA.processingDelay[2] packetReceived:count 0
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, count"
+scalar TestNetwork.switchA.processingDelay[2] packetReceived:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, sum(packetBytes)"
+scalar TestNetwork.switchA.processingDelay[2] packetSent:count 0
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, count"
+scalar TestNetwork.switchA.processingDelay[2] packetSent:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, sum(packetBytes)"
+statistic TestNetwork.switchA.processingDelay[3] delay:stats
+field count 0
+field mean -nan
+field stddev -nan
+field min -nan
+field max -nan
+field sum 0
+field sqrsum 0
+attr interpolationmode none
+attr source delay
+attr title "packet delay, stats"
+scalar TestNetwork.switchA.processingDelay[3] packetReceived:count 0
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, count"
+scalar TestNetwork.switchA.processingDelay[3] packetReceived:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetReceived
+attr title "packets received, sum(packetBytes)"
+scalar TestNetwork.switchA.processingDelay[3] packetSent:count 0
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, count"
+scalar TestNetwork.switchA.processingDelay[3] packetSent:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetSent
+attr title "packets sent, sum(packetBytes)"
 

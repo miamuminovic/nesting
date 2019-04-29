@@ -15,6 +15,8 @@
 
 package nesting.ieee8021q.queue;
 
+import inet.examples.inet.ipv4hook.MyHost;
+import inet.networklayer.ipv4.Ipv4;
 import nesting.ieee8021q.queue.framePreemption.LengthAwareQueue;
 import nesting.ieee8021q.queue.gating.GateController;
 import nesting.ieee8021q.queue.gating.TransmissionGate;

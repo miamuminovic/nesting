@@ -1,14 +1,14 @@
 version 2
-run General-0-20190417-15:50:07-15611
+run General-0-20190425-13:29:08-5734
 attr configname General
-attr datetime 20190417-15:50:07
+attr datetime 20190425-13:29:08
 attr experiment General
 attr inifile 05_Gating.ini
 attr iterationvars ""
 attr iterationvarsf ""
 attr measurement ""
 attr network TestNetwork
-attr processid 15611
+attr processid 5734
 attr repetition 0
 attr replication #0
 attr resultdir 05_results_Gating
@@ -54,249 +54,297 @@ param **.sink.trafGenApp.numPacketsPerBurst 0
 param **.sink.trafGenApp.sendInterval 1ms
 param **.sink.trafGenApp.packetLength 100B
 
-vector 0 TestNetwork.switchA.eth[0].queuing.queues[0] queueLength:vector ETV
+vector 0 TestNetwork.sink.eth.queuing.queues[0] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 1 TestNetwork.switchA.eth[0].queuing.queues[1] queueLength:vector ETV
+vector 1 TestNetwork.sink.eth.queuing.queues[1] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 2 TestNetwork.switchA.eth[0].queuing.queues[2] queueLength:vector ETV
+vector 2 TestNetwork.sink.eth.queuing.queues[2] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 3 TestNetwork.switchA.eth[0].queuing.queues[3] queueLength:vector ETV
+vector 3 TestNetwork.sink.eth.queuing.queues[3] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 4 TestNetwork.switchA.eth[0].queuing.queues[4] queueLength:vector ETV
+vector 4 TestNetwork.sink.eth.queuing.queues[4] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 5 TestNetwork.switchA.eth[0].queuing.queues[5] queueLength:vector ETV
+vector 5 TestNetwork.sink.eth.queuing.queues[5] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 6 TestNetwork.switchA.eth[0].queuing.queues[6] queueLength:vector ETV
+vector 6 TestNetwork.sink.eth.queuing.queues[6] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 7 TestNetwork.switchA.eth[0].queuing.queues[7] queueLength:vector ETV
+vector 7 TestNetwork.sink.eth.queuing.queues[7] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 8 TestNetwork.switchA.eth[1].queuing.queues[0] queueLength:vector ETV
+vector 8 TestNetwork.sink1.eth.queuing.queues[0] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 9 TestNetwork.switchA.eth[1].queuing.queues[1] queueLength:vector ETV
+vector 9 TestNetwork.sink1.eth.queuing.queues[1] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 10 TestNetwork.switchA.eth[1].queuing.queues[2] queueLength:vector ETV
+vector 10 TestNetwork.sink1.eth.queuing.queues[2] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 11 TestNetwork.switchA.eth[1].queuing.queues[3] queueLength:vector ETV
+vector 11 TestNetwork.sink1.eth.queuing.queues[3] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 12 TestNetwork.switchA.eth[1].queuing.queues[4] queueLength:vector ETV
+vector 12 TestNetwork.sink1.eth.queuing.queues[4] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 13 TestNetwork.switchA.eth[1].queuing.queues[5] queueLength:vector ETV
+vector 13 TestNetwork.sink1.eth.queuing.queues[5] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 14 TestNetwork.switchA.eth[1].queuing.queues[6] queueLength:vector ETV
+vector 14 TestNetwork.sink1.eth.queuing.queues[6] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 15 TestNetwork.switchA.eth[1].queuing.queues[7] queueLength:vector ETV
+vector 15 TestNetwork.sink1.eth.queuing.queues[7] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 16 TestNetwork.switchA.eth[2].queuing.queues[0] queueLength:vector ETV
+vector 16 TestNetwork.switchA.eth[0].queuing.queues[0] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 17 TestNetwork.switchA.eth[2].queuing.queues[1] queueLength:vector ETV
+vector 17 TestNetwork.switchA.eth[0].queuing.queues[1] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 18 TestNetwork.switchA.eth[2].queuing.queues[2] queueLength:vector ETV
+vector 18 TestNetwork.switchA.eth[0].queuing.queues[2] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 19 TestNetwork.switchA.eth[2].queuing.queues[3] queueLength:vector ETV
+vector 19 TestNetwork.switchA.eth[0].queuing.queues[3] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 20 TestNetwork.switchA.eth[2].queuing.queues[4] queueLength:vector ETV
+vector 20 TestNetwork.switchA.eth[0].queuing.queues[4] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 21 TestNetwork.switchA.eth[2].queuing.queues[5] queueLength:vector ETV
+vector 21 TestNetwork.switchA.eth[0].queuing.queues[5] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 22 TestNetwork.switchA.eth[2].queuing.queues[6] queueLength:vector ETV
+vector 22 TestNetwork.switchA.eth[0].queuing.queues[6] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 23 TestNetwork.switchA.eth[2].queuing.queues[7] queueLength:vector ETV
+vector 23 TestNetwork.switchA.eth[0].queuing.queues[7] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 24 TestNetwork.sink.eth.queuing.queues[0] queueLength:vector ETV
+vector 24 TestNetwork.switchA.eth[1].queuing.queues[0] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 25 TestNetwork.sink.eth.queuing.queues[1] queueLength:vector ETV
+vector 25 TestNetwork.switchA.eth[1].queuing.queues[1] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 26 TestNetwork.sink.eth.queuing.queues[2] queueLength:vector ETV
+vector 26 TestNetwork.switchA.eth[1].queuing.queues[2] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 27 TestNetwork.sink.eth.queuing.queues[3] queueLength:vector ETV
+vector 27 TestNetwork.switchA.eth[1].queuing.queues[3] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 28 TestNetwork.sink.eth.queuing.queues[4] queueLength:vector ETV
+vector 28 TestNetwork.switchA.eth[1].queuing.queues[4] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 29 TestNetwork.sink.eth.queuing.queues[5] queueLength:vector ETV
+vector 29 TestNetwork.switchA.eth[1].queuing.queues[5] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 30 TestNetwork.sink.eth.queuing.queues[6] queueLength:vector ETV
+vector 30 TestNetwork.switchA.eth[1].queuing.queues[6] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 31 TestNetwork.sink.eth.queuing.queues[7] queueLength:vector ETV
+vector 31 TestNetwork.switchA.eth[1].queuing.queues[7] queueLength:vector ETV
 attr interpolationmode sample-hold
 attr title "queue length, vector"
-vector 32 TestNetwork.workstation1.trafGenQueueApp sentPk:vector(packetBytes) ETV
+vector 32 TestNetwork.switchA.eth[2].queuing.queues[0] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 33 TestNetwork.switchA.eth[2].queuing.queues[1] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 34 TestNetwork.switchA.eth[2].queuing.queues[2] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 35 TestNetwork.switchA.eth[2].queuing.queues[3] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 36 TestNetwork.switchA.eth[2].queuing.queues[4] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 37 TestNetwork.switchA.eth[2].queuing.queues[5] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 38 TestNetwork.switchA.eth[2].queuing.queues[6] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 39 TestNetwork.switchA.eth[2].queuing.queues[7] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 40 TestNetwork.switchA.eth[3].queuing.queues[0] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 41 TestNetwork.switchA.eth[3].queuing.queues[1] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 42 TestNetwork.switchA.eth[3].queuing.queues[2] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 43 TestNetwork.switchA.eth[3].queuing.queues[3] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 44 TestNetwork.switchA.eth[3].queuing.queues[4] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 45 TestNetwork.switchA.eth[3].queuing.queues[5] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 46 TestNetwork.switchA.eth[3].queuing.queues[6] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 47 TestNetwork.switchA.eth[3].queuing.queues[7] queueLength:vector ETV
+attr interpolationmode sample-hold
+attr title "queue length, vector"
+vector 48 TestNetwork.workstation1.trafGenQueueApp sentPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source sentPk
 attr title "packets sent, vector(packetBytes)"
-vector 33 TestNetwork.workstation1.eth.etherEncap encapPk:vector(packetBytes) ETV
+vector 49 TestNetwork.workstation1.eth.etherEncap encapPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source encapPk
 attr title "packets encapsulated, vector(packetBytes)"
-vector 34 TestNetwork.switchA.eth[0].queuing.tGates[7] gateStateChanged:vector ETV
-attr interpolationmode none
-attr title "gateStateChanged, vector"
-vector 35 TestNetwork.switchA.eth[1].queuing.tGates[7] gateStateChanged:vector ETV
-attr interpolationmode none
-attr title "gateStateChanged, vector"
-vector 36 TestNetwork.switchA.eth[2].queuing.tGates[7] gateStateChanged:vector ETV
-attr interpolationmode none
-attr title "gateStateChanged, vector"
-vector 37 TestNetwork.workstation1.eth.vlanEncap encapPk:vector(packetBytes) ETV
+vector 50 TestNetwork.workstation1.eth.vlanEncap encapPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source encapPk
 attr title "packets encapsulated, vector(packetBytes)"
-vector 38 TestNetwork.robotController.eth.etherEncap encapPk:vector(packetBytes) ETV
+vector 51 TestNetwork.robotController.eth.etherEncap encapPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source encapPk
 attr title "packets encapsulated, vector(packetBytes)"
-vector 39 TestNetwork.workstation1.eth.mac packetReceivedFromUpper:vector(packetBytes) ETV
+vector 52 TestNetwork.switchA.eth[0].queuing.tGates[7] gateStateChanged:vector ETV
+attr interpolationmode none
+attr title "gateStateChanged, vector"
+vector 53 TestNetwork.switchA.eth[1].queuing.tGates[7] gateStateChanged:vector ETV
+attr interpolationmode none
+attr title "gateStateChanged, vector"
+vector 54 TestNetwork.switchA.eth[2].queuing.tGates[7] gateStateChanged:vector ETV
+attr interpolationmode none
+attr title "gateStateChanged, vector"
+vector 55 TestNetwork.workstation1.eth.mac packetReceivedFromUpper:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packet bytes from higher layer, vector(packetBytes)"
-vector 40 TestNetwork.robotController.eth.vlanEncap encapPk:vector(packetBytes) ETV
+vector 56 TestNetwork.robotController.eth.vlanEncap encapPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source encapPk
 attr title "packets encapsulated, vector(packetBytes)"
-vector 41 TestNetwork.robotController.eth.mac packetReceivedFromUpper:vector(packetBytes) ETV
+vector 57 TestNetwork.robotController.eth.mac packetReceivedFromUpper:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packet bytes from higher layer, vector(packetBytes)"
-vector 42 TestNetwork.workstation1.eth.mac txPk:vector(packetBytes) ETV
+vector 58 TestNetwork.workstation1.eth.mac txPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets transmitted, vector(packetBytes)"
-vector 43 TestNetwork.robotController.eth.mac txPk:vector(packetBytes) ETV
+vector 59 TestNetwork.robotController.eth.mac txPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets transmitted, vector(packetBytes)"
-vector 44 TestNetwork.switchA.eth[1].mac receivedExpressFrame:vector(packetBytes) ETV
+vector 60 TestNetwork.switchA.eth[0].mac receivedExpressFrame:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "receivedExpressFrame, vector(packetBytes)"
-vector 45 TestNetwork.switchA.eth[1].mac rxPkOk:vector(packetBytes) ETV
+vector 61 TestNetwork.switchA.eth[0].mac rxPkOk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source rxPkOk
 attr title "packets received OK, vector(packetBytes)"
-vector 46 TestNetwork.switchA.eth[1].mac passedUpPk:vector(packetBytes) ETV
+vector 62 TestNetwork.switchA.eth[0].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
-vector 47 TestNetwork.switchA.eth[0].mac receivedExpressFrame:vector(packetBytes) ETV
+vector 63 TestNetwork.switchA.eth[1].mac receivedExpressFrame:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "receivedExpressFrame, vector(packetBytes)"
-vector 48 TestNetwork.switchA.eth[0].mac rxPkOk:vector(packetBytes) ETV
+vector 64 TestNetwork.switchA.eth[1].mac rxPkOk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source rxPkOk
 attr title "packets received OK, vector(packetBytes)"
-vector 49 TestNetwork.switchA.eth[0].mac passedUpPk:vector(packetBytes) ETV
+vector 65 TestNetwork.switchA.eth[1].mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
-vector 50 TestNetwork.switchA.eth[1].vlanEncapE decapPk:vector(packetBytes) ETV
+vector 66 TestNetwork.switchA.eth[0].vlanEncapE decapPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source decapPk
 attr title "packets decapsulated, vector(packetBytes)"
-vector 51 TestNetwork.switchA.eth[0].vlanEncapE decapPk:vector(packetBytes) ETV
+vector 67 TestNetwork.switchA.eth[1].vlanEncapE decapPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source decapPk
 attr title "packets decapsulated, vector(packetBytes)"
-vector 52 TestNetwork.switchA.processingDelay[1] packetReceived:vector(packetBytes) ETV
+vector 68 TestNetwork.switchA.processingDelay[0] packetReceived:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceived
 attr title "packets received, vector(packetBytes)"
-vector 53 TestNetwork.switchA.processingDelay[1] delay:vector ETV
+vector 69 TestNetwork.switchA.processingDelay[0] delay:vector ETV
 attr interpolationmode none
 attr source delay
 attr title "packet delay, vector"
-vector 54 TestNetwork.switchA.processingDelay[0] packetReceived:vector(packetBytes) ETV
+vector 70 TestNetwork.switchA.processingDelay[1] packetReceived:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceived
 attr title "packets received, vector(packetBytes)"
-vector 55 TestNetwork.switchA.processingDelay[0] delay:vector ETV
+vector 71 TestNetwork.switchA.processingDelay[1] delay:vector ETV
 attr interpolationmode none
 attr source delay
 attr title "packet delay, vector"
-vector 56 TestNetwork.switchA.processingDelay[1] packetSent:vector(packetBytes) ETV
+vector 72 TestNetwork.switchA.processingDelay[0] packetSent:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSent
 attr title "packets sent, vector(packetBytes)"
-vector 57 TestNetwork.switchA.processingDelay[0] packetSent:vector(packetBytes) ETV
+vector 73 TestNetwork.switchA.processingDelay[1] packetSent:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSent
 attr title "packets sent, vector(packetBytes)"
-vector 58 TestNetwork.switchA.eth[2].queuing.queues[6] rcvdPk:vector(packetBytes) ETV
+vector 74 TestNetwork.switchA.eth[2].queuing.queues[6] rcvdPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "received packets, vector(packetBytes)"
-vector 59 TestNetwork.switchA.eth[2].queuing.queues[7] rcvdPk:vector(packetBytes) ETV
+vector 75 TestNetwork.switchA.eth[2].queuing.queues[7] rcvdPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "received packets, vector(packetBytes)"
-vector 60 TestNetwork.switchA.eth[2].queuing.queues[6] queueingTime:vector ETV
+vector 76 TestNetwork.switchA.eth[2].queuing.queues[6] queueingTime:vector ETV
 attr interpolationmode none
 attr title "queueing time, vector"
-vector 61 TestNetwork.switchA.eth[2].etherEncapP encapPk:vector(packetBytes) ETV
+vector 77 TestNetwork.switchA.eth[2].etherEncapP encapPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source encapPk
 attr title "packets encapsulated, vector(packetBytes)"
-vector 62 TestNetwork.switchA.eth[2].vlanEncapP encapPk:vector(packetBytes) ETV
+vector 78 TestNetwork.switchA.eth[2].vlanEncapP encapPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source encapPk
 attr title "packets encapsulated, vector(packetBytes)"
-vector 63 TestNetwork.switchA.eth[2].mac packetReceivedFromUpper:vector(packetBytes) ETV
+vector 79 TestNetwork.switchA.eth[2].mac packetReceivedFromUpper:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceivedFromUpper
 attr title "packet bytes from higher layer, vector(packetBytes)"
-vector 64 TestNetwork.switchA.eth[2].mac eMacDelay:vector ETV
+vector 80 TestNetwork.switchA.eth[2].mac eMacDelay:vector ETV
 attr interpolationmode none
 attr title "eMacDelay, vector"
-vector 65 TestNetwork.switchA.eth[2].mac txPk:vector(packetBytes) ETV
+vector 81 TestNetwork.switchA.eth[2].mac txPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToLower
 attr title "packets transmitted, vector(packetBytes)"
-vector 66 TestNetwork.sink.eth.mac receivedExpressFrame:vector(packetBytes) ETV
+vector 82 TestNetwork.sink.eth.mac receivedExpressFrame:vector(packetBytes) ETV
 attr interpolationmode none
 attr title "receivedExpressFrame, vector(packetBytes)"
-vector 67 TestNetwork.sink.eth.mac rxPkOk:vector(packetBytes) ETV
+vector 83 TestNetwork.sink.eth.mac rxPkOk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source rxPkOk
 attr title "packets received OK, vector(packetBytes)"
-vector 68 TestNetwork.sink.eth.mac passedUpPk:vector(packetBytes) ETV
+vector 84 TestNetwork.sink.eth.mac passedUpPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetSentToUpper
 attr title "packets passed to higher layer, vector(packetBytes)"
-vector 69 TestNetwork.sink.eth.vlanEncapE decapPk:vector(packetBytes) ETV
+vector 85 TestNetwork.sink.eth.vlanEncapE decapPk:vector(packetBytes) ETV
 attr interpolationmode none
 attr source decapPk
 attr title "packets decapsulated, vector(packetBytes)"
-vector 70 TestNetwork.sink.trafGenApp packetReceived:vector(packetBytes) ETV
+vector 86 TestNetwork.sink.trafGenApp packetReceived:vector(packetBytes) ETV
 attr interpolationmode none
 attr source packetReceived
 attr title "packets received, vector(packetBytes)"
-vector 71 TestNetwork.sink.trafGenApp endToEndDelay:vector ETV
+vector 87 TestNetwork.sink.trafGenApp endToEndDelay:vector ETV
 attr interpolationmode none
 attr source dataAge(packetReceived)
 attr title "end-to-end delay, vector"
@@ -324,21 +372,7 @@ attr unit s
 20	0	0	0
 21	0	0	0
 22	0	0	0
-22	46	0.00004502	1
-22	55	0.00004502	0
-22	89	0.0000859	1
-22	95	0.0000859	0
-22	143	0.00012678	1
-22	149	0.00012678	0
-22	197	0.00016766	1
-22	203	0.00016766	0
-22	251	0.00020854	1
-22	257	0.00020854	0
 23	0	0	0
-23	47	0.00004502	1
-23	113	0.00009502	2
-23	167	0.00014502	3
-23	221	0.00019502	4
 24	0	0	0
 25	0	0	0
 26	0	0	0
@@ -347,180 +381,122 @@ attr unit s
 29	0	0	0
 30	0	0	0
 31	0	0	0
-32	0	0	470
-32	35	0.00004088	470
-32	75	0.00008176	470
-32	129	0.00012264	470
-32	183	0.00016352	470
-32	237	0.0002044	470
-33	7	0	470
-33	37	0.00004088	470
-33	76	0.00008176	470
-33	130	0.00012264	470
-33	184	0.00016352	470
-33	238	0.0002044	470
-34	11	0	0
-35	12	0	0
-36	13	0	0
-37	14	0	477
-37	38	0.00004088	477
-37	77	0.00008176	477
-37	131	0.00012264	477
-37	185	0.00016352	477
-37	239	0.0002044	477
-38	15	0	470
-38	66	0.00005	470
-38	120	0.0001	470
-38	174	0.00015	470
-38	228	0.0002	470
-39	16	0	491
-39	39	0.00004088	491
-39	78	0.00008176	491
-39	132	0.00012264	491
-39	186	0.00016352	491
-39	240	0.0002044	491
-40	17	0	477
-40	67	0.00005	477
-40	121	0.0001	477
-40	175	0.00015	477
-40	229	0.0002	477
-41	18	0	491
-41	68	0.00005	491
-41	122	0.0001	491
-41	176	0.00015	491
-41	230	0.0002	491
-42	23	0.00003992	491
-42	69	0.0000808	491
-42	123	0.00012168	491
-42	177	0.00016256	491
-42	231	0.00020344	491
-43	24	0.00003992	491
-43	103	0.00008992	491
-43	157	0.00013992	491
-43	211	0.00018992	491
-44	25	0.00004002	499
-44	70	0.0000809	499
-44	124	0.00012178	499
-44	178	0.00016266	499
-44	232	0.00020354	499
-45	25	0.00004002	491
-45	70	0.0000809	491
-45	124	0.00012178	491
-45	178	0.00016266	491
-45	232	0.00020354	491
-46	25	0.00004002	491
-46	70	0.0000809	491
-46	124	0.00012178	491
-46	178	0.00016266	491
-46	232	0.00020354	491
-47	26	0.00004002	499
-47	104	0.00009002	499
-47	158	0.00014002	499
-47	212	0.00019002	499
-48	26	0.00004002	491
-48	104	0.00009002	491
-48	158	0.00014002	491
-48	212	0.00019002	491
-49	26	0.00004002	491
-49	104	0.00009002	491
-49	158	0.00014002	491
-49	212	0.00019002	491
-50	27	0.00004002	477
-50	71	0.0000809	477
-50	125	0.00012178	477
-50	179	0.00016266	477
-50	233	0.00020354	477
-51	28	0.00004002	477
-51	105	0.00009002	477
-51	159	0.00014002	477
-51	213	0.00019002	477
-52	33	0.00004002	470
-52	74	0.0000809	470
-52	128	0.00012178	470
-52	182	0.00016266	470
-52	236	0.00020354	470
-53	33	0.00004002	5e-06
-53	74	0.0000809	5e-06
-53	128	0.00012178	5e-06
-53	182	0.00016266	5e-06
-53	236	0.00020354	5e-06
-54	34	0.00004002	470
-54	108	0.00009002	470
-54	162	0.00014002	470
-54	216	0.00019002	470
-55	34	0.00004002	5e-06
-55	108	0.00009002	5e-06
-55	162	0.00014002	5e-06
-55	216	0.00019002	5e-06
-56	40	0.00004502	470
-56	85	0.0000859	470
-56	139	0.00012678	470
-56	193	0.00016766	470
-56	247	0.00020854	470
-57	41	0.00004502	470
-57	110	0.00009502	470
-57	164	0.00014502	470
-57	218	0.00019502	470
-58	46	0.00004502	470
-58	89	0.0000859	470
-58	143	0.00012678	470
-58	197	0.00016766	470
-58	251	0.00020854	470
-59	47	0.00004502	470
-59	113	0.00009502	470
-59	167	0.00014502	470
-59	221	0.00019502	470
-60	55	0.00004502	0
-60	95	0.0000859	0
-60	149	0.00012678	0
-60	203	0.00016766	0
-60	257	0.00020854	0
-61	59	0.00004502	470
-61	99	0.0000859	470
-61	153	0.00012678	470
-61	207	0.00016766	470
-61	261	0.00020854	470
-62	60	0.00004502	477
-62	100	0.0000859	477
-62	154	0.00012678	477
-62	208	0.00016766	477
-62	262	0.00020854	477
-63	61	0.00004502	491
-63	101	0.0000859	491
-63	155	0.00012678	491
-63	209	0.00016766	491
-63	263	0.00020854	491
-64	61	0.00004502	4.502e-05
-64	101	0.0000859	8.59e-05
-64	155	0.00012678	0.00012678
-64	209	0.00016766	0.00016766
-64	263	0.00020854	0.00020854
-65	79	0.00008494	491
-65	133	0.00012582	491
-65	187	0.0001667	491
-65	241	0.00020758	491
-66	80	0.00008504	499
-66	134	0.00012592	499
-66	188	0.0001668	499
-66	242	0.00020768	499
-67	80	0.00008504	491
-67	134	0.00012592	491
-67	188	0.0001668	491
-67	242	0.00020768	491
-68	80	0.00008504	491
-68	134	0.00012592	491
-68	188	0.0001668	491
-68	242	0.00020768	491
-69	81	0.00008504	477
-69	135	0.00012592	477
-69	189	0.0001668	477
-69	243	0.00020768	477
-70	84	0.00008504	470
-70	138	0.00012592	470
-70	192	0.0001668	470
-70	246	0.00020768	470
-71	84	0.00008504	8.504e-05
-71	138	0.00012592	8.504e-05
-71	192	0.0001668	8.504e-05
-71	246	0.00020768	8.504e-05
+32	0	0	0
+33	0	0	0
+34	0	0	0
+35	0	0	0
+36	0	0	0
+37	0	0	0
+38	0	0	0
+38	51	0.00004502	1
+38	60	0.00004502	0
+38	95	0.0000859	1
+38	101	0.0000859	0
+39	0	0	0
+39	52	0.00004502	1
+39	119	0.00009502	2
+40	0	0	0
+41	0	0	0
+42	0	0	0
+43	0	0	0
+44	0	0	0
+45	0	0	0
+46	0	0	0
+47	0	0	0
+48	0	0	470
+48	40	0.00004088	470
+48	81	0.00008176	470
+48	136	0.00012264	470
+49	8	0	470
+49	42	0.00004088	470
+49	82	0.00008176	470
+49	137	0.00012264	470
+50	14	0	477
+50	43	0.00004088	477
+50	83	0.00008176	477
+50	138	0.00012264	477
+51	15	0	470
+51	72	0.00005	470
+51	127	0.0001	470
+52	16	0	0
+53	17	0	0
+54	18	0	0
+55	19	0	491
+55	44	0.00004088	491
+55	84	0.00008176	491
+55	139	0.00012264	491
+56	20	0	477
+56	73	0.00005	477
+56	128	0.0001	477
+57	21	0	491
+57	74	0.00005	491
+57	129	0.0001	491
+58	28	0.00003992	491
+58	75	0.0000808	491
+58	130	0.00012168	491
+59	29	0.00003992	491
+59	109	0.00008992	491
+60	30	0.00004002	499
+60	76	0.0000809	499
+60	131	0.00012178	499
+61	30	0.00004002	491
+61	76	0.0000809	491
+61	131	0.00012178	491
+62	30	0.00004002	491
+62	76	0.0000809	491
+62	131	0.00012178	491
+63	31	0.00004002	499
+63	110	0.00009002	499
+64	31	0.00004002	491
+64	110	0.00009002	491
+65	31	0.00004002	491
+65	110	0.00009002	491
+66	32	0.00004002	477
+66	77	0.0000809	477
+66	132	0.00012178	477
+67	33	0.00004002	477
+67	111	0.00009002	477
+68	38	0.00004002	470
+68	80	0.0000809	470
+68	135	0.00012178	470
+69	38	0.00004002	5e-06
+69	80	0.0000809	5e-06
+69	135	0.00012178	5e-06
+70	39	0.00004002	470
+70	114	0.00009002	470
+71	39	0.00004002	5e-06
+71	114	0.00009002	5e-06
+72	45	0.00004502	470
+72	91	0.0000859	470
+72	146	0.00012678	470
+73	46	0.00004502	470
+73	116	0.00009502	470
+74	51	0.00004502	470
+74	95	0.0000859	470
+75	52	0.00004502	470
+75	119	0.00009502	470
+76	60	0.00004502	0
+76	101	0.0000859	0
+77	64	0.00004502	470
+77	105	0.0000859	470
+78	65	0.00004502	477
+78	106	0.0000859	477
+79	66	0.00004502	491
+79	107	0.0000859	491
+80	66	0.00004502	4.502e-05
+80	107	0.0000859	8.59e-05
+81	85	0.00008494	491
+81	140	0.00012582	491
+82	86	0.00008504	499
+82	141	0.00012592	499
+83	86	0.00008504	491
+83	141	0.00012592	491
+84	86	0.00008504	491
+84	141	0.00012592	491
+85	87	0.00008504	477
+85	142	0.00012592	477
+86	90	0.00008504	470
+86	145	0.00012592	470
+87	90	0.00008504	8.504e-05
+87	145	0.00012592	8.504e-05
 

@@ -62,6 +62,7 @@ module VlanEtherSwitchPreemptable
         }
         interfaceTable: InterfaceTable {
             @display("p=60,31;is=s");
+            displayAddresses = true;
         }
 
     connections:

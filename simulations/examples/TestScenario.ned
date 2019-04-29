@@ -15,7 +15,17 @@
 
 package nesting.simulations.examples;
 
+import inet.applications.ethernet.EtherAppServer;
+import inet.applications.tcpapp.TcpGenericServerApp;
+import inet.examples.inet.ipv4hook.MyHost;
+import inet.examples.wireless.hosttohost.ThroughputServer;
+import inet.networklayer.ipv4.Ipv4NetworkLayer;
+import inet.node.ethernet.EtherHost;
+import inet.node.ethernet.EtherHost2;
+import inet.node.ipv6.StandardHost6;
+import inet.node.packetdrill.PacketDrillHost;
 import ned.DatarateChannel;
+import nesting.node.ethernet.VlanEtherHost;
 import nesting.node.ethernet.VlanEtherSwitchPreemptable;
 import nesting.node.ethernet.VlanEtherHostSched;
 import nesting.node.ethernet.VlanEtherHostFullLoad;
@@ -72,19 +82,19 @@ network TestScenario
             @display("p=682,29");
         }
         Camera1: VlanEtherHostSched {
-            @display("p=501,217");
+            @display("p=487.5,215.8");
         }
         Camera2: VlanEtherHostSched {
             @display("p=572,217");
-        }
-        FCAM: VlanEtherHostSched {
-            @display("p=643,217");
         }
         Control1: VlanEtherHostSched {
             @display("p=712,217");
         }
         Control2: VlanEtherHostSched {
             @display("p=784,217");
+        }
+        FCAM: VlanEtherHostSched {
+            @display("p=642.2,215.8");
         }
     connections:
         switchA.ethg[0] <--> C <--> switchB.ethg[0];
@@ -99,7 +109,7 @@ network TestScenario
         switchB.ethg[7] <--> C <--> HeadUnit.ethg;
         Camera1.ethg <--> C <--> switchB.ethg[1];
         Camera2.ethg <--> C <--> switchB.ethg[2];
-        FCAM.ethg <--> C <--> switchB.ethg[3];
         Control1.ethg <--> C <--> switchB.ethg[4];
         Control2.ethg <--> C <--> switchB.ethg[5];
+        FCAM.ethg <--> C <--> switchB.ethg[3];
 }
