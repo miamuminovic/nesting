@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<scave:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:scave="http://www.omnetpp.org/omnetpp/scave">
+<scave:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:scave="http://www.omnetpp.org/omnetpp/scave">
   <inputs>
-    <inputs name="/tsn_thesis/simulations/examples/results_frame_preemption/General-*.vec"/>
-    <inputs name="/tsn_thesis/simulations/examples/results_frame_preemption/General-*.sca"/>
+    <inputs name="/tsn_thesis/simulations/examples/results_no_frame_preemption2/General-#0.sca"/>
+    <inputs name="/tsn_thesis/simulations/examples/results_no_frame_preemption2/General-#0.vec"/>
   </inputs>
-  <datasets/>
+  <datasets>
+    <datasets name="Latency">
+      <items xsi:type="scave:Add" filterPattern="endToEnd" type="VECTOR"/>
+    </datasets>
+  </datasets>
   <chartSheets/>
 </scave:Analysis>

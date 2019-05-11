@@ -1,15 +1,15 @@
-file 19105 1556191823                                           
+file 10137 1557147595                                           
 version 2
-run General-0-20190425-13:29:08-5734
+run General-0-20190506-14:00:01-5973
 attr configname General
-attr datetime 20190425-13:29:08
+attr datetime 20190506-14:00:01
 attr experiment General
 attr inifile 05_Gating.ini
 attr iterationvars ""
 attr iterationvarsf ""
 attr measurement ""
 attr network TestNetwork
-attr processid 5734
+attr processid 5973
 attr repetition 0
 attr replication #0
 attr resultdir 05_results_Gating
@@ -203,239 +203,53 @@ vector 48 TestNetwork.workstation1.trafGenQueueApp sentPk:vector(packetBytes) ET
 attr interpolationmode none
 attr source sentPk
 attr title "packets sent, vector(packetBytes)"
-vector 49 TestNetwork.workstation1.eth.etherEncap encapPk:vector(packetBytes) ETV
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, vector(packetBytes)"
-vector 50 TestNetwork.workstation1.eth.vlanEncap encapPk:vector(packetBytes) ETV
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, vector(packetBytes)"
-vector 51 TestNetwork.robotController.eth.etherEncap encapPk:vector(packetBytes) ETV
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, vector(packetBytes)"
-vector 52 TestNetwork.switchA.eth[0].queuing.tGates[7] gateStateChanged:vector ETV
-attr interpolationmode none
-attr title "gateStateChanged, vector"
-vector 53 TestNetwork.switchA.eth[1].queuing.tGates[7] gateStateChanged:vector ETV
-attr interpolationmode none
-attr title "gateStateChanged, vector"
-vector 54 TestNetwork.switchA.eth[2].queuing.tGates[7] gateStateChanged:vector ETV
-attr interpolationmode none
-attr title "gateStateChanged, vector"
-vector 55 TestNetwork.workstation1.eth.mac packetReceivedFromUpper:vector(packetBytes) ETV
-attr interpolationmode none
-attr source packetReceivedFromUpper
-attr title "packet bytes from higher layer, vector(packetBytes)"
-vector 56 TestNetwork.robotController.eth.vlanEncap encapPk:vector(packetBytes) ETV
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, vector(packetBytes)"
-vector 57 TestNetwork.robotController.eth.mac packetReceivedFromUpper:vector(packetBytes) ETV
-attr interpolationmode none
-attr source packetReceivedFromUpper
-attr title "packet bytes from higher layer, vector(packetBytes)"
-vector 58 TestNetwork.workstation1.eth.mac txPk:vector(packetBytes) ETV
-attr interpolationmode none
-attr source packetSentToLower
-attr title "packets transmitted, vector(packetBytes)"
-vector 59 TestNetwork.robotController.eth.mac txPk:vector(packetBytes) ETV
-attr interpolationmode none
-attr source packetSentToLower
-attr title "packets transmitted, vector(packetBytes)"
-vector 60 TestNetwork.switchA.eth[0].mac receivedExpressFrame:vector(packetBytes) ETV
-attr interpolationmode none
-attr title "receivedExpressFrame, vector(packetBytes)"
-vector 61 TestNetwork.switchA.eth[0].mac rxPkOk:vector(packetBytes) ETV
-attr interpolationmode none
-attr source rxPkOk
-attr title "packets received OK, vector(packetBytes)"
-vector 62 TestNetwork.switchA.eth[0].mac passedUpPk:vector(packetBytes) ETV
-attr interpolationmode none
-attr source packetSentToUpper
-attr title "packets passed to higher layer, vector(packetBytes)"
-vector 63 TestNetwork.switchA.eth[1].mac receivedExpressFrame:vector(packetBytes) ETV
-attr interpolationmode none
-attr title "receivedExpressFrame, vector(packetBytes)"
-vector 64 TestNetwork.switchA.eth[1].mac rxPkOk:vector(packetBytes) ETV
-attr interpolationmode none
-attr source rxPkOk
-attr title "packets received OK, vector(packetBytes)"
-vector 65 TestNetwork.switchA.eth[1].mac passedUpPk:vector(packetBytes) ETV
-attr interpolationmode none
-attr source packetSentToUpper
-attr title "packets passed to higher layer, vector(packetBytes)"
-vector 66 TestNetwork.switchA.eth[0].vlanEncapE decapPk:vector(packetBytes) ETV
-attr interpolationmode none
-attr source decapPk
-attr title "packets decapsulated, vector(packetBytes)"
-vector 67 TestNetwork.switchA.eth[1].vlanEncapE decapPk:vector(packetBytes) ETV
-attr interpolationmode none
-attr source decapPk
-attr title "packets decapsulated, vector(packetBytes)"
-vector 68 TestNetwork.switchA.processingDelay[0] packetReceived:vector(packetBytes) ETV
-attr interpolationmode none
-attr source packetReceived
-attr title "packets received, vector(packetBytes)"
-vector 69 TestNetwork.switchA.processingDelay[0] delay:vector ETV
-attr interpolationmode none
-attr source delay
-attr title "packet delay, vector"
-vector 70 TestNetwork.switchA.processingDelay[1] packetReceived:vector(packetBytes) ETV
-attr interpolationmode none
-attr source packetReceived
-attr title "packets received, vector(packetBytes)"
-vector 71 TestNetwork.switchA.processingDelay[1] delay:vector ETV
-attr interpolationmode none
-attr source delay
-attr title "packet delay, vector"
-vector 72 TestNetwork.switchA.processingDelay[0] packetSent:vector(packetBytes) ETV
-attr interpolationmode none
-attr source packetSent
-attr title "packets sent, vector(packetBytes)"
-vector 73 TestNetwork.switchA.processingDelay[1] packetSent:vector(packetBytes) ETV
-attr interpolationmode none
-attr source packetSent
-attr title "packets sent, vector(packetBytes)"
-vector 74 TestNetwork.switchA.eth[2].queuing.queues[6] rcvdPk:vector(packetBytes) ETV
-attr interpolationmode none
-attr title "received packets, vector(packetBytes)"
-vector 75 TestNetwork.switchA.eth[2].queuing.queues[7] rcvdPk:vector(packetBytes) ETV
-attr interpolationmode none
-attr title "received packets, vector(packetBytes)"
-vector 76 TestNetwork.switchA.eth[2].queuing.queues[6] queueingTime:vector ETV
-attr interpolationmode none
-attr title "queueing time, vector"
-vector 77 TestNetwork.switchA.eth[2].etherEncapP encapPk:vector(packetBytes) ETV
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, vector(packetBytes)"
-vector 78 TestNetwork.switchA.eth[2].vlanEncapP encapPk:vector(packetBytes) ETV
-attr interpolationmode none
-attr source encapPk
-attr title "packets encapsulated, vector(packetBytes)"
-vector 79 TestNetwork.switchA.eth[2].mac packetReceivedFromUpper:vector(packetBytes) ETV
-attr interpolationmode none
-attr source packetReceivedFromUpper
-attr title "packet bytes from higher layer, vector(packetBytes)"
-vector 80 TestNetwork.switchA.eth[2].mac eMacDelay:vector ETV
-attr interpolationmode none
-attr title "eMacDelay, vector"
-vector 81 TestNetwork.switchA.eth[2].mac txPk:vector(packetBytes) ETV
-attr interpolationmode none
-attr source packetSentToLower
-attr title "packets transmitted, vector(packetBytes)"
-vector 82 TestNetwork.sink.eth.mac receivedExpressFrame:vector(packetBytes) ETV
-attr interpolationmode none
-attr title "receivedExpressFrame, vector(packetBytes)"
-vector 83 TestNetwork.sink.eth.mac rxPkOk:vector(packetBytes) ETV
-attr interpolationmode none
-attr source rxPkOk
-attr title "packets received OK, vector(packetBytes)"
-vector 84 TestNetwork.sink.eth.mac passedUpPk:vector(packetBytes) ETV
-attr interpolationmode none
-attr source packetSentToUpper
-attr title "packets passed to higher layer, vector(packetBytes)"
-vector 85 TestNetwork.sink.eth.vlanEncapE decapPk:vector(packetBytes) ETV
-attr interpolationmode none
-attr source decapPk
-attr title "packets decapsulated, vector(packetBytes)"
-vector 86 TestNetwork.sink.trafGenApp packetReceived:vector(packetBytes) ETV
-attr interpolationmode none
-attr source packetReceived
-attr title "packets received, vector(packetBytes)"
-vector 87 TestNetwork.sink.trafGenApp endToEndDelay:vector ETV
-attr interpolationmode none
-attr source dataAge(packetReceived)
-attr title "end-to-end delay, vector"
-attr unit s
-0	16620 8 0 0 0 0 1 0 0 0 0
-1	16628 8 0 0 0 0 1 0 0 0 0
-2	16636 8 0 0 0 0 1 0 0 0 0
-3	16644 8 0 0 0 0 1 0 0 0 0
-4	16652 8 0 0 0 0 1 0 0 0 0
-5	16660 8 0 0 0 0 1 0 0 0 0
-6	16668 8 0 0 0 0 1 0 0 0 0
-7	16676 8 0 0 0 0 1 0 0 0 0
-8	16684 8 0 0 0 0 1 0 0 0 0
-9	16692 8 0 0 0 0 1 0 0 0 0
-10	16700 9 0 0 0 0 1 0 0 0 0
-11	16709 9 0 0 0 0 1 0 0 0 0
-12	16718 9 0 0 0 0 1 0 0 0 0
-13	16727 9 0 0 0 0 1 0 0 0 0
-14	16736 9 0 0 0 0 1 0 0 0 0
-15	16745 9 0 0 0 0 1 0 0 0 0
-16	16754 9 0 0 0 0 1 0 0 0 0
-17	16763 9 0 0 0 0 1 0 0 0 0
-18	16772 9 0 0 0 0 1 0 0 0 0
-19	16781 9 0 0 0 0 1 0 0 0 0
-20	16790 9 0 0 0 0 1 0 0 0 0
-21	16799 9 0 0 0 0 1 0 0 0 0
-22	16808 9 0 0 0 0 1 0 0 0 0
-23	16817 9 0 0 0 0 1 0 0 0 0
-24	16826 9 0 0 0 0 1 0 0 0 0
-25	16835 9 0 0 0 0 1 0 0 0 0
-26	16844 9 0 0 0 0 1 0 0 0 0
-27	16853 9 0 0 0 0 1 0 0 0 0
-28	16862 9 0 0 0 0 1 0 0 0 0
-29	16871 9 0 0 0 0 1 0 0 0 0
-30	16880 9 0 0 0 0 1 0 0 0 0
-31	16889 9 0 0 0 0 1 0 0 0 0
-32	16898 9 0 0 0 0 1 0 0 0 0
-33	16907 9 0 0 0 0 1 0 0 0 0
-34	16916 9 0 0 0 0 1 0 0 0 0
-35	16925 9 0 0 0 0 1 0 0 0 0
-36	16934 9 0 0 0 0 1 0 0 0 0
-37	16943 9 0 0 0 0 1 0 0 0 0
-38	16952 84 0 101 0 0.0000859 5 0 1 2 2
-39	17036 48 0 119 0 0.00009502 3 0 2 3 5
-40	17084 9 0 0 0 0 1 0 0 0 0
-41	17093 9 0 0 0 0 1 0 0 0 0
-42	17102 9 0 0 0 0 1 0 0 0 0
-43	17111 9 0 0 0 0 1 0 0 0 0
-44	17120 9 0 0 0 0 1 0 0 0 0
-45	17129 9 0 0 0 0 1 0 0 0 0
-46	17138 9 0 0 0 0 1 0 0 0 0
-47	17147 9 0 0 0 0 1 0 0 0 0
-48	17156 75 0 136 0 0.00012264 4 470 470 1880 883600
-49	17231 75 8 137 0 0.00012264 4 470 470 1880 883600
-50	17306 76 14 138 0 0.00012264 4 477 477 1908 910116
-51	17382 48 15 127 0 0.0001 3 470 470 1410 662700
-52	17430 10 16 16 0 0 1 0 0 0 0
-53	17440 10 17 17 0 0 1 0 0 0 0
-54	17450 10 18 18 0 0 1 0 0 0 0
-55	17460 76 19 139 0 0.00012264 4 491 491 1964 964324
-56	17536 48 20 128 0 0.0001 3 477 477 1431 682587
-57	17584 48 21 129 0 0.0001 3 491 491 1473 723243
-58	17632 63 28 130 0.00003992 0.00012168 3 491 491 1473 723243
-59	17695 43 29 109 0.00003992 0.00008992 2 491 491 982 482162
-60	17738 63 30 131 0.00004002 0.00012178 3 499 499 1497 747003
-61	17801 63 30 131 0.00004002 0.00012178 3 491 491 1473 723243
-62	17864 63 30 131 0.00004002 0.00012178 3 491 491 1473 723243
-63	17927 43 31 110 0.00004002 0.00009002 2 499 499 998 498002
-64	17970 43 31 110 0.00004002 0.00009002 2 491 491 982 482162
-65	18013 43 31 110 0.00004002 0.00009002 2 491 491 982 482162
-66	18056 63 32 132 0.00004002 0.00012178 3 477 477 1431 682587
-67	18119 43 33 111 0.00004002 0.00009002 2 477 477 954 455058
-68	18162 63 38 135 0.00004002 0.00012178 3 470 470 1410 662700
-69	18225 69 38 135 0.00004002 0.00012178 3 5e-06 5e-06 1.5e-05 7.5e-11
-70	18294 43 39 114 0.00004002 0.00009002 2 470 470 940 441800
-71	18337 47 39 114 0.00004002 0.00009002 2 5e-06 5e-06 1e-05 5e-11
-72	18384 63 45 146 0.00004502 0.00012678 3 470 470 1410 662700
-73	18447 43 46 116 0.00004502 0.00009502 2 470 470 940 441800
-74	18490 41 51 95 0.00004502 0.0000859 2 470 470 940 441800
-75	18531 43 52 119 0.00004502 0.00009502 2 470 470 940 441800
-76	18574 38 60 101 0.00004502 0.0000859 2 0 0 0 0
-77	18612 42 64 105 0.00004502 0.0000859 2 470 470 940 441800
-78	18654 42 65 106 0.00004502 0.0000859 2 477 477 954 455058
-79	18696 42 66 107 0.00004502 0.0000859 2 491 491 982 482162
-80	18738 53 66 107 0.00004502 0.0000859 2 4.502e-05 8.59e-05 0.00013092 9.4056104e-09
-81	18791 43 85 140 0.00008494 0.00012582 2 491 491 982 482162
-82	18834 43 86 141 0.00008504 0.00012592 2 499 499 998 498002
-83	18877 43 86 141 0.00008504 0.00012592 2 491 491 982 482162
-84	18920 43 86 141 0.00008504 0.00012592 2 491 491 982 482162
-85	18963 43 87 142 0.00008504 0.00012592 2 477 477 954 455058
-86	19006 43 90 145 0.00008504 0.00012592 2 470 470 940 441800
-87	19049 55 90 145 0.00008504 0.00012592 2 8.504e-05 8.504e-05 0.00017008 1.44636032e-08
+0	9703 8 0 0 0 0 1 0 0 0 0
+1	9711 8 0 0 0 0 1 0 0 0 0
+2	9719 8 0 0 0 0 1 0 0 0 0
+3	9727 8 0 0 0 0 1 0 0 0 0
+4	9735 8 0 0 0 0 1 0 0 0 0
+5	9743 8 0 0 0 0 1 0 0 0 0
+6	9751 8 0 0 0 0 1 0 0 0 0
+7	9759 8 0 0 0 0 1 0 0 0 0
+8	9767 8 0 0 0 0 1 0 0 0 0
+9	9775 8 0 0 0 0 1 0 0 0 0
+10	9783 9 0 0 0 0 1 0 0 0 0
+11	9792 9 0 0 0 0 1 0 0 0 0
+12	9801 9 0 0 0 0 1 0 0 0 0
+13	9810 9 0 0 0 0 1 0 0 0 0
+14	9819 9 0 0 0 0 1 0 0 0 0
+15	9828 9 0 0 0 0 1 0 0 0 0
+16	9837 9 0 0 0 0 1 0 0 0 0
+17	9846 9 0 0 0 0 1 0 0 0 0
+18	9855 9 0 0 0 0 1 0 0 0 0
+19	9864 9 0 0 0 0 1 0 0 0 0
+20	9873 9 0 0 0 0 1 0 0 0 0
+21	9882 9 0 0 0 0 1 0 0 0 0
+22	9891 9 0 0 0 0 1 0 0 0 0
+23	9900 9 0 0 0 0 1 0 0 0 0
+24	9909 9 0 0 0 0 1 0 0 0 0
+25	9918 9 0 0 0 0 1 0 0 0 0
+26	9927 9 0 0 0 0 1 0 0 0 0
+27	9936 9 0 0 0 0 1 0 0 0 0
+28	9945 9 0 0 0 0 1 0 0 0 0
+29	9954 9 0 0 0 0 1 0 0 0 0
+30	9963 9 0 0 0 0 1 0 0 0 0
+31	9972 9 0 0 0 0 1 0 0 0 0
+32	9981 9 0 0 0 0 1 0 0 0 0
+33	9990 9 0 0 0 0 1 0 0 0 0
+34	9999 9 0 0 0 0 1 0 0 0 0
+35	10008 9 0 0 0 0 1 0 0 0 0
+36	10017 9 0 0 0 0 1 0 0 0 0
+37	10026 9 0 0 0 0 1 0 0 0 0
+38	10035 9 0 0 0 0 1 0 0 0 0
+39	10044 9 0 0 0 0 1 0 0 0 0
+40	10053 9 0 0 0 0 1 0 0 0 0
+41	10062 9 0 0 0 0 1 0 0 0 0
+42	10071 9 0 0 0 0 1 0 0 0 0
+43	10080 9 0 0 0 0 1 0 0 0 0
+44	10089 9 0 0 0 0 1 0 0 0 0
+45	10098 9 0 0 0 0 1 0 0 0 0
+46	10107 9 0 0 0 0 1 0 0 0 0
+47	10116 9 0 0 0 0 1 0 0 0 0
+48	10125 11 0 0 0 0 1 470 470 470 220900
 

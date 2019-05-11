@@ -39,7 +39,7 @@ network TestScenario
         channel C extends DatarateChannel
         {
             delay = 0.1us;
-            datarate = 1Gbps;
+            datarate = 100Mbps;
         }
     submodules:
         switchA: VlanEtherSwitchPreemptable {

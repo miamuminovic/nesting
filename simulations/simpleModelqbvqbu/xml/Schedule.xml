@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<schedule>
+	<cycle>1000</cycle>
+	<host name="ST">
+		<entry>
+			<start>0</start>
+			<queue>5</queue>
+			<dest>00:00:00:00:00:04</dest>
+			<size>20</size>
+		</entry>
+		<entry>
+			<start>500</start>
+			<queue>5</queue>
+			<dest>00:00:00:00:00:04</dest>
+			<size>20</size>
+		</entry>
+	</host>
+	<host name="AV">
+		<entry>
+			<start>0</start>
+			<queue>7</queue>
+			<dest>00:00:00:00:00:04</dest>
+			<size>1500</size>
+		</entry>
+		<entry>
+			<start>250</start>
+			<queue>7</queue>
+			<dest>00:00:00:00:00:04</dest>
+			<size>1500</size>
+		</entry>
+		<entry>
+			<start>500</start>
+			<queue>7</queue>
+			<dest>00:00:00:00:00:04</dest>
+			<size>1500</size>
+		</entry>
+		<entry>
+			<start>750</start>
+			<queue>7</queue>
+			<dest>00:00:00:00:00:04</dest>
+			<size>1500</size>
+		</entry>
+	</host>
+	<switch name="switch">
+		<port id="3">
+			<entry>
+				<length>16.72</length>
+				<bitvector>010</bitvector>
+			</entry>
+			<entry>
+				<length>360.96</length>
+				<bitvector>101</bitvector>
+			</entry>
+			<entry>
+				<length>122.32</length>
+				<bitvector>000</bitvector>
+			</entry>
+			<entry>
+				<length>16.72</length>
+				<bitvector>010</bitvector>
+			</entry>
+			<entry>
+				<length>360.96</length>
+				<bitvector>101</bitvector>
+			</entry>
+			<entry>
+				<length>122.32</length>
+				<bitvector>000</bitvector>
+			</entry>			
+		</port>
+	</switch>
+</schedule>
