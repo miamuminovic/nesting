@@ -18,27 +18,27 @@
 	<switch name="switch">
 		<port id="2">
 			<entry>
-				<length>16.72</length>
+				<length>17</length>
 				<bitvector>01</bitvector>
 			</entry>
 			<entry>
-				<length>360.96</length>
+				<length>360</length>
 				<bitvector>10</bitvector>
 			</entry>
 			<entry>
-				<length>122.32</length>
+				<length>123</length>
 				<bitvector>00</bitvector>
 			</entry>
 			<entry>
-				<length>16.72</length>
+				<length>17</length>
 				<bitvector>01</bitvector>
 			</entry>
 			<entry>
-				<length>360.96</length>
+				<length>360</length>
 				<bitvector>10</bitvector>
 			</entry>
 			<entry>
-				<length>122.32</length>
+				<length>123</length>
 				<bitvector>00</bitvector>
 			</entry>			
 		</port>

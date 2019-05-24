@@ -84,27 +84,3 @@ If you want to use NeSTiNg without the IDE or using OMNeT++ core, you can also b
   $ MODE=debug ./runsim-qt example.ini  # run simulation with the Qt interface (debug)
 ```
 
-## Citation
-
-If you use NeSTiNg in your research, please include the following reference in your publication:
-
-> J. Falk, D. Hellmanns, B. Carabelli _et al._ “NeSTiNg: Simulating IEEE Time-sensitive Networking (TSN) in OMNeT++”. In: _Proceedings of the 2019 International Conference on Networked Systems (NetSys)_. Garching b. München, Germany, Mar. 2019.
-
-The author's version can be retrieved [here](ftp://ftp.informatik.uni-stuttgart.de/pub/library/ncstrl.ustuttgart_fi/INPROC-2019-04/INPROC-2019-04.pdf).
-
-### bibtex entry
-```
-@inproceedings {nesting_2019,
-    author = {Jonathan Falk and David Hellmanns and Ben Carabelli and Naresh Nayak and Frank D{\"u}rr and Stephan Kehrer and Kurt Rothermel},
-    title = {{NeSTiNg}: Simulating {IEEE} Time-sensitive Networking ({TSN}) in {OMNeT}++},
-    booktitle = {Proceedings of the 2019 International Conference on Networked Systems (NetSys)},
-    address = {Garching b. M{\"u}nchen, Germany},
-    month = mar,
-    year = {2019},
-} 
-```
-
-## Contribution
-Institute of Parallel and Distributed Systems  
-University of Stuttgart  
-[https://www.ipvs.uni-stuttgart.de/abteilungen/vs/](https://www.ipvs.uni-stuttgart.de/abteilungen/vs/)

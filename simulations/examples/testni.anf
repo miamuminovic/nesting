@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<scave:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:scave="http://www.omnetpp.org/omnetpp/scave">
-  <inputs>
-    <inputs name="/tsn_thesis/simulations/examples/results_frame_preemption/General-*.vec"/>
-    <inputs name="/tsn_thesis/simulations/examples/results_frame_preemption/General-*.sca"/>
-  </inputs>
-  <datasets/>
-  <chartSheets/>
-</scave:Analysis>

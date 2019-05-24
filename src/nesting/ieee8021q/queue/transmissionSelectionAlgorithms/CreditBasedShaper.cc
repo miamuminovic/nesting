@@ -218,6 +218,8 @@ void CreditBasedShaper::handleSendPacketEvent(Packet* packet) {
 
     spendCredit(packet);
 
+    cancelEvent(&endSpendingCreditMessage);
+
     scheduleAt(simTime() + transmissionTime(packet), &endSpendingCreditMessage);
     updateState(kSpendCredit);
 }

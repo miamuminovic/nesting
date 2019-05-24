@@ -18,7 +18,6 @@ package nesting.simulations.simpleModelqbu;
 import inet.examples.ospfv2.fulltest.C;
 import nesting.node.ethernet.VlanEtherHostFullLoad;
 import nesting.node.ethernet.VlanEtherHostQ;
-import nesting.node.ethernet.VlanEtherHostSched;
 import nesting.node.ethernet.VlanEtherSwitchPreemptable;
 
 
@@ -27,23 +26,21 @@ import nesting.node.ethernet.VlanEtherSwitchPreemptable;
 //
 network SimpleNetworkQbu
 {
-    @display("bgb=396,225");
     submodules:
-        switch: VlanEtherSwitchPreemptable {
-            parameters:
-                @display("p=197,109");
-            gates:
-                ethg[3];
-
+        AV: VlanEtherHostFullLoad {
+            @display("p=71,62");
         }
         BE: VlanEtherHostFullLoad {
-            @display("p=94,156");
+            @display("p=71,147");
         }
         Sink: VlanEtherHostQ {
-            @display("p=315,110");
+            @display("p=306,101");
         }
-        AV: VlanEtherHostSched {
-            @display("p=93,53");
+        switch: VlanEtherSwitchPreemptable {
+            parameters:
+                @display("p=185,100");
+            gates:
+                ethg[3];
         }
     connections:
         AV.ethg <--> C <--> switch.ethg[0];

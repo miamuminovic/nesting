@@ -34,7 +34,7 @@ import nesting.node.ethernet.VlanEtherHostQ;
 
 network TestScenario
 {
-    @display("bgb=840,314");
+    @display("bgb=1007.5,477.1");
     types:
         channel C extends DatarateChannel
         {
@@ -44,57 +44,57 @@ network TestScenario
     submodules:
         switchA: VlanEtherSwitchPreemptable {
             parameters:
-                @display("p=188,127");
+                @display("p=227.5,184.59999");
             gates:
                 ethg[8];
         }
         switchB: VlanEtherSwitchPreemptable {
             parameters:
-                @display("p=643,127");
+                @display("p=682.5,184.59999");
             gates:
                 ethg[8];
         }
         Control3: VlanEtherHostSched {
-            @display("p=100,217");
+            @display("p=139.09999,274.3");
         }
         HeadUnit: VlanEtherHostQ {
-            @display("p=604,29");
+            @display("p=643.5,87.1");
         }
         AV_sink: VlanEtherHostQ {
-            @display("p=265,23");
+            @display("p=304.19998,80.6");
         }
         Control4: VlanEtherHostSched {
-            @display("p=188,217");
+            @display("p=227.5,274.3");
         }
         Camera3: VlanEtherHostSched {
-            @display("p=45,128");
+            @display("p=84.5,185.9");
         }
         Video: VlanEtherHostSched {
-            @display("p=188,23");
+            @display("p=227.5,80.6");
         }
         Audio: VlanEtherHostSched {
-            @display("p=106,23");
+            @display("p=145.59999,80.6");
         }
         Bulk: VlanEtherHostSched {
-            @display("p=265,217");
+            @display("p=304.19998,274.3");
         }
         PUCAM: VlanEtherHostQ {
-            @display("p=682,29");
+            @display("p=721.5,87.1");
         }
         Camera1: VlanEtherHostSched {
-            @display("p=487.5,215.8");
+            @display("p=527.8,274.3");
         }
         Camera2: VlanEtherHostSched {
-            @display("p=572,217");
+            @display("p=612.3,274.3");
         }
         Control1: VlanEtherHostSched {
-            @display("p=712,217");
+            @display("p=751.39996,274.3");
         }
         Control2: VlanEtherHostSched {
-            @display("p=784,217");
+            @display("p=824.2,274.3");
         }
         FCAM: VlanEtherHostSched {
-            @display("p=642.2,215.8");
+            @display("p=682.5,274.3");
         }
     connections:
         switchA.ethg[0] <--> C <--> switchB.ethg[0];

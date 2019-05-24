@@ -1,10 +1,10 @@
 <?xml version="1.0" ?>
 <schedule>
-	<cycle>20000</cycle>
+	<cycle>10000</cycle>
 	<host name="Control1">
 		<entry>
 			<start>0</start>
-			<queue>2</queue>
+			<queue>7</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>20</size>
 		</entry>
@@ -12,7 +12,7 @@
 	<host name="Control2">
 		<entry>
 			<start>0</start>
-			<queue>2</queue>
+			<queue>7</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>20</size>
 		</entry>
@@ -20,7 +20,7 @@
 	<host name="Control3">
 		<entry>
 			<start>0</start>
-			<queue>2</queue>
+			<queue>7</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>20</size>
 		</entry>
@@ -28,7 +28,7 @@
 	<host name="Control4">
 		<entry>
 			<start>0</start>
-			<queue>2</queue>
+			<queue>7</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>20</size>
 		</entry>
@@ -36,127 +36,127 @@
 	<host name="Camera1">
 		<entry>
 			<start>0</start>
-			<queue>3</queue>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>12.332</start>
-			<queue>3</queue>
+			<start>122.42</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>24.664</start>
-			<queue>3</queue>
+			<start>244.84</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>36.996</start>
-			<queue>3</queue>
+			<start>367.26</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>49.328</start>
-			<queue>3</queue>
+			<start>489.68</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>61.66</start>
-			<queue>3</queue>
+			<start>612.1</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>73.992</start>
-			<queue>3</queue>
+			<start>734.52</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>86.324</start>
-			<queue>3</queue>
+			<start>856.94</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>98.656</start>
-			<queue>3</queue>
+			<start>979.36</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>110.988</start>
-			<queue>3</queue>
+			<start>1101.78</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>123.32</start>
-			<queue>3</queue>
+			<start>1224.2</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>135.652</start>
-			<queue>3</queue>
+			<start>1346.62</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>147.984</start>
-			<queue>3</queue>
+			<start>1469.04</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>160.316</start>
-			<queue>3</queue>
+			<start>1591.46</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>172.648</start>
-			<queue>3</queue>
+			<start>1713.88</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>184.98</start>
-			<queue>3</queue>
+			<start>1836.3</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>197.312</start>
-			<queue>3</queue>
+			<start>1958.72</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>209.644</start>
-			<queue>3</queue>
+			<start>2081.14</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>221.976</start>
-			<queue>3</queue>
+			<start>2203.56</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>246.64</start>
-			<queue>3</queue>
+			<start>2325.98</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>258.972</start>
-			<queue>3</queue>
+			<start>2448.4</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1440</size>
 		</entry>
@@ -164,127 +164,127 @@
 	<host name="Camera2">
 		<entry>
 			<start>0</start>
-			<queue>3</queue>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>12.332</start>
-			<queue>3</queue>
+			<start>122.42</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>24.664</start>
-			<queue>3</queue>
+			<start>244.84</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>36.996</start>
-			<queue>3</queue>
+			<start>367.26</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>49.328</start>
-			<queue>3</queue>
+			<start>489.68</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>61.66</start>
-			<queue>3</queue>
+			<start>612.1</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>73.992</start>
-			<queue>3</queue>
+			<start>734.52</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>86.324</start>
-			<queue>3</queue>
+			<start>856.94</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>98.656</start>
-			<queue>3</queue>
+			<start>979.36</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>110.988</start>
-			<queue>3</queue>
+			<start>1101.78</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>123.32</start>
-			<queue>3</queue>
+			<start>1224.2</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>135.652</start>
-			<queue>3</queue>
+			<start>1346.62</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>147.984</start>
-			<queue>3</queue>
+			<start>1469.04</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>160.316</start>
-			<queue>3</queue>
+			<start>1591.46</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>172.648</start>
-			<queue>3</queue>
+			<start>1713.88</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>184.98</start>
-			<queue>3</queue>
+			<start>1836.3</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>197.312</start>
-			<queue>3</queue>
+			<start>1958.72</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>209.644</start>
-			<queue>3</queue>
+			<start>2081.14</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>221.976</start>
-			<queue>3</queue>
+			<start>2203.56</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>246.64</start>
-			<queue>3</queue>
+			<start>2325.98</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>258.972</start>
-			<queue>3</queue>
+			<start>2448.4</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1440</size>
 		</entry>
@@ -292,127 +292,127 @@
 	<host name="Camera3">
 		<entry>
 			<start>0</start>
-			<queue>3</queue>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>12.332</start>
-			<queue>3</queue>
+			<start>122.42</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>24.664</start>
-			<queue>3</queue>
+			<start>244.84</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>36.996</start>
-			<queue>3</queue>
+			<start>367.26</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>49.328</start>
-			<queue>3</queue>
+			<start>489.68</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>61.66</start>
-			<queue>3</queue>
+			<start>612.1</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>73.992</start>
-			<queue>3</queue>
+			<start>734.52</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>86.324</start>
-			<queue>3</queue>
+			<start>856.94</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>98.656</start>
-			<queue>3</queue>
+			<start>979.36</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>110.988</start>
-			<queue>3</queue>
+			<start>1101.78</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>123.32</start>
-			<queue>3</queue>
+			<start>1224.2</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>135.652</start>
-			<queue>3</queue>
+			<start>1346.62</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>147.984</start>
-			<queue>3</queue>
+			<start>1469.04</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>160.316</start>
-			<queue>3</queue>
+			<start>1591.46</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>172.648</start>
-			<queue>3</queue>
+			<start>1713.88</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>184.98</start>
-			<queue>3</queue>
+			<start>1836.3</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>197.312</start>
-			<queue>3</queue>
+			<start>1958.72</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>209.644</start>
-			<queue>3</queue>
+			<start>2081.14</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>221.976</start>
-			<queue>3</queue>
+			<start>2203.56</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>246.64</start>
-			<queue>3</queue>
+			<start>2325.98</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>258.972</start>
-			<queue>3</queue>
+			<start>2448.4</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1440</size>
 		</entry>
@@ -420,127 +420,127 @@
 	<host name="FCAM">
 		<entry>
 			<start>0</start>
-			<queue>3</queue>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:08</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>12.332</start>
-			<queue>3</queue>
+			<start>122.42</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:08</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>24.664</start>
-			<queue>3</queue>
+			<start>244.84</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:08</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>36.996</start>
-			<queue>3</queue>
+			<start>367.26</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:08</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>49.328</start>
-			<queue>3</queue>
+			<start>489.68</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:08</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>61.66</start>
-			<queue>3</queue>
+			<start>612.1</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:08</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>73.992</start>
-			<queue>3</queue>
+			<start>734.52</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:08</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>86.324</start>
-			<queue>3</queue>
+			<start>856.94</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:08</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>98.656</start>
-			<queue>3</queue>
+			<start>979.36</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:08</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>110.988</start>
-			<queue>3</queue>
+			<start>1101.78</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:08</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>123.32</start>
-			<queue>3</queue>
+			<start>1224.2</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:08</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>135.652</start>
-			<queue>3</queue>
+			<start>1346.62</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:08</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>147.984</start>
-			<queue>3</queue>
+			<start>1469.04</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:08</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>160.316</start>
-			<queue>3</queue>
+			<start>1591.46</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:08</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>172.648</start>
-			<queue>3</queue>
+			<start>1713.88</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:08</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>184.98</start>
-			<queue>3</queue>
+			<start>1836.3</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:08</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>197.312</start>
-			<queue>3</queue>
+			<start>1958.72</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:08</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>209.644</start>
-			<queue>3</queue>
+			<start>2081.14</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:08</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>221.976</start>
-			<queue>3</queue>
+			<start>2203.56</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:08</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>246.64</start>
-			<queue>3</queue>
+			<start>2325.98</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:08</dest>
 			<size>1500</size>
 		</entry>
 		<entry>
-			<start>258.972</start>
-			<queue>3</queue>
+			<start>2448.4</start>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:08</dest>
 			<size>1440</size>
 		</entry>
@@ -548,7 +548,7 @@
 	<host name="Audio">
 		<entry>
 			<start>0</start>
-			<queue>3</queue>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:01</dest>
 			<size>1472</size>
 		</entry>
@@ -556,7 +556,7 @@
 	<host name="Video">
 		<entry>
 			<start>0</start>
-			<queue>3</queue>
+			<queue>5</queue>
 			<dest>00:00:00:00:00:01</dest>
 			<size>1472</size>
 		</entry>
@@ -564,7 +564,7 @@
 	<host name="Bulk">
 		<entry>
 			<start>0</start>
-			<queue>0</queue>
+			<queue>2</queue>
 			<dest>00:00:00:00:00:09</dest>
 			<size>1400</size>
 		</entry>
@@ -572,17 +572,21 @@
 	<switch name="switchA">
 		<port id="0">
 			<entry>
-				<length>18</length>
-				<bitvector>0010</bitvector>
+				<length>24</length>
+				<bitvector>0001</bitvector>
 			</entry>
 			<entry>
-				<length>9000</length>
-				<bitvector>1111</bitvector>
+				<length>9853</length>
+				<bitvector>1110</bitvector>
+			</entry>
+			<entry>
+				<length>123</length>
+				<bitvector>0000</bitvector>
 			</entry>			
 		</port>
 		<port id="1">
 			<entry>
-				<length>9000</length>
+				<length>10000</length>
 				<bitvector>1111</bitvector>
 			</entry>
 		</port>
@@ -590,18 +594,22 @@
 	<switch name="switchB">
 		<port id="6">
 			<entry>
-				<length>9000</length>
+				<length>10000</length>
 				<bitvector>1111</bitvector>
 			</entry>
 		</port>
 		<port id="7">
 			<entry>
-				<length>32</length> 
-				<bitvector>0010</bitvector>
+				<length>37</length> 
+				<bitvector>0001</bitvector>
 			</entry>
 			<entry>
-				<length>9000</length>
-				<bitvector>1111</bitvector>
+				<length>9840</length>
+				<bitvector>1110</bitvector>
+			</entry>
+			<entry>
+				<length>123</length>
+				<bitvector>0000</bitvector>
 			</entry>
 		</port>
 	</switch>

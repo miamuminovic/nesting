@@ -32,9 +32,6 @@ network SimpleNetwork
         Sink: VlanEtherHostQ {
             @display("p=424,134");
         }
-        AV: VlanEtherHostSched {
-            @display("p=116,65");
-        }
         ST: VlanEtherHostSched {
             @display("p=116,134");
         }
@@ -47,9 +44,12 @@ network SimpleNetwork
             gates:
                 ethg[4];
         }
+        AV: VlanEtherHostFullLoad {
+            @display("p=116,60");
+        }
     connections:
-        AV.ethg <--> C <--> switch.ethg[0];
         ST.ethg <--> C <--> switch.ethg[1];
         BE.ethg <--> C <--> switch.ethg[2];
         switch.ethg[3] <--> C <--> Sink.ethg;
+        AV.ethg <--> C <--> switch.ethg[0];
 }
