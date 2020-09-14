@@ -59,14 +59,15 @@ int FilteringDatabase::numInitStages() const {
 void FilteringDatabase::loadDatabase(cXMLElement* xml, int cycle) {
     newCycle = cycle;
 
-    std::string switchName =
-            this->getModuleByPath(par("switchModule"))->getFullName();
+    std::string switchName = this->getModuleByPath(par("switchModule"))->getFullName();
+    std::string switchId = std::to_string(this->getModuleByPath(par("switchModule"))->getId());
     cXMLElement* fdb;
     //TODO this bool can probably be refactored to a nullptr check
     bool databaseFound = false;
     //try to extract the part of the filteringDatabase xml belonging to this module
     for (cXMLElement* host : xml->getChildren()) {
-        if (host->hasAttributes() && host->getAttribute("id") == switchName) {
+        //check for a matching switch name or id
+        if (host->hasAttributes() && (host->getAttribute("id") == switchName || host->getAttribute("id") == switchId)) {
             fdb = host;
             databaseFound = true;
             break;
